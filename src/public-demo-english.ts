@@ -2,6 +2,27 @@
 import { assert } from './domain.ts';
 import { publicDemoHtml } from './public-demo-view.ts';
 
+const stageLabels = [
+  'Fresh session: digest is still required',
+  'Control: only sequenceNumber is required, budget 1',
+  'After correction: Atlas is repaired, budget 1',
+];
+export function englishPresentationData(source: any) {
+  const data = structuredClone(source);
+  assert(data.stages.length === stageLabels.length, 'ENGLISH_STAGE_COUNT_CHANGED');
+  data.stages.forEach((stage: any, i: number) => { stage.label = stageLabels[i]; });
+  data.historicalNegativePilot.title = 'Saved 8B pilot: failure with and without memory.';
+  return data;
+}
+export function englishPresentationReport(source: any, sourceHash: string) {
+  const report = structuredClone(source);
+  assert(report.rows.length === stageLabels.length, 'ENGLISH_REPORT_COUNT_CHANGED');
+  report.rows.forEach((row: any, i: number) => { row.label = stageLabels[i]; });
+  report.publishedLocalization = { language: 'en', sourceReportCanonicalHash: sourceHash,
+    changedPaths: ['rows[0].label', 'rows[1].label', 'rows[2].label'], rawResponses: 'VERBATIM' };
+  return report;
+}
+
 const phrases: Record<string, string> = {
   'Без истории': 'No history',
   'Факты в контексте': 'Facts in context',

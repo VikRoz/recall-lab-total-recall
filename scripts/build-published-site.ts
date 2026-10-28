@@ -6,7 +6,8 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { assert, Fault } from '../src/domain.ts';
 import { buildPublicDemo } from './build-public-demo.ts';
 import { escapeHtml } from '../src/public-demo-view.ts';
-import { englishPublicDemoHtml } from '../src/public-demo-english.ts';
+import { englishPublicDemoHtml, englishPresentationData, englishPresentationReport } from '../src/public-demo-english.ts';
+import { hash } from '../src/evaluation.ts';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const sha = (b: string | Buffer) => createHash('sha256').update(b).digest('hex');
 export const REPOSITORY_URL = 'https://github.com/VikRoz/recall-lab-total-recall';
@@ -40,15 +41,29 @@ export function articleHtml(markdown: string) {
 }
 
 export async function buildPublishedSite(output: string) {
-  const data = await buildPublicDemo(output);
+  const sourceData = await buildPublicDemo(output);
+  const sourceReportHash = sourceData.provenance.modelReportHash;
+  const sourceReport = JSON.parse(readFileSync(join(output, 'model-report.json'), 'utf8'));
+  const report = englishPresentationReport(sourceReport, sourceReportHash);
+  const reportHash = hash(report);
+  const data = englishPresentationData(sourceData);
+  data.provenance.sourceModelReportHash = sourceReportHash;
+  data.provenance.modelReportHash = reportHash;
+  data.provenance.metadataLocalization = 'ENGLISH_DESCRIPTIVE_LABELS_ONLY_RAW_RESPONSES_VERBATIM';
+  writeFileSync(join(output, 'demo-data.json'), JSON.stringify(data, null, 2));
+  writeFileSync(join(output, 'model-report.json'), JSON.stringify(report, null, 2));
   const html = englishPublicDemoHtml(data, readFileSync(join(root, 'public-demo/style.css'), 'utf8'), readFileSync(join(root, 'public-demo/client.js'), 'utf8'));
   assert(html.includes('href="./blog.html"'), 'PUBLISHED_SITE_ARTICLE_LINK_MISSING');
   writeFileSync(join(output, 'index.html'), html);
   writeFileSync(join(output, 'blog.html'), articleHtml(readFileSync(join(root, 'public-demo/BLOG.en.md'), 'utf8')));
   const verification = JSON.parse(readFileSync(join(output, 'verification.json'), 'utf8'));
+  verification.dataHash = hash(data);
+  verification.sourceModelReportHash = sourceReportHash;
+  verification.publishedModelReportHash = reportHash;
+  verification.metadataLocalization = report.publishedLocalization;
   verification.status = 'STATIC_SITE_WITH_ARTICLE_PREPARED'; verification.publication = 'NOT_ATTESTED_BY_OFFLINE_CHECK';
   verification.article = './blog.html'; writeFileSync(join(output, 'verification.json'), JSON.stringify(verification, null, 2));
-  const verifier = readFileSync(join(output, 'verify.mjs'), 'utf8').replace("verification.publication, 'NOT_PUBLISHED'", "verification.publication, 'NOT_ATTESTED_BY_OFFLINE_CHECK'").replace("publication: 'NOT_PUBLISHED'", "publication: 'NOT_ATTESTED_BY_OFFLINE_CHECK'");
+  const verifier = readFileSync(join(output, 'verify.mjs'), 'utf8').replace(sourceReportHash, reportHash).replace("verification.publication, 'NOT_PUBLISHED'", "verification.publication, 'NOT_ATTESTED_BY_OFFLINE_CHECK'").replace("publication: 'NOT_PUBLISHED'", "publication: 'NOT_ATTESTED_BY_OFFLINE_CHECK'");
   writeFileSync(join(output, 'verify.mjs'), verifier);
   writeFileSync(join(output, 'README.md'), readFileSync(join(root, 'public-demo/PUBLISHED-README.en.md'), 'utf8'));
   writeFileSync(join(output, 'RUNBOOK.md'), readFileSync(join(root, 'public-demo/PUBLISHED-RUNBOOK.en.md'), 'utf8'));

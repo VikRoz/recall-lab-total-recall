@@ -21,9 +21,14 @@ test('published static build keeps the model evidence, includes approved article
     const ui = html.replace(/<pre\b[^>]*>[\s\S]*?<\/pre>|<script\b[^>]*>[\s\S]*?<\/script>/g, '');
     assert.ok(!/[\u0400-\u04ff]/.test(ui), 'All interface text and accessibility labels are English');
     assert.ok(html.includes('Showing ${count} of ${records.length} records'));
-    const original = readFileSync(join(import.meta.dirname, '../evidence/scenario-probe-v1/live-report.json'));
-    assert.deepEqual(readFileSync(join(dir, 'model-report.json')), original);
-    for (const name of ['README.md', 'RUNBOOK.md']) assert.ok(!/[\u0400-\u04ff]/.test(readFileSync(join(dir, name), 'utf8')));
+    const original = JSON.parse(readFileSync(join(import.meta.dirname, '../evidence/scenario-probe-v1/live-report.json'), 'utf8'));
+    const localized = JSON.parse(readFileSync(join(dir, 'model-report.json'), 'utf8'));
+    assert.equal(localized.publishedLocalization.rawResponses, 'VERBATIM');
+    delete localized.publishedLocalization;
+    localized.rows.forEach((row: any, i: number) => { row.label = original.rows[i].label; });
+    assert.deepEqual(localized, original, 'Only the three descriptive labels changed; all raw responses and scored outcomes are exact');
+    for (const name of ['index.html', 'blog.html', 'demo-data.json', 'model-report.json', 'verification.json', 'README.md', 'RUNBOOK.md', 'verify.mjs'])
+      assert.ok(!/[\u0400-\u04ff]/.test(readFileSync(join(dir, name), 'utf8')), 'No Cyrillic anywhere in served files: ' + name);
     const checks = JSON.parse(readFileSync(join(dir, 'CHECKSUMS.json'), 'utf8')); assert.equal(Object.keys(checks).length, 8);
     const result = spawnSync(process.execPath, [join(dir, 'verify.mjs')], { cwd: dir, env: {}, encoding: 'utf8' });
     assert.equal(result.status, 0); assert.equal(JSON.parse(result.stdout).providerCalls, 0);

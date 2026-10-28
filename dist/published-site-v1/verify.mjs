@@ -16,7 +16,7 @@ try {
     assert.equal(sha(readFileSync(join(root, name))), digest, 'Changed file: ' + name);
   }
   const data = json('demo-data.json'), model = json('model-report.json'), verification = json('verification.json');
-  assert.equal(sha(canonical(model)), '36b5f462e753b8af3f98dec355ceeaa94fb0bb27bd6a0eb8d1e3ca7fdd17c22d');
+  assert.equal(sha(canonical(model)), '4cec4721dd2d6ad641e2b32a56aec28956ac331329447f8ba14e5b726a194e73');
   assert.equal(sha(canonical(data)), verification.dataHash);
   assert.equal(data.records.length, 10); assert.equal(data.chains.length, 5);
   for (const row of data.records) {

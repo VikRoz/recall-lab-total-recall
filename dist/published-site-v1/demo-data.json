@@ -398,7 +398,7 @@
     }
   ],
   "historicalNegativePilot": {
-    "title": "Сохранённый 8B pilot: fail без памяти и с памятью.",
+    "title": "Saved 8B pilot: failure with and without memory.",
     "mode": "LIVE_MODEL_RECORDED_TATUM_FROZEN_WALRUS",
     "modelId": "@cf/meta/llama-3.1-8b-instruct-fp8-fast",
     "sourceReportSha256": "dfb138bd2cb527d30d93d9867a29690ad9a4f9a945276f51e863ab027506f236",
@@ -602,7 +602,7 @@
   "stages": [
     {
       "id": "repeat-required-field",
-      "label": "Новый сеанс: digest по-прежнему нужен",
+      "label": "Fresh session: digest is still required",
       "arms": [
         {
           "condition": "A",
@@ -810,7 +810,7 @@
     },
     {
       "id": "field-no-longer-required",
-      "label": "Контроль: нужен только sequenceNumber, бюджет1",
+      "label": "Control: only sequenceNumber is required, budget 1",
       "arms": [
         {
           "condition": "A",
@@ -979,7 +979,7 @@
     },
     {
       "id": "after-verified-correction",
-      "label": "После correction: Atlas исправлен, бюджет1",
+      "label": "After correction: Atlas is repaired, budget 1",
       "arms": [
         {
           "condition": "A",
@@ -1192,7 +1192,7 @@
     "description": "Fresh local process verified saved blobs/revisions; earlier separate live readers verified Mainnet."
   },
   "provenance": {
-    "modelReportHash": "36b5f462e753b8af3f98dec355ceeaa94fb0bb27bd6a0eb8d1e3ca7fdd17c22d",
+    "modelReportHash": "4cec4721dd2d6ad641e2b32a56aec28956ac331329447f8ba14e5b726a194e73",
     "permitHash": "40f12edf62f0c12d48445244f99d32a576b5b0ce70d555896a788f8624ee743d",
     "inputPlanHash": "01a44fea2996b2881db7defeaee182c93536a5a2432658b32b9ab758746389f5",
     "originalMemoryInputHash": "89efc4d0a5ecbd614b3582b96252ac65b1e56af2cdb1119194310b5b2d969dac",
@@ -1200,6 +1200,8 @@
     "modelInference": "SAVED_REAL_8B_V1_RESPONSES",
     "projectionEvaluation": "RECOMPUTED_LOCALLY_FROM_SAVED_CONTROLLED_DATA",
     "deterministicBaseline": "PREVIOUSLY_EXECUTED_OFFLINE",
-    "memoryRead": "SAVED_REAL_MAINNET_READ_PLUS_LOCAL_RESTORATION"
+    "memoryRead": "SAVED_REAL_MAINNET_READ_PLUS_LOCAL_RESTORATION",
+    "sourceModelReportHash": "36b5f462e753b8af3f98dec355ceeaa94fb0bb27bd6a0eb8d1e3ca7fdd17c22d",
+    "metadataLocalization": "ENGLISH_DESCRIPTIVE_LABELS_ONLY_RAW_RESPONSES_VERBATIM"
   }
 }

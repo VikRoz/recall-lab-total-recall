@@ -2,13 +2,13 @@
 
 Prepared 28 October 2026. Viewing this package makes no provider calls, writes or payments. Additional spend: $0.
 
-Open `index.html` in a browser. Data, styles and controls are bundled; no credentials, dependency installation or application server are required. The article is in `blog.html`. The interface is in English. Original evidence and saved model responses remain verbatim, including any original-language text.
+Open `index.html` in a browser. Data, styles and controls are bundled; no credentials, dependency installation or application server are required. The article is in `blog.html`. All served files are English. Four descriptive labels in the presentation data, including three in the report copy, are translated; original raw model responses and Mainnet records remain verbatim. Source journals are unchanged.
 
 ## Verify the package
 
 With Node.js 18+, run `node verify.mjs` from this directory. No dependencies or network access are needed. It checks checksums, saved model-report and record hashes, totals and embedded page data. Checksums establish integrity, not independent authenticity or a new Mainnet read. Offline verification does not attest to publication or browser QA; those are checked separately.
 
-`demo-data.json` contains ten real Mainnet records, their receipts, five correction chains and an earlier negative pilot. `model-report.json` preserves the five-call diagnostic. `verification.json` records offline build boundaries. `RUNBOOK.md` is the demonstration sequence.
+`demo-data.json` contains ten real Mainnet records, their receipts, five correction chains and an earlier negative pilot. `model-report.json` is an English-labelled presentation copy of the five-call diagnostic: its localization metadata names the original canonical report hash and the three translated label paths. The published report has its own hash; it is not claimed to be a byte-identical original report. Raw responses and outcomes are unchanged. `verification.json` records offline build boundaries. `RUNBOOK.md` is the demonstration sequence.
 
 ## Honest limitations
 

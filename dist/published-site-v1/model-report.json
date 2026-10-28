@@ -11,7 +11,7 @@
   "rows": [
     {
       "id": "repeat-required-field",
-      "label": "Новый сеанс: digest по-прежнему нужен",
+      "label": "Fresh session: digest is still required",
       "arms": [
         {
           "condition": "A",
@@ -157,7 +157,7 @@
     },
     {
       "id": "field-no-longer-required",
-      "label": "Контроль: нужен только sequenceNumber, бюджет1",
+      "label": "Control: only sequenceNumber is required, budget 1",
       "arms": [
         {
           "condition": "A",
@@ -269,7 +269,7 @@
     },
     {
       "id": "after-verified-correction",
-      "label": "После correction: Atlas исправлен, бюджет1",
+      "label": "After correction: Atlas is repaired, budget 1",
       "arms": [
         {
           "condition": "A",
@@ -458,5 +458,15 @@
       "state": "DONE",
       "response": "{\"memoryIds\":[\"experience:atlas-v1-correction-1\"],\"reason\":\"Within budget\",\"serviceId\":\"atlas\"}"
     }
-  ]
+  ],
+  "publishedLocalization": {
+    "language": "en",
+    "sourceReportCanonicalHash": "36b5f462e753b8af3f98dec355ceeaa94fb0bb27bd6a0eb8d1e3ca7fdd17c22d",
+    "changedPaths": [
+      "rows[0].label",
+      "rows[1].label",
+      "rows[2].label"
+    ],
+    "rawResponses": "VERBATIM"
+  }
 }
