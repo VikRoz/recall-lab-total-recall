@@ -1,0 +1,472 @@
+{
+  "status": "SCENARIO_PROBE_COMPLETED",
+  "code": null,
+  "permitHash": "40f12edf62f0c12d48445244f99d32a576b5b0ce70d555896a788f8624ee743d",
+  "inputPlanHash": "01a44fea2996b2881db7defeaee182c93536a5a2432658b32b9ab758746389f5",
+  "modelId": "@cf/meta/llama-3.1-8b-instruct-fp8-fast",
+  "requestsReserved": 5,
+  "modelCallsThisInvocation": 5,
+  "completedUniqueResponses": 5,
+  "logicalArms": 9,
+  "rows": [
+    {
+      "id": "repeat-required-field",
+      "label": "Fresh session: digest is still required",
+      "arms": [
+        {
+          "condition": "A",
+          "requestHash": "f3ed19a6c417650f5f4a8bd3df063edc7cca56387ae1a3e8d3cee6787987af2a",
+          "status": "MODEL_RESPONSE_SCORED",
+          "rawResponseHash": "b5377f1cc8dd096597d275e734bef0dfacd053f8b032373e4efb5ed9599fe7dc",
+          "proposal": {
+            "serviceId": "atlas",
+            "reason": "Within budget and meets requirements",
+            "memoryIds": []
+          },
+          "rawVerifier": {
+            "status": "fail",
+            "reasons": [
+              "missing:digest"
+            ]
+          },
+          "goalCompleted": false,
+          "controllerOutcome": "LOCAL_PROJECTION_VERIFIED",
+          "guardEvidenceIds": [],
+          "localServiceExecutions": 1,
+          "demoCredits": "1",
+          "citationAudit": {
+            "contract": "memory-citations-v1",
+            "status": "none_available",
+            "citationGatePassed": false,
+            "providedMemoryIds": [],
+            "declaredMemoryIds": [],
+            "assessments": []
+          }
+        },
+        {
+          "condition": "B",
+          "requestHash": "d6c8071a8a95c831abffc9c2a4a617d510b8c17665177aff104aa1af96fcfce5",
+          "status": "MODEL_RESPONSE_SCORED",
+          "rawResponseHash": "0daa50ac1ce56a6c3ca9122f2b98e059a5ad85d02bcffad2610953bb3529596e",
+          "proposal": {
+            "serviceId": "beacon",
+            "reason": "Within budget and offers more than atlas",
+            "memoryIds": [
+              "experience:stage0-smoke"
+            ]
+          },
+          "rawVerifier": {
+            "status": "pass",
+            "reasons": []
+          },
+          "goalCompleted": true,
+          "controllerOutcome": "LOCAL_PROJECTION_VERIFIED",
+          "guardEvidenceIds": [],
+          "localServiceExecutions": 1,
+          "demoCredits": "2",
+          "citationAudit": {
+            "contract": "memory-citations-v1",
+            "status": "supported",
+            "citationGatePassed": true,
+            "providedMemoryIds": [
+              "experience:stage0-smoke"
+            ],
+            "declaredMemoryIds": [
+              "experience:stage0-smoke"
+            ],
+            "assessments": [
+              {
+                "id": "experience:stage0-smoke",
+                "declared": true,
+                "relevance": "relevant_failure",
+                "reasons": [
+                  "required_field_failure_same_version"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "condition": "C",
+          "requestHash": "d6c8071a8a95c831abffc9c2a4a617d510b8c17665177aff104aa1af96fcfce5",
+          "status": "MODEL_RESPONSE_SCORED",
+          "rawResponseHash": "0daa50ac1ce56a6c3ca9122f2b98e059a5ad85d02bcffad2610953bb3529596e",
+          "proposal": {
+            "serviceId": "beacon",
+            "reason": "Within budget and offers more than atlas",
+            "memoryIds": [
+              "experience:stage0-smoke"
+            ]
+          },
+          "rawVerifier": {
+            "status": "pass",
+            "reasons": []
+          },
+          "goalCompleted": true,
+          "controllerOutcome": "LOCAL_PROJECTION_VERIFIED",
+          "guardEvidenceIds": [],
+          "localServiceExecutions": 1,
+          "demoCredits": "2",
+          "citationAudit": {
+            "contract": "memory-citations-v1",
+            "status": "supported",
+            "citationGatePassed": true,
+            "providedMemoryIds": [
+              "experience:stage0-smoke"
+            ],
+            "declaredMemoryIds": [
+              "experience:stage0-smoke"
+            ],
+            "assessments": [
+              {
+                "id": "experience:stage0-smoke",
+                "declared": true,
+                "relevance": "relevant_failure",
+                "reasons": [
+                  "required_field_failure_same_version"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "D": {
+        "condition": "D",
+        "status": "DETERMINISTIC_BASELINE_EXECUTED_OFFLINE",
+        "selector": "EXISTING_FIELD_AWARE_RULES",
+        "contextHash": "ce4e8948b607be9bd431dc1ece3ec413761ce1cc19fd54fe27630b0a6cde4097",
+        "proposal": {
+          "serviceId": "beacon",
+          "reason": "Lowest demo price among compatible offers without a matching known failure.",
+          "memoryIds": [
+            "experience:stage0-smoke"
+          ]
+        },
+        "rawVerifier": {
+          "status": "pass",
+          "reasons": []
+        },
+        "goalCompleted": true,
+        "controllerOutcome": "LOCAL_PROJECTION_VERIFIED",
+        "guardEvidenceIds": [],
+        "localServiceExecutions": 1,
+        "demoCredits": "2",
+        "providerCalls": 0
+      },
+      "BAndCShareOneResponse": true
+    },
+    {
+      "id": "field-no-longer-required",
+      "label": "Control: only sequenceNumber is required, budget 1",
+      "arms": [
+        {
+          "condition": "A",
+          "requestHash": "6d4423d5ca1953c1509ac85da299fe84a34a55058e95cc38bad2136ee3ed6dea",
+          "status": "MODEL_RESPONSE_SCORED",
+          "rawResponseHash": "fa7d5fb0d28a56950d77e4bc52d995bb32d1b25deef12bff67369112fca58bde",
+          "proposal": {
+            "serviceId": "atlas",
+            "reason": "Lowest price within budget",
+            "memoryIds": []
+          },
+          "rawVerifier": {
+            "status": "pass",
+            "reasons": []
+          },
+          "goalCompleted": true,
+          "controllerOutcome": "LOCAL_PROJECTION_VERIFIED",
+          "guardEvidenceIds": [],
+          "localServiceExecutions": 1,
+          "demoCredits": "1",
+          "citationAudit": {
+            "contract": "memory-citations-v1",
+            "status": "none_available",
+            "citationGatePassed": false,
+            "providedMemoryIds": [],
+            "declaredMemoryIds": [],
+            "assessments": []
+          }
+        },
+        {
+          "condition": "B",
+          "requestHash": "6d4423d5ca1953c1509ac85da299fe84a34a55058e95cc38bad2136ee3ed6dea",
+          "status": "MODEL_RESPONSE_SCORED",
+          "rawResponseHash": "fa7d5fb0d28a56950d77e4bc52d995bb32d1b25deef12bff67369112fca58bde",
+          "proposal": {
+            "serviceId": "atlas",
+            "reason": "Lowest price within budget",
+            "memoryIds": []
+          },
+          "rawVerifier": {
+            "status": "pass",
+            "reasons": []
+          },
+          "goalCompleted": true,
+          "controllerOutcome": "LOCAL_PROJECTION_VERIFIED",
+          "guardEvidenceIds": [],
+          "localServiceExecutions": 1,
+          "demoCredits": "1",
+          "citationAudit": {
+            "contract": "memory-citations-v1",
+            "status": "none_available",
+            "citationGatePassed": false,
+            "providedMemoryIds": [],
+            "declaredMemoryIds": [],
+            "assessments": []
+          }
+        },
+        {
+          "condition": "C",
+          "requestHash": "6d4423d5ca1953c1509ac85da299fe84a34a55058e95cc38bad2136ee3ed6dea",
+          "status": "MODEL_RESPONSE_SCORED",
+          "rawResponseHash": "fa7d5fb0d28a56950d77e4bc52d995bb32d1b25deef12bff67369112fca58bde",
+          "proposal": {
+            "serviceId": "atlas",
+            "reason": "Lowest price within budget",
+            "memoryIds": []
+          },
+          "rawVerifier": {
+            "status": "pass",
+            "reasons": []
+          },
+          "goalCompleted": true,
+          "controllerOutcome": "LOCAL_PROJECTION_VERIFIED",
+          "guardEvidenceIds": [],
+          "localServiceExecutions": 1,
+          "demoCredits": "1",
+          "citationAudit": {
+            "contract": "memory-citations-v1",
+            "status": "none_available",
+            "citationGatePassed": false,
+            "providedMemoryIds": [],
+            "declaredMemoryIds": [],
+            "assessments": []
+          }
+        }
+      ],
+      "D": {
+        "condition": "D",
+        "status": "DETERMINISTIC_BASELINE_EXECUTED_OFFLINE",
+        "selector": "EXISTING_FIELD_AWARE_RULES",
+        "contextHash": "61efd7df102a8a0423870571464b87293357bbacf902ce80e1f332c57f4c7294",
+        "proposal": {
+          "serviceId": "atlas",
+          "reason": "Lowest demo price among compatible offers without a matching known failure.",
+          "memoryIds": []
+        },
+        "rawVerifier": {
+          "status": "pass",
+          "reasons": []
+        },
+        "goalCompleted": true,
+        "controllerOutcome": "LOCAL_PROJECTION_VERIFIED",
+        "guardEvidenceIds": [],
+        "localServiceExecutions": 1,
+        "demoCredits": "1",
+        "providerCalls": 0
+      },
+      "BAndCShareOneResponse": true
+    },
+    {
+      "id": "after-verified-correction",
+      "label": "After correction: Atlas is repaired, budget 1",
+      "arms": [
+        {
+          "condition": "A",
+          "requestHash": "bea9bcc2a173d8a15eab77b263bec67194a9b76befb9c20120e558e87286656d",
+          "status": "MODEL_RESPONSE_SCORED",
+          "rawResponseHash": "fa7d5fb0d28a56950d77e4bc52d995bb32d1b25deef12bff67369112fca58bde",
+          "proposal": {
+            "serviceId": "atlas",
+            "reason": "Lowest price within budget",
+            "memoryIds": []
+          },
+          "rawVerifier": {
+            "status": "pass",
+            "reasons": []
+          },
+          "goalCompleted": true,
+          "controllerOutcome": "LOCAL_PROJECTION_VERIFIED",
+          "guardEvidenceIds": [],
+          "localServiceExecutions": 1,
+          "demoCredits": "1",
+          "citationAudit": {
+            "contract": "memory-citations-v1",
+            "status": "none_available",
+            "citationGatePassed": false,
+            "providedMemoryIds": [],
+            "declaredMemoryIds": [],
+            "assessments": []
+          }
+        },
+        {
+          "condition": "B",
+          "requestHash": "dfe9976523bf07110f4721be746b7370a723824ab7700799a2f61503c9c055a5",
+          "status": "MODEL_RESPONSE_SCORED",
+          "rawResponseHash": "568f345f374f9d755bc3d58f48296961aeb3ea69c4c8f1670a118a241c68518d",
+          "proposal": {
+            "serviceId": "atlas",
+            "reason": "Within budget",
+            "memoryIds": [
+              "experience:atlas-v1-correction-1"
+            ]
+          },
+          "rawVerifier": {
+            "status": "pass",
+            "reasons": []
+          },
+          "goalCompleted": true,
+          "controllerOutcome": "LOCAL_PROJECTION_VERIFIED",
+          "guardEvidenceIds": [],
+          "localServiceExecutions": 1,
+          "demoCredits": "1",
+          "citationAudit": {
+            "contract": "memory-citations-v1",
+            "status": "unverifiable",
+            "citationGatePassed": false,
+            "providedMemoryIds": [
+              "experience:atlas-v1-correction-1"
+            ],
+            "declaredMemoryIds": [
+              "experience:atlas-v1-correction-1"
+            ],
+            "assessments": [
+              {
+                "id": "experience:atlas-v1-correction-1",
+                "declared": true,
+                "relevance": "unassessable",
+                "reasons": [
+                  "observation_contract_insufficient"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "condition": "C",
+          "requestHash": "dfe9976523bf07110f4721be746b7370a723824ab7700799a2f61503c9c055a5",
+          "status": "MODEL_RESPONSE_SCORED",
+          "rawResponseHash": "568f345f374f9d755bc3d58f48296961aeb3ea69c4c8f1670a118a241c68518d",
+          "proposal": {
+            "serviceId": "atlas",
+            "reason": "Within budget",
+            "memoryIds": [
+              "experience:atlas-v1-correction-1"
+            ]
+          },
+          "rawVerifier": {
+            "status": "pass",
+            "reasons": []
+          },
+          "goalCompleted": true,
+          "controllerOutcome": "LOCAL_PROJECTION_VERIFIED",
+          "guardEvidenceIds": [],
+          "localServiceExecutions": 1,
+          "demoCredits": "1",
+          "citationAudit": {
+            "contract": "memory-citations-v1",
+            "status": "unverifiable",
+            "citationGatePassed": false,
+            "providedMemoryIds": [
+              "experience:atlas-v1-correction-1"
+            ],
+            "declaredMemoryIds": [
+              "experience:atlas-v1-correction-1"
+            ],
+            "assessments": [
+              {
+                "id": "experience:atlas-v1-correction-1",
+                "declared": true,
+                "relevance": "unassessable",
+                "reasons": [
+                  "observation_contract_insufficient"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "D": {
+        "condition": "D",
+        "status": "DETERMINISTIC_BASELINE_EXECUTED_OFFLINE",
+        "selector": "EXISTING_FIELD_AWARE_RULES",
+        "contextHash": "d135a1a17d3153b5faa46d60df96fde80f2cf6c261e5a79b9d6c5d0c858d1953",
+        "proposal": {
+          "serviceId": "atlas",
+          "reason": "Lowest demo price among compatible offers without a matching known failure.",
+          "memoryIds": [
+            "experience:atlas-v1-correction-1"
+          ]
+        },
+        "rawVerifier": {
+          "status": "pass",
+          "reasons": []
+        },
+        "goalCompleted": true,
+        "controllerOutcome": "LOCAL_PROJECTION_VERIFIED",
+        "guardEvidenceIds": [],
+        "localServiceExecutions": 1,
+        "demoCredits": "1",
+        "providerCalls": 0
+      },
+      "BAndCShareOneResponse": true
+    }
+  ],
+  "tatumCalls": 0,
+  "walrusOperations": 0,
+  "additionalSpendLimitUSD": 0,
+  "limitations": [
+    "One known development scenario with two controls, not a general performance estimate.",
+    "B/C and the irrelevant-field arms reuse identical request outputs; they are not independent trials.",
+    "Service results/reference/memory are saved controlled projections, not fresh chain reads or purchases.",
+    "Raw model proposals, controller admission and deterministic D remain separate."
+  ],
+  "lastProviderStatus": 200,
+  "effects": [
+    {
+      "id": "eval:scenario-probe:v1:f3ed19a6c417650f5f4a8bd3df063edc7cca56387ae1a3e8d3cee6787987af2a",
+      "kind": "model",
+      "hash": "f3ed19a6c417650f5f4a8bd3df063edc7cca56387ae1a3e8d3cee6787987af2a",
+      "state": "DONE",
+      "response": "{\"memoryIds\":[],\"reason\":\"Within budget and meets requirements\",\"serviceId\":\"atlas\"}"
+    },
+    {
+      "id": "eval:scenario-probe:v1:d6c8071a8a95c831abffc9c2a4a617d510b8c17665177aff104aa1af96fcfce5",
+      "kind": "model",
+      "hash": "d6c8071a8a95c831abffc9c2a4a617d510b8c17665177aff104aa1af96fcfce5",
+      "state": "DONE",
+      "response": "{\"memoryIds\":[\"experience:stage0-smoke\"],\"reason\":\"Within budget and offers more than atlas\",\"serviceId\":\"beacon\"}"
+    },
+    {
+      "id": "eval:scenario-probe:v1:6d4423d5ca1953c1509ac85da299fe84a34a55058e95cc38bad2136ee3ed6dea",
+      "kind": "model",
+      "hash": "6d4423d5ca1953c1509ac85da299fe84a34a55058e95cc38bad2136ee3ed6dea",
+      "state": "DONE",
+      "response": "{\"memoryIds\":[],\"reason\":\"Lowest price within budget\",\"serviceId\":\"atlas\"}"
+    },
+    {
+      "id": "eval:scenario-probe:v1:bea9bcc2a173d8a15eab77b263bec67194a9b76befb9c20120e558e87286656d",
+      "kind": "model",
+      "hash": "bea9bcc2a173d8a15eab77b263bec67194a9b76befb9c20120e558e87286656d",
+      "state": "DONE",
+      "response": "{\"memoryIds\":[],\"reason\":\"Lowest price within budget\",\"serviceId\":\"atlas\"}"
+    },
+    {
+      "id": "eval:scenario-probe:v1:dfe9976523bf07110f4721be746b7370a723824ab7700799a2f61503c9c055a5",
+      "kind": "model",
+      "hash": "dfe9976523bf07110f4721be746b7370a723824ab7700799a2f61503c9c055a5",
+      "state": "DONE",
+      "response": "{\"memoryIds\":[\"experience:atlas-v1-correction-1\"],\"reason\":\"Within budget\",\"serviceId\":\"atlas\"}"
+    }
+  ],
+  "publishedLocalization": {
+    "language": "en",
+    "sourceReportCanonicalHash": "36b5f462e753b8af3f98dec355ceeaa94fb0bb27bd6a0eb8d1e3ca7fdd17c22d",
+    "changedPaths": [
+      "rows[0].label",
+      "rows[1].label",
+      "rows[2].label"
+    ],
+    "rawResponses": "VERBATIM"
+  }
+}

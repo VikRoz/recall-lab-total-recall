@@ -1,0 +1,27 @@
+{
+  "status": "STATIC_SITE_WITH_ARTICLE_PREPARED",
+  "dataHash": "23a9b1dc0f8f6c119b4f04324ea5a3ce8ced8fbf41e012c9968281d35e2593c8",
+  "verifiedRecords": 10,
+  "correctionChains": 5,
+  "modelCallsThisBuild": 0,
+  "providerCallsThisBuild": 0,
+  "mainnetWritesThisBuild": 0,
+  "additionalSpendUSD": 0,
+  "networkPolicy": "CONNECT_NONE_NO_EXTERNAL_ASSETS",
+  "publication": "NOT_ATTESTED_BY_OFFLINE_CHECK",
+  "freshLocalProcessVerified": true,
+  "remoteRecallThisBuild": false,
+  "sourceModelReportHash": "36b5f462e753b8af3f98dec355ceeaa94fb0bb27bd6a0eb8d1e3ca7fdd17c22d",
+  "publishedModelReportHash": "4cec4721dd2d6ad641e2b32a56aec28956ac331329447f8ba14e5b726a194e73",
+  "metadataLocalization": {
+    "language": "en",
+    "sourceReportCanonicalHash": "36b5f462e753b8af3f98dec355ceeaa94fb0bb27bd6a0eb8d1e3ca7fdd17c22d",
+    "changedPaths": [
+      "rows[0].label",
+      "rows[1].label",
+      "rows[2].label"
+    ],
+    "rawResponses": "VERBATIM"
+  },
+  "article": "./blog.html"
+}
