@@ -1,0 +1,504 @@
+{
+  "schema": 1,
+  "mode": "OFFLINE_DEVELOPMENT_SCENARIO_NOT_HOLDOUT",
+  "originalEvidenceHash": "89efc4d0a5ecbd614b3582b96252ac65b1e56af2cdb1119194310b5b2d969dac",
+  "coverageEvidenceHash": "92f3fd8103b9fe0fb784af07c88b10fad8b3091a6d7eb5e06345fe5f5c954f0f",
+  "origin": {
+    "label": "HISTORICAL_MODEL_RESPONSE_NOT_A_NEW_COMPARISON",
+    "originalRequestHash": "6bc42be9326e2312d1b7c18b9c0b7be4360cc386a57188111463fbb3d09e7dd5",
+    "decision": {
+      "memoryIds": [],
+      "reason": "Lowest price within budget",
+      "serviceId": "atlas"
+    },
+    "verification": {
+      "status": "fail",
+      "reasons": [
+        "missing:digest"
+      ]
+    },
+    "record": {
+      "evidence": {
+        "source": "tatum",
+        "target": "checkpoint:338359837",
+        "version": "338359837"
+      },
+      "family": "checkpoint",
+      "id": "experience:stage0-smoke",
+      "kind": "experience",
+      "network": "mainnet",
+      "observedAt": "2026-10-26T14:47:56.743Z",
+      "reasons": [
+        "missing:digest"
+      ],
+      "recordedAt": "2026-10-26T14:47:58.112Z",
+      "schema": 1,
+      "serviceId": "atlas",
+      "serviceVersion": "v1",
+      "supersedes": null,
+      "verdict": "fail"
+    },
+    "receipt": {
+      "id": "stage0:experience:1",
+      "hash": "b997a6c090e8acf83bf357947affe323c90d20dba56ef3b7a84c999f8bef8980",
+      "state": "DONE",
+      "job_id": "57082e95-f18f-4015-b677-1e1adfe62f3b",
+      "blob_id": "DiyAqT9ArzQxgIpjGRy8wh7euL3MdOeJInmswZAGfvM"
+    }
+  },
+  "correction": {
+    "record": {
+      "schema": 1,
+      "kind": "experience",
+      "id": "experience:atlas-v1-correction-1",
+      "network": "mainnet",
+      "family": "checkpoint",
+      "serviceId": "atlas",
+      "serviceVersion": "v1",
+      "observedAt": "2026-10-27T08:38:29.832Z",
+      "recordedAt": "2026-10-27T08:38:29.832Z",
+      "verdict": "pass",
+      "reasons": [],
+      "supersedes": "experience:stage0-smoke",
+      "evidence": {
+        "source": "tatum",
+        "target": "checkpoint:338630541",
+        "version": "338630541"
+      }
+    },
+    "receipt": {
+      "state": "done",
+      "jobId": "eeef6880-3198-4a51-a6a7-ec9f301789f6",
+      "blobId": "qpQxhrCw4zsgJm3UmZSUpwzotfOsEF6lcH3A2qyKRIE"
+    }
+  },
+  "snapshot": {
+    "schema": 1,
+    "mode": "SAVED_WALRUS_BYTES_LOCAL_RESTORE_NOT_LIVE",
+    "sourceEvidenceHash": "92f3fd8103b9fe0fb784af07c88b10fad8b3091a6d7eb5e06345fe5f5c954f0f",
+    "manifestHash": "20eafb0e7a45ed00eb35b8eb6833caec839c3dbd306e489379bc39aa140cda18",
+    "entries": [
+      {
+        "blobId": "DiyAqT9ArzQxgIpjGRy8wh7euL3MdOeJInmswZAGfvM",
+        "hash": "b997a6c090e8acf83bf357947affe323c90d20dba56ef3b7a84c999f8bef8980",
+        "id": "experience:stage0-smoke"
+      },
+      {
+        "blobId": "qpQxhrCw4zsgJm3UmZSUpwzotfOsEF6lcH3A2qyKRIE",
+        "hash": "29cb08f637671b0a6ce3ae0660048000ebe2ecb01c9368f0e62bb444e73ff671",
+        "id": "experience:atlas-v1-correction-1"
+      },
+      {
+        "blobId": "IQzIXKHwTADNd6YumObZgYVSf1WDR0IT9afHDebNlHI",
+        "hash": "453a35a15593e326499b8cb40e449734959c870bbb16249cba58c7bf5cae5372",
+        "id": "experience:coverage-v1:03"
+      },
+      {
+        "blobId": "IHutsuaeSKVEk09QT6_dxvrCpDivizw-qxVjEnMIEGw",
+        "hash": "e6533f951e32b75da4479ebe7af574194980f730dad21d32d6fff8f67113e104",
+        "id": "experience:coverage-v1:05"
+      },
+      {
+        "blobId": "ce8Ast4hy9VIw5cdnR-BbFRaN7OJjbZghsqZhFwul74",
+        "hash": "7f5dd46b21c0ddd3e36484f55adc35dab50d2289c0747bebbf0e1e6ae930792b",
+        "id": "experience:coverage-v1:07"
+      },
+      {
+        "blobId": "zhFfmMj4H0NieBUsnGFbKcc2zIJQChOhZBVqBT-QV8w",
+        "hash": "dcbfe94a5f9fa154ef269e8d0bcac7d6bcc8cb8bf2eb3880880cb3ad73618d9b",
+        "id": "experience:coverage-v1:09"
+      },
+      {
+        "blobId": "HVkc1DZkGsMjI2aZBEzCvsAsXy9bda1kKnpsZrtY8_k",
+        "hash": "b3eeba14bb9c084ffc32b5fff955c6b0ab694ee10e49d16f961037a2d751ae46",
+        "id": "experience:coverage-v1:04"
+      },
+      {
+        "blobId": "Cb_5qxuzA8lAC1IIFrlP3JLLguivZEx7znKT5BKMu5s",
+        "hash": "e73bae3572950c961c89c34f8e457a7d50a3f37a2d18cecf9029ef74690f8ac4",
+        "id": "experience:coverage-v1:06"
+      },
+      {
+        "blobId": "YvuaUX3rF8BAzpP2beMnwKBYBbMboNHgnWeDnZKudN4",
+        "hash": "96d852141c929b9e7a974a61b0348b542862d8157d9fbb8a1b5d4e9924fc6cc1",
+        "id": "experience:coverage-v1:08"
+      },
+      {
+        "blobId": "00o9ygazsRX7mH_KdIwCIDyjIoxsEo3HNEgKJJDNB7k",
+        "hash": "5c5f43332d52d23c4225cd67843cb25cd5ed852f6ac032a6d11cecd70e0ba86d",
+        "id": "experience:coverage-v1:10"
+      }
+    ],
+    "hits": [
+      {
+        "blobId": "Cb_5qxuzA8lAC1IIFrlP3JLLguivZEx7znKT5BKMu5s",
+        "text": "{\"evidence\":{\"source\":\"tatum\",\"target\":\"checkpoint:338746862\",\"version\":\"338746862\"},\"family\":\"checkpoint\",\"id\":\"experience:coverage-v1:06\",\"kind\":\"experience\",\"network\":\"mainnet\",\"observedAt\":\"2026-10-27T16:19:40.120Z\",\"reasons\":[],\"recordedAt\":\"2026-10-27T16:19:40.121Z\",\"schema\":1,\"serviceId\":\"beacon\",\"serviceVersion\":\"v1\",\"supersedes\":\"experience:coverage-v1:05\",\"verdict\":\"pass\"}"
+      },
+      {
+        "blobId": "00o9ygazsRX7mH_KdIwCIDyjIoxsEo3HNEgKJJDNB7k",
+        "text": "{\"evidence\":{\"source\":\"fixture\",\"target\":\"checkpoint:338746862\",\"version\":\"338746862\"},\"family\":\"history\",\"id\":\"experience:coverage-v1:10\",\"kind\":\"experience\",\"network\":\"mainnet\",\"observedAt\":\"2026-10-27T16:19:40.124Z\",\"reasons\":[],\"recordedAt\":\"2026-10-27T16:19:40.124Z\",\"schema\":1,\"serviceId\":\"beacon\",\"serviceVersion\":\"v1\",\"supersedes\":\"experience:coverage-v1:09\",\"verdict\":\"pass\"}"
+      },
+      {
+        "blobId": "HVkc1DZkGsMjI2aZBEzCvsAsXy9bda1kKnpsZrtY8_k",
+        "text": "{\"evidence\":{\"source\":\"tatum\",\"target\":\"checkpoint:338746862\",\"version\":\"338746862\"},\"family\":\"checkpoint\",\"id\":\"experience:coverage-v1:04\",\"kind\":\"experience\",\"network\":\"mainnet\",\"observedAt\":\"2026-10-27T16:19:40.119Z\",\"reasons\":[],\"recordedAt\":\"2026-10-27T16:19:40.119Z\",\"schema\":1,\"serviceId\":\"cipher\",\"serviceVersion\":\"v1\",\"supersedes\":\"experience:coverage-v1:03\",\"verdict\":\"pass\"}"
+      },
+      {
+        "blobId": "YvuaUX3rF8BAzpP2beMnwKBYBbMboNHgnWeDnZKudN4",
+        "text": "{\"evidence\":{\"source\":\"tatum\",\"target\":\"checkpoint:338746862\",\"version\":\"338746862\"},\"family\":\"freshness\",\"id\":\"experience:coverage-v1:08\",\"kind\":\"experience\",\"network\":\"mainnet\",\"observedAt\":\"2026-10-27T16:19:40.122Z\",\"reasons\":[],\"recordedAt\":\"2026-10-27T16:19:40.123Z\",\"schema\":1,\"serviceId\":\"atlas\",\"serviceVersion\":\"v1\",\"supersedes\":\"experience:coverage-v1:07\",\"verdict\":\"pass\"}"
+      },
+      {
+        "blobId": "IHutsuaeSKVEk09QT6_dxvrCpDivizw-qxVjEnMIEGw",
+        "text": "{\"evidence\":{\"source\":\"tatum\",\"target\":\"checkpoint:338746862\",\"version\":\"338746862\"},\"family\":\"checkpoint\",\"id\":\"experience:coverage-v1:05\",\"kind\":\"experience\",\"network\":\"mainnet\",\"observedAt\":\"2026-10-27T16:19:40.115Z\",\"reasons\":[\"mismatch:digest\"],\"recordedAt\":\"2026-10-27T16:19:40.115Z\",\"schema\":1,\"serviceId\":\"beacon\",\"serviceVersion\":\"v1\",\"supersedes\":null,\"verdict\":\"fail\"}"
+      },
+      {
+        "blobId": "qpQxhrCw4zsgJm3UmZSUpwzotfOsEF6lcH3A2qyKRIE",
+        "text": "{\"evidence\":{\"source\":\"tatum\",\"target\":\"checkpoint:338630541\",\"version\":\"338630541\"},\"family\":\"checkpoint\",\"id\":\"experience:atlas-v1-correction-1\",\"kind\":\"experience\",\"network\":\"mainnet\",\"observedAt\":\"2026-10-27T08:38:29.832Z\",\"reasons\":[],\"recordedAt\":\"2026-10-27T08:38:29.832Z\",\"schema\":1,\"serviceId\":\"atlas\",\"serviceVersion\":\"v1\",\"supersedes\":\"experience:stage0-smoke\",\"verdict\":\"pass\"}"
+      },
+      {
+        "blobId": "zhFfmMj4H0NieBUsnGFbKcc2zIJQChOhZBVqBT-QV8w",
+        "text": "{\"evidence\":{\"source\":\"fixture\",\"target\":\"checkpoint:338746862\",\"version\":\"338746862\"},\"family\":\"history\",\"id\":\"experience:coverage-v1:09\",\"kind\":\"experience\",\"network\":\"mainnet\",\"observedAt\":\"2026-10-27T16:19:40.118Z\",\"reasons\":[\"reference-version-mismatch\"],\"recordedAt\":\"2026-10-27T16:19:40.118Z\",\"schema\":1,\"serviceId\":\"beacon\",\"serviceVersion\":\"v1\",\"supersedes\":null,\"verdict\":\"unknown\"}"
+      },
+      {
+        "blobId": "IQzIXKHwTADNd6YumObZgYVSf1WDR0IT9afHDebNlHI",
+        "text": "{\"evidence\":{\"source\":\"tatum\",\"target\":\"checkpoint:338746862\",\"version\":\"338746862\"},\"family\":\"checkpoint\",\"id\":\"experience:coverage-v1:03\",\"kind\":\"experience\",\"network\":\"mainnet\",\"observedAt\":\"2026-10-27T16:19:40.113Z\",\"reasons\":[\"missing:sequenceNumber\"],\"recordedAt\":\"2026-10-27T16:19:40.114Z\",\"schema\":1,\"serviceId\":\"cipher\",\"serviceVersion\":\"v1\",\"supersedes\":null,\"verdict\":\"fail\"}"
+      },
+      {
+        "blobId": "ce8Ast4hy9VIw5cdnR-BbFRaN7OJjbZghsqZhFwul74",
+        "text": "{\"evidence\":{\"source\":\"tatum\",\"target\":\"checkpoint:338746862\",\"version\":\"338746862\"},\"family\":\"freshness\",\"id\":\"experience:coverage-v1:07\",\"kind\":\"experience\",\"network\":\"mainnet\",\"observedAt\":\"2026-10-27T16:19:40.116Z\",\"reasons\":[\"outside-time-window\"],\"recordedAt\":\"2026-10-27T16:19:40.117Z\",\"schema\":1,\"serviceId\":\"atlas\",\"serviceVersion\":\"v1\",\"supersedes\":null,\"verdict\":\"fail\"}"
+      },
+      {
+        "blobId": "DiyAqT9ArzQxgIpjGRy8wh7euL3MdOeJInmswZAGfvM",
+        "text": "{\"evidence\":{\"source\":\"tatum\",\"target\":\"checkpoint:338359837\",\"version\":\"338359837\"},\"family\":\"checkpoint\",\"id\":\"experience:stage0-smoke\",\"kind\":\"experience\",\"network\":\"mainnet\",\"observedAt\":\"2026-10-26T14:47:56.743Z\",\"reasons\":[\"missing:digest\"],\"recordedAt\":\"2026-10-26T14:47:58.112Z\",\"schema\":1,\"serviceId\":\"atlas\",\"serviceVersion\":\"v1\",\"supersedes\":null,\"verdict\":\"fail\"}"
+      }
+    ]
+  },
+  "directFacts": [
+    {
+      "evidence": {
+        "source": "tatum",
+        "target": "checkpoint:338359837",
+        "version": "338359837"
+      },
+      "family": "checkpoint",
+      "id": "experience:stage0-smoke",
+      "kind": "experience",
+      "network": "mainnet",
+      "observedAt": "2026-10-26T14:47:56.743Z",
+      "reasons": [
+        "missing:digest"
+      ],
+      "recordedAt": "2026-10-26T14:47:58.112Z",
+      "schema": 1,
+      "serviceId": "atlas",
+      "serviceVersion": "v1",
+      "supersedes": null,
+      "verdict": "fail"
+    },
+    {
+      "evidence": {
+        "source": "tatum",
+        "target": "checkpoint:338630541",
+        "version": "338630541"
+      },
+      "family": "checkpoint",
+      "id": "experience:atlas-v1-correction-1",
+      "kind": "experience",
+      "network": "mainnet",
+      "observedAt": "2026-10-27T08:38:29.832Z",
+      "reasons": [],
+      "recordedAt": "2026-10-27T08:38:29.832Z",
+      "schema": 1,
+      "serviceId": "atlas",
+      "serviceVersion": "v1",
+      "supersedes": "experience:stage0-smoke",
+      "verdict": "pass"
+    }
+  ],
+  "stages": [
+    {
+      "id": "repeat-required-field",
+      "label": "Новый сеанс: digest по-прежнему нужен",
+      "task": {
+        "id": "memory-scenario-repeat",
+        "network": "mainnet",
+        "family": "checkpoint",
+        "target": "checkpoint:338359837",
+        "requiredFields": [
+          "digest",
+          "sequenceNumber"
+        ],
+        "maxAgeMs": 60000,
+        "budget": "2",
+        "cutoff": "2026-10-26T14:47:59.112Z"
+      },
+      "offers": [
+        {
+          "id": "atlas",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "checkpoint"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "1"
+        },
+        {
+          "id": "beacon",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "checkpoint"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "2"
+        }
+      ],
+      "source": {
+        "asOf": "2026-10-26T14:47:56.743Z",
+        "fields": {
+          "digest": "t4cZcdo7NEAH5XJRp6uVvgZaNFfVh6wgqXVAr8mAp92",
+          "sequenceNumber": "338359837"
+        },
+        "network": "mainnet",
+        "source": "tatum",
+        "target": "checkpoint:338359837",
+        "version": "338359837"
+      },
+      "reference": {
+        "asOf": "2026-10-26T14:47:56.743Z",
+        "fields": {
+          "digest": "t4cZcdo7NEAH5XJRp6uVvgZaNFfVh6wgqXVAr8mAp92",
+          "sequenceNumber": "338359837"
+        },
+        "network": "mainnet",
+        "source": "tatum",
+        "target": "checkpoint:338359837",
+        "version": "338359837"
+      },
+      "repaired": false,
+      "oracle": [
+        {
+          "asOf": "2026-10-26T14:47:56.743Z",
+          "fields": {
+            "sequenceNumber": "338359837"
+          },
+          "network": "mainnet",
+          "source": "tatum",
+          "target": "checkpoint:338359837",
+          "version": "338359837",
+          "serviceId": "atlas",
+          "serviceVersion": "v1"
+        },
+        {
+          "asOf": "2026-10-26T14:47:56.743Z",
+          "fields": {
+            "digest": "t4cZcdo7NEAH5XJRp6uVvgZaNFfVh6wgqXVAr8mAp92",
+            "sequenceNumber": "338359837"
+          },
+          "network": "mainnet",
+          "source": "tatum",
+          "target": "checkpoint:338359837",
+          "version": "338359837",
+          "serviceId": "beacon",
+          "serviceVersion": "v1"
+        }
+      ]
+    },
+    {
+      "id": "field-no-longer-required",
+      "label": "Контроль: нужен только sequenceNumber, бюджет1",
+      "task": {
+        "id": "memory-scenario-narrow",
+        "network": "mainnet",
+        "family": "checkpoint",
+        "target": "checkpoint:338359837",
+        "requiredFields": [
+          "sequenceNumber"
+        ],
+        "maxAgeMs": 60000,
+        "budget": "1",
+        "cutoff": "2026-10-26T14:47:59.112Z"
+      },
+      "offers": [
+        {
+          "id": "atlas",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "checkpoint"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "1"
+        },
+        {
+          "id": "beacon",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "checkpoint"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "2"
+        }
+      ],
+      "source": {
+        "asOf": "2026-10-26T14:47:56.743Z",
+        "fields": {
+          "digest": "t4cZcdo7NEAH5XJRp6uVvgZaNFfVh6wgqXVAr8mAp92",
+          "sequenceNumber": "338359837"
+        },
+        "network": "mainnet",
+        "source": "tatum",
+        "target": "checkpoint:338359837",
+        "version": "338359837"
+      },
+      "reference": {
+        "asOf": "2026-10-26T14:47:56.743Z",
+        "fields": {
+          "digest": "t4cZcdo7NEAH5XJRp6uVvgZaNFfVh6wgqXVAr8mAp92",
+          "sequenceNumber": "338359837"
+        },
+        "network": "mainnet",
+        "source": "tatum",
+        "target": "checkpoint:338359837",
+        "version": "338359837"
+      },
+      "repaired": false,
+      "oracle": [
+        {
+          "asOf": "2026-10-26T14:47:56.743Z",
+          "fields": {
+            "sequenceNumber": "338359837"
+          },
+          "network": "mainnet",
+          "source": "tatum",
+          "target": "checkpoint:338359837",
+          "version": "338359837",
+          "serviceId": "atlas",
+          "serviceVersion": "v1"
+        },
+        {
+          "asOf": "2026-10-26T14:47:56.743Z",
+          "fields": {
+            "digest": "t4cZcdo7NEAH5XJRp6uVvgZaNFfVh6wgqXVAr8mAp92",
+            "sequenceNumber": "338359837"
+          },
+          "network": "mainnet",
+          "source": "tatum",
+          "target": "checkpoint:338359837",
+          "version": "338359837",
+          "serviceId": "beacon",
+          "serviceVersion": "v1"
+        }
+      ]
+    },
+    {
+      "id": "after-verified-correction",
+      "label": "После correction: Atlas исправлен, бюджет1",
+      "task": {
+        "id": "memory-scenario-corrected",
+        "network": "mainnet",
+        "family": "checkpoint",
+        "target": "checkpoint:338630541",
+        "requiredFields": [
+          "digest",
+          "sequenceNumber"
+        ],
+        "maxAgeMs": 600000,
+        "budget": "1",
+        "cutoff": "2026-10-27T08:38:29.832Z"
+      },
+      "offers": [
+        {
+          "id": "atlas",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "checkpoint"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "1"
+        },
+        {
+          "id": "beacon",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "checkpoint"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "2"
+        }
+      ],
+      "source": {
+        "network": "mainnet",
+        "target": "checkpoint:338630541",
+        "version": "338630541",
+        "asOf": "2026-10-27T08:38:29.017Z",
+        "fields": {
+          "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+          "sequenceNumber": "338630541"
+        },
+        "source": "tatum"
+      },
+      "reference": {
+        "network": "mainnet",
+        "target": "checkpoint:338630541",
+        "version": "338630541",
+        "asOf": "2026-10-27T08:38:29.017Z",
+        "fields": {
+          "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+          "sequenceNumber": "338630541"
+        },
+        "source": "tatum"
+      },
+      "repaired": true,
+      "oracle": [
+        {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum",
+          "serviceId": "atlas",
+          "serviceVersion": "v1"
+        },
+        {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum",
+          "serviceId": "beacon",
+          "serviceVersion": "v1"
+        }
+      ]
+    }
+  ]
+}

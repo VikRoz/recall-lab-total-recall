@@ -1,0 +1,247 @@
+{
+  "status": "OFFLINE_COVERAGE_COMPLETED",
+  "mode": "SIMULATED_WRITES_NO_MAINNET",
+  "planHash": "6d13e8a79d88c37fb5fbe10e73f0d35e64312e5e16253806b185391cf8cc7d6f",
+  "frozenBundleHash": "3c5d2bfd38b38df8464410af8766493b10079f1cf756d8661f6f344c71c71a4d",
+  "simulatedRecords": 10,
+  "simulatedNewWrites": 8,
+  "reservations": {
+    "tatum": 2,
+    "remember": 8,
+    "status": 8,
+    "inventory": 6,
+    "recall": 3
+  },
+  "perJob": [
+    {
+      "slot": 3,
+      "operation_key": "coverage:v1:memory:03",
+      "hash": "f0c9e12981efe76396e040122c049f2dc57e4c5c272f7ca8b0558109a7a4fcbb",
+      "state": "DONE",
+      "job_id": "fixture-job-3",
+      "blob_id": "SIMULATED_BLOB_coverage_3",
+      "polls": 1
+    },
+    {
+      "slot": 4,
+      "operation_key": "coverage:v1:memory:04",
+      "hash": "2d80bd025f9a9c330f70633f14c11ac267eaf645976c9747545b7f3924cec703",
+      "state": "DONE",
+      "job_id": "fixture-job-4",
+      "blob_id": "SIMULATED_BLOB_coverage_4",
+      "polls": 1
+    },
+    {
+      "slot": 5,
+      "operation_key": "coverage:v1:memory:05",
+      "hash": "0554a68414bfc307ca97281061875677aa1558e3a7ab9a61b4891477c9abd920",
+      "state": "DONE",
+      "job_id": "fixture-job-5",
+      "blob_id": "SIMULATED_BLOB_coverage_5",
+      "polls": 1
+    },
+    {
+      "slot": 6,
+      "operation_key": "coverage:v1:memory:06",
+      "hash": "c5c62340a5a235a9f35118b0b5f19b3119194b53fd7f4bf04f0d17228ec6495e",
+      "state": "DONE",
+      "job_id": "fixture-job-6",
+      "blob_id": "SIMULATED_BLOB_coverage_6",
+      "polls": 1
+    },
+    {
+      "slot": 7,
+      "operation_key": "coverage:v1:memory:07",
+      "hash": "aa742ddc02e8ad3a25dace4007882ab11e8e5fa79ce58f503d6d90b3d23b24f4",
+      "state": "DONE",
+      "job_id": "fixture-job-7",
+      "blob_id": "SIMULATED_BLOB_coverage_7",
+      "polls": 1
+    },
+    {
+      "slot": 8,
+      "operation_key": "coverage:v1:memory:08",
+      "hash": "c743fb31b746606e55a269e4ab1503edb46eee4057d3d28384829708ba06ee73",
+      "state": "DONE",
+      "job_id": "fixture-job-8",
+      "blob_id": "SIMULATED_BLOB_coverage_8",
+      "polls": 1
+    },
+    {
+      "slot": 9,
+      "operation_key": "coverage:v1:memory:09",
+      "hash": "a9f297dbbb472ab22216e1ddaeda3a1532ede69b62869359b2803cf1ac27834b",
+      "state": "DONE",
+      "job_id": "fixture-job-9",
+      "blob_id": "SIMULATED_BLOB_coverage_9",
+      "polls": 1
+    },
+    {
+      "slot": 10,
+      "operation_key": "coverage:v1:memory:10",
+      "hash": "62ae82b506ce204ca10a1418acf8c9a848a39f6b4e6ca3daea5d15d09badcbc7",
+      "state": "DONE",
+      "job_id": "fixture-job-10",
+      "blob_id": "SIMULATED_BLOB_coverage_10",
+      "polls": 1
+    }
+  ],
+  "waveA": {
+    "records": 6,
+    "manifestHash": "eec7503ebad213f7b7de87b1e11d11b5e86aa6c60b95352f566a436964e100d2"
+  },
+  "waveB": {
+    "records": 10,
+    "manifestHash": "e5e7f32138bdbc813a70282cc268e07290849dbc2d7cfb24490efa09dfba6068"
+  },
+  "providerApiCalls": 0,
+  "mainnetWrites": 0,
+  "actualMainnetCountLastConfirmed": 2,
+  "additionalSpendLimitUSD": 0,
+  "liveBindingReady": false,
+  "requiresSeparateLiveApproval": true,
+  "simulatedDriverCallsThisInvocation": {
+    "checkpointCalls": 2,
+    "closed": 1,
+    "inventory": 2,
+    "recall": 1,
+    "remember": 8,
+    "status": 8
+  },
+  "independentProcessesThisInvocation": [
+    {
+      "wave": "A",
+      "pid": 779,
+      "parentPid": 772
+    },
+    {
+      "wave": "B",
+      "pid": 786,
+      "parentPid": 772
+    }
+  ],
+  "ledger": {
+    "run": {
+      "id": 1,
+      "plan_hash": "6d13e8a79d88c37fb5fbe10e73f0d35e64312e5e16253806b185391cf8cc7d6f",
+      "binding": "46b294e9a9bf8a6aedbb3d9e6a87b43b865d9c6522bdc4e426d8ed16832b643d",
+      "state": "DONE",
+      "phase": "DONE",
+      "result": "{\"actualMainnetCountLastConfirmed\":2,\"additionalSpendLimitUSD\":0,\"frozenBundleHash\":\"3c5d2bfd38b38df8464410af8766493b10079f1cf756d8661f6f344c71c71a4d\",\"liveBindingReady\":false,\"mainnetWrites\":0,\"mode\":\"SIMULATED_WRITES_NO_MAINNET\",\"perJob\":[{\"blob_id\":\"SIMULATED_BLOB_coverage_3\",\"hash\":\"f0c9e12981efe76396e040122c049f2dc57e4c5c272f7ca8b0558109a7a4fcbb\",\"job_id\":\"fixture-job-3\",\"operation_key\":\"coverage:v1:memory:03\",\"polls\":1,\"slot\":3,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_BLOB_coverage_4\",\"hash\":\"2d80bd025f9a9c330f70633f14c11ac267eaf645976c9747545b7f3924cec703\",\"job_id\":\"fixture-job-4\",\"operation_key\":\"coverage:v1:memory:04\",\"polls\":1,\"slot\":4,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_BLOB_coverage_5\",\"hash\":\"0554a68414bfc307ca97281061875677aa1558e3a7ab9a61b4891477c9abd920\",\"job_id\":\"fixture-job-5\",\"operation_key\":\"coverage:v1:memory:05\",\"polls\":1,\"slot\":5,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_BLOB_coverage_6\",\"hash\":\"c5c62340a5a235a9f35118b0b5f19b3119194b53fd7f4bf04f0d17228ec6495e\",\"job_id\":\"fixture-job-6\",\"operation_key\":\"coverage:v1:memory:06\",\"polls\":1,\"slot\":6,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_BLOB_coverage_7\",\"hash\":\"aa742ddc02e8ad3a25dace4007882ab11e8e5fa79ce58f503d6d90b3d23b24f4\",\"job_id\":\"fixture-job-7\",\"operation_key\":\"coverage:v1:memory:07\",\"polls\":1,\"slot\":7,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_BLOB_coverage_8\",\"hash\":\"c743fb31b746606e55a269e4ab1503edb46eee4057d3d28384829708ba06ee73\",\"job_id\":\"fixture-job-8\",\"operation_key\":\"coverage:v1:memory:08\",\"polls\":1,\"slot\":8,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_BLOB_coverage_9\",\"hash\":\"a9f297dbbb472ab22216e1ddaeda3a1532ede69b62869359b2803cf1ac27834b\",\"job_id\":\"fixture-job-9\",\"operation_key\":\"coverage:v1:memory:09\",\"polls\":1,\"slot\":9,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_BLOB_coverage_10\",\"hash\":\"62ae82b506ce204ca10a1418acf8c9a848a39f6b4e6ca3daea5d15d09badcbc7\",\"job_id\":\"fixture-job-10\",\"operation_key\":\"coverage:v1:memory:10\",\"polls\":1,\"slot\":10,\"state\":\"DONE\"}],\"planHash\":\"6d13e8a79d88c37fb5fbe10e73f0d35e64312e5e16253806b185391cf8cc7d6f\",\"providerApiCalls\":0,\"requiresSeparateLiveApproval\":true,\"reservations\":{\"inventory\":6,\"recall\":3,\"remember\":8,\"status\":8,\"tatum\":2},\"simulatedNewWrites\":8,\"simulatedRecords\":10,\"status\":\"OFFLINE_COVERAGE_COMPLETED\",\"waveA\":{\"manifestHash\":\"eec7503ebad213f7b7de87b1e11d11b5e86aa6c60b95352f566a436964e100d2\",\"records\":6},\"waveB\":{\"manifestHash\":\"e5e7f32138bdbc813a70282cc268e07290849dbc2d7cfb24490efa09dfba6068\",\"records\":10}}",
+      "code": null
+    },
+    "reservations": {
+      "tatum": 2,
+      "remember": 8,
+      "status": 8,
+      "inventory": 6,
+      "recall": 3
+    },
+    "outbox": [
+      {
+        "slot": 3,
+        "operation_key": "coverage:v1:memory:03",
+        "hash": "f0c9e12981efe76396e040122c049f2dc57e4c5c272f7ca8b0558109a7a4fcbb",
+        "state": "DONE",
+        "job_id": "fixture-job-3",
+        "blob_id": "SIMULATED_BLOB_coverage_3",
+        "polls": 1
+      },
+      {
+        "slot": 4,
+        "operation_key": "coverage:v1:memory:04",
+        "hash": "2d80bd025f9a9c330f70633f14c11ac267eaf645976c9747545b7f3924cec703",
+        "state": "DONE",
+        "job_id": "fixture-job-4",
+        "blob_id": "SIMULATED_BLOB_coverage_4",
+        "polls": 1
+      },
+      {
+        "slot": 5,
+        "operation_key": "coverage:v1:memory:05",
+        "hash": "0554a68414bfc307ca97281061875677aa1558e3a7ab9a61b4891477c9abd920",
+        "state": "DONE",
+        "job_id": "fixture-job-5",
+        "blob_id": "SIMULATED_BLOB_coverage_5",
+        "polls": 1
+      },
+      {
+        "slot": 6,
+        "operation_key": "coverage:v1:memory:06",
+        "hash": "c5c62340a5a235a9f35118b0b5f19b3119194b53fd7f4bf04f0d17228ec6495e",
+        "state": "DONE",
+        "job_id": "fixture-job-6",
+        "blob_id": "SIMULATED_BLOB_coverage_6",
+        "polls": 1
+      },
+      {
+        "slot": 7,
+        "operation_key": "coverage:v1:memory:07",
+        "hash": "aa742ddc02e8ad3a25dace4007882ab11e8e5fa79ce58f503d6d90b3d23b24f4",
+        "state": "DONE",
+        "job_id": "fixture-job-7",
+        "blob_id": "SIMULATED_BLOB_coverage_7",
+        "polls": 1
+      },
+      {
+        "slot": 8,
+        "operation_key": "coverage:v1:memory:08",
+        "hash": "c743fb31b746606e55a269e4ab1503edb46eee4057d3d28384829708ba06ee73",
+        "state": "DONE",
+        "job_id": "fixture-job-8",
+        "blob_id": "SIMULATED_BLOB_coverage_8",
+        "polls": 1
+      },
+      {
+        "slot": 9,
+        "operation_key": "coverage:v1:memory:09",
+        "hash": "a9f297dbbb472ab22216e1ddaeda3a1532ede69b62869359b2803cf1ac27834b",
+        "state": "DONE",
+        "job_id": "fixture-job-9",
+        "blob_id": "SIMULATED_BLOB_coverage_9",
+        "polls": 1
+      },
+      {
+        "slot": 10,
+        "operation_key": "coverage:v1:memory:10",
+        "hash": "62ae82b506ce204ca10a1418acf8c9a848a39f6b4e6ca3daea5d15d09badcbc7",
+        "state": "DONE",
+        "job_id": "fixture-job-10",
+        "blob_id": "SIMULATED_BLOB_coverage_10",
+        "polls": 1
+      }
+    ],
+    "readers": [
+      {
+        "wave": "A",
+        "hash": "eec7503ebad213f7b7de87b1e11d11b5e86aa6c60b95352f566a436964e100d2",
+        "state": "DONE"
+      },
+      {
+        "wave": "B",
+        "hash": "e5e7f32138bdbc813a70282cc268e07290849dbc2d7cfb24490efa09dfba6068",
+        "state": "DONE"
+      },
+      {
+        "wave": "preflight",
+        "hash": "e4154058e9ee60ae1f7869244409b3c5c87364482b6761286f4751a2d9d9f4f8",
+        "state": "DONE"
+      }
+    ],
+    "effects": [
+      {
+        "id": "coverage:v1:tatum:latest",
+        "kind": "tatum",
+        "hash": "7e78ca781bbdc75859005319c69fc172af08e03ff0b27b8f7d6c077a2d16468d",
+        "state": "DONE"
+      },
+      {
+        "id": "coverage:v1:tatum:pinned",
+        "kind": "tatum",
+        "hash": "50deb61dee18dbbfd863e559809bddb38e5d56212cb2ea967a356ffdd884b419",
+        "state": "DONE"
+      }
+    ]
+  },
+  "instruction": "Offline only. This CLI has no live/provider binding. Preserve ledger; stopped/interrupted runs cannot resume."
+}

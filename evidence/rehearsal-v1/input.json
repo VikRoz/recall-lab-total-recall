@@ -1,0 +1,444 @@
+{
+  "schema": 1,
+  "mode": "RECORDED_REAL_EVIDENCE_NOT_LIVE",
+  "stage0": {
+    "effects": {
+      "stage0:tatum:source": {
+        "id": "stage0:tatum:source",
+        "kind": "tatum",
+        "hash": "eff10a7f85add92bcaf0777559f8b54aef80d5cb55bd3461a7017473d92382a6",
+        "state": "DONE",
+        "response": "{\"asOf\":\"2026-10-26T14:47:56.743Z\",\"fields\":{\"digest\":\"t4cZcdo7NEAH5XJRp6uVvgZaNFfVh6wgqXVAr8mAp92\",\"sequenceNumber\":\"338359837\"},\"network\":\"mainnet\",\"source\":\"tatum\",\"target\":\"checkpoint:338359837\",\"version\":\"338359837\"}"
+      },
+      "stage0:tatum:verify": {
+        "id": "stage0:tatum:verify",
+        "kind": "tatum",
+        "hash": "a788e6a1fe7035d612969e0834624aa306d7de97c2769c74730205db87f1467d",
+        "state": "DONE",
+        "response": "{\"asOf\":\"2026-10-26T14:47:56.743Z\",\"fields\":{\"digest\":\"t4cZcdo7NEAH5XJRp6uVvgZaNFfVh6wgqXVAr8mAp92\",\"sequenceNumber\":\"338359837\"},\"network\":\"mainnet\",\"source\":\"tatum\",\"target\":\"checkpoint:338359837\",\"version\":\"338359837\"}"
+      },
+      "stage0:model:select": {
+        "id": "stage0:model:select",
+        "kind": "model",
+        "hash": "6bc42be9326e2312d1b7c18b9c0b7be4360cc386a57188111463fbb3d09e7dd5",
+        "state": "DONE",
+        "response": "{\"memoryIds\":[],\"reason\":\"Lowest price within budget\",\"serviceId\":\"atlas\"}"
+      }
+    },
+    "receipt": {
+      "id": "stage0:experience:1",
+      "hash": "b997a6c090e8acf83bf357947affe323c90d20dba56ef3b7a84c999f8bef8980",
+      "state": "DONE",
+      "job_id": "57082e95-f18f-4015-b677-1e1adfe62f3b",
+      "blob_id": "DiyAqT9ArzQxgIpjGRy8wh7euL3MdOeJInmswZAGfvM"
+    },
+    "record": {
+      "evidence": {
+        "source": "tatum",
+        "target": "checkpoint:338359837",
+        "version": "338359837"
+      },
+      "family": "checkpoint",
+      "id": "experience:stage0-smoke",
+      "kind": "experience",
+      "network": "mainnet",
+      "observedAt": "2026-10-26T14:47:56.743Z",
+      "reasons": [
+        "missing:digest"
+      ],
+      "recordedAt": "2026-10-26T14:47:58.112Z",
+      "schema": 1,
+      "serviceId": "atlas",
+      "serviceVersion": "v1",
+      "supersedes": null,
+      "verdict": "fail"
+    }
+  },
+  "correction": {
+    "probe": {
+      "planHash": "db563fe300792b830e01272cb220d22e71c3227bea5074364820289acd13964b",
+      "task": {
+        "id": "atlas-v1-correction-1",
+        "network": "mainnet",
+        "family": "checkpoint",
+        "target": "checkpoint:338630541",
+        "requiredFields": [
+          "digest",
+          "sequenceNumber"
+        ],
+        "maxAgeMs": 600000,
+        "budget": "3",
+        "cutoff": "2026-10-27T08:38:29.832Z"
+      },
+      "source": {
+        "network": "mainnet",
+        "target": "checkpoint:338630541",
+        "version": "338630541",
+        "asOf": "2026-10-27T08:38:29.017Z",
+        "fields": {
+          "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+          "sequenceNumber": "338630541"
+        },
+        "source": "tatum"
+      },
+      "reference": {
+        "network": "mainnet",
+        "target": "checkpoint:338630541",
+        "version": "338630541",
+        "asOf": "2026-10-27T08:38:29.017Z",
+        "fields": {
+          "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+          "sequenceNumber": "338630541"
+        },
+        "source": "tatum"
+      },
+      "result": {
+        "network": "mainnet",
+        "target": "checkpoint:338630541",
+        "version": "338630541",
+        "asOf": "2026-10-27T08:38:29.017Z",
+        "fields": {
+          "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+          "sequenceNumber": "338630541"
+        },
+        "source": "tatum",
+        "serviceId": "atlas",
+        "serviceVersion": "v1"
+      },
+      "negativeControl": {
+        "status": "fail",
+        "reasons": [
+          "missing:digest"
+        ]
+      },
+      "verification": {
+        "status": "pass",
+        "reasons": []
+      },
+      "record": {
+        "schema": 1,
+        "kind": "experience",
+        "id": "experience:atlas-v1-correction-1",
+        "network": "mainnet",
+        "family": "checkpoint",
+        "serviceId": "atlas",
+        "serviceVersion": "v1",
+        "observedAt": "2026-10-27T08:38:29.832Z",
+        "recordedAt": "2026-10-27T08:38:29.832Z",
+        "verdict": "pass",
+        "reasons": [],
+        "supersedes": "experience:stage0-smoke",
+        "evidence": {
+          "source": "tatum",
+          "target": "checkpoint:338630541",
+          "version": "338630541"
+        }
+      },
+      "disclosure": "Owned synthetic service projection of real Tatum data; the digest omission is explicitly removed. Not an external merchant repair.",
+      "operatorProbe": true,
+      "agentServiceCalls": 0,
+      "modelCalls": 0,
+      "recordHash": "29cb08f637671b0a6ce3ae0660048000ebe2ecb01c9368f0e62bb444e73ff671"
+    },
+    "reader-manifest": {
+      "protocol": "atlas-correction-portability-v1",
+      "planHash": "db563fe300792b830e01272cb220d22e71c3227bea5074364820289acd13964b",
+      "oldBlobId": "DiyAqT9ArzQxgIpjGRy8wh7euL3MdOeJInmswZAGfvM",
+      "correctionBlobId": "qpQxhrCw4zsgJm3UmZSUpwzotfOsEF6lcH3A2qyKRIE",
+      "correctionId": "experience:atlas-v1-correction-1",
+      "recordHash": "29cb08f637671b0a6ce3ae0660048000ebe2ecb01c9368f0e62bb444e73ff671",
+      "task": {
+        "id": "atlas-v1-correction-1",
+        "network": "mainnet",
+        "family": "checkpoint",
+        "target": "checkpoint:338630541",
+        "requiredFields": [
+          "digest",
+          "sequenceNumber"
+        ],
+        "maxAgeMs": 600000,
+        "budget": "3",
+        "cutoff": "2026-10-27T08:38:29.832Z"
+      },
+      "correctionRecordedAt": "2026-10-27T08:38:29.832Z"
+    },
+    "writer-result": {
+      "status": "CORRECTION_WRITE_CONFIRMED_READER_NOT_RUN",
+      "planHash": "db563fe300792b830e01272cb220d22e71c3227bea5074364820289acd13964b",
+      "receipt": {
+        "state": "done",
+        "jobId": "eeef6880-3198-4a51-a6a7-ec9f301789f6",
+        "blobId": "qpQxhrCw4zsgJm3UmZSUpwzotfOsEF6lcH3A2qyKRIE"
+      },
+      "recordHash": "29cb08f637671b0a6ce3ae0660048000ebe2ecb01c9368f0e62bb444e73ff671",
+      "counts": {
+        "inventory": 2,
+        "recall": 1,
+        "remember": 1,
+        "status": 6,
+        "tatum": 2
+      },
+      "modelCalls": 0,
+      "additionalSpendLimitUSD": 0
+    }
+  },
+  "historicalIndependentRead": {
+    "status": "CORRECTION_PORTABILITY_VERIFIED",
+    "memoryMode": "live",
+    "planHash": "db563fe300792b830e01272cb220d22e71c3227bea5074364820289acd13964b",
+    "namespaceRecords": 2,
+    "recalledRecordHashes": [
+      {
+        "id": "experience:atlas-v1-correction-1",
+        "hash": "29cb08f637671b0a6ce3ae0660048000ebe2ecb01c9368f0e62bb444e73ff671"
+      },
+      {
+        "id": "experience:stage0-smoke",
+        "hash": "b997a6c090e8acf83bf357947affe323c90d20dba56ef3b7a84c999f8bef8980"
+      }
+    ],
+    "beforeGuard": [
+      "experience:stage0-smoke"
+    ],
+    "afterGuard": [],
+    "activeMemoryIds": [
+      "experience:atlas-v1-correction-1"
+    ],
+    "deterministicDecision": {
+      "serviceId": "atlas",
+      "reason": "Lowest demo price among compatible offers without a matching known failure.",
+      "memoryIds": [
+        "experience:atlas-v1-correction-1"
+      ]
+    },
+    "modelCalls": 0,
+    "serviceCalls": 0,
+    "independentOfWriterJournal": true,
+    "limitation": "Same account/delegate, new process. No cross-account authorization, LLM quality or permanent external service health claim.",
+    "inventories": 2,
+    "recalls": 1
+  },
+  "originalIndependentRead": {
+    "mode": "LIVE_WALRUS_MAINNET",
+    "status": "EXPECTED_BLOB_READ",
+    "namespaceRecords": 1,
+    "records": [
+      {
+        "evidence": {
+          "source": "tatum",
+          "target": "checkpoint:338359837",
+          "version": "338359837"
+        },
+        "family": "checkpoint",
+        "id": "experience:stage0-smoke",
+        "kind": "experience",
+        "network": "mainnet",
+        "observedAt": "2026-10-26T14:47:56.743Z",
+        "reasons": [
+          "missing:digest"
+        ],
+        "recordedAt": "2026-10-26T14:47:58.112Z",
+        "schema": 1,
+        "serviceId": "atlas",
+        "serviceVersion": "v1",
+        "supersedes": null,
+        "verdict": "fail"
+      }
+    ]
+  },
+  "negativeModelPilot": {
+    "mode": "LIVE_MODEL_RECORDED_TATUM_FROZEN_WALRUS",
+    "modelId": "@cf/meta/llama-3.1-8b-instruct-fp8-fast",
+    "sourceReportSha256": "dfb138bd2cb527d30d93d9867a29690ad9a4f9a945276f51e863ab027506f236",
+    "rows": [
+      {
+        "selector": "model",
+        "caseId": "pilot-checkpoint-1",
+        "memoryEnabled": false,
+        "selectorMode": "live",
+        "context": {
+          "task": {
+            "id": "pilot-checkpoint-1",
+            "network": "mainnet",
+            "family": "checkpoint",
+            "target": "checkpoint:338359837",
+            "requiredFields": [
+              "digest",
+              "sequenceNumber"
+            ],
+            "maxAgeMs": 600000,
+            "budget": "3",
+            "cutoff": "2026-10-26T14:47:59.112Z"
+          },
+          "offers": [
+            {
+              "id": "atlas",
+              "version": "v1",
+              "network": "mainnet",
+              "families": [
+                "checkpoint"
+              ],
+              "fields": [
+                "digest",
+                "sequenceNumber"
+              ],
+              "price": "1"
+            },
+            {
+              "id": "beacon",
+              "version": "v1",
+              "network": "mainnet",
+              "families": [
+                "checkpoint"
+              ],
+              "fields": [
+                "digest",
+                "sequenceNumber"
+              ],
+              "price": "2"
+            },
+            {
+              "id": "cipher",
+              "version": "v1",
+              "network": "mainnet",
+              "families": [
+                "checkpoint"
+              ],
+              "fields": [
+                "digest",
+                "sequenceNumber"
+              ],
+              "price": "3"
+            }
+          ],
+          "memories": []
+        },
+        "contextHash": "211d9cffe3fdb3fa5a8378fecd8f5522b8040dd8d2fa1d39d023e46957979fd4",
+        "selections": 1,
+        "serviceProjections": 1,
+        "selectedServiceId": "atlas",
+        "decision": {
+          "serviceId": "atlas",
+          "reason": "Lowest price within budget",
+          "memoryIds": []
+        },
+        "memoryIdsAvailable": [],
+        "verdict": "fail",
+        "reasons": [
+          "missing:digest"
+        ],
+        "demoCredits": "1"
+      },
+      {
+        "selector": "model",
+        "caseId": "pilot-checkpoint-1",
+        "memoryEnabled": true,
+        "selectorMode": "live",
+        "context": {
+          "task": {
+            "id": "pilot-checkpoint-1",
+            "network": "mainnet",
+            "family": "checkpoint",
+            "target": "checkpoint:338359837",
+            "requiredFields": [
+              "digest",
+              "sequenceNumber"
+            ],
+            "maxAgeMs": 600000,
+            "budget": "3",
+            "cutoff": "2026-10-26T14:47:59.112Z"
+          },
+          "offers": [
+            {
+              "id": "atlas",
+              "version": "v1",
+              "network": "mainnet",
+              "families": [
+                "checkpoint"
+              ],
+              "fields": [
+                "digest",
+                "sequenceNumber"
+              ],
+              "price": "1"
+            },
+            {
+              "id": "beacon",
+              "version": "v1",
+              "network": "mainnet",
+              "families": [
+                "checkpoint"
+              ],
+              "fields": [
+                "digest",
+                "sequenceNumber"
+              ],
+              "price": "2"
+            },
+            {
+              "id": "cipher",
+              "version": "v1",
+              "network": "mainnet",
+              "families": [
+                "checkpoint"
+              ],
+              "fields": [
+                "digest",
+                "sequenceNumber"
+              ],
+              "price": "3"
+            }
+          ],
+          "memories": [
+            {
+              "evidence": {
+                "source": "tatum",
+                "target": "checkpoint:338359837",
+                "version": "338359837"
+              },
+              "family": "checkpoint",
+              "id": "experience:stage0-smoke",
+              "kind": "experience",
+              "network": "mainnet",
+              "observedAt": "2026-10-26T14:47:56.743Z",
+              "reasons": [
+                "missing:digest"
+              ],
+              "recordedAt": "2026-10-26T14:47:58.112Z",
+              "schema": 1,
+              "serviceId": "atlas",
+              "serviceVersion": "v1",
+              "supersedes": null,
+              "verdict": "fail"
+            }
+          ]
+        },
+        "contextHash": "c818aa7461a766408a96cd0e52cf1fdcf5ced7901c0fa77dce8c177ef16e7a4c",
+        "selections": 1,
+        "serviceProjections": 1,
+        "selectedServiceId": "atlas",
+        "decision": {
+          "serviceId": "atlas",
+          "reason": "Lowest price",
+          "memoryIds": [
+            "experience:stage0-smoke"
+          ]
+        },
+        "memoryIdsAvailable": [
+          "experience:stage0-smoke"
+        ],
+        "verdict": "fail",
+        "reasons": [
+          "missing:digest"
+        ],
+        "demoCredits": "1"
+      }
+    ],
+    "result": {
+      "modelOff": "fail",
+      "modelOn": "fail",
+      "improvedValidResult": false,
+      "citedExpectedMemory": true
+    }
+  }
+}

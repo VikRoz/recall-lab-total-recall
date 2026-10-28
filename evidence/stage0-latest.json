@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2026-10-26T08:41:08.690Z",
+  "stage": 0,
+  "offline": {
+    "status": "PASS",
+    "testsPassed": 27,
+    "testsFailed": 0,
+    "syntaxCheck": "PASS",
+    "fullTypeCheck": "NOT_RUN",
+    "standalonePreview": "PASS",
+    "browserVisualQA": "NOT_RUN"
+  },
+  "setup": {
+    "stage": 0,
+    "status": "BLOCKED",
+    "runtime": "v22.23.1",
+    "additionalSpendLimitUSD": 0,
+    "networkCalls": 0,
+    "checks": [
+      {
+        "name": "@mysten-incubation/memwal",
+        "status": "MISSING_DEPENDENCY"
+      },
+      {
+        "name": "@mysten/sui/grpc",
+        "status": "MISSING_DEPENDENCY"
+      },
+      {
+        "name": "@mysten/seal",
+        "status": "MISSING_DEPENDENCY"
+      },
+      {
+        "name": "TATUM_API_KEY",
+        "status": "MISSING_CREDENTIAL"
+      },
+      {
+        "name": "MEMWAL_KEY",
+        "status": "MISSING_CREDENTIAL"
+      },
+      {
+        "name": "MEMWAL_ACCOUNT_ID",
+        "status": "MISSING_CREDENTIAL"
+      },
+      {
+        "name": "CLOUDFLARE_ACCOUNT_ID",
+        "status": "MISSING_CREDENTIAL"
+      },
+      {
+        "name": "CLOUDFLARE_API_TOKEN",
+        "status": "MISSING_CREDENTIAL"
+      },
+      {
+        "name": "RECALL_FREE_TIER_CONFIRMED",
+        "status": "NOT_CONFIRMED"
+      },
+      {
+        "name": "RECALL_WALRUS_SPONSOR_CONFIRMED",
+        "status": "NOT_CONFIRMED"
+      },
+      {
+        "name": "Walrus documented Node prerequisite",
+        "status": "RUNTIME_UPGRADE_REQUIRED"
+      }
+    ],
+    "liveGates": {
+      "tatumRead": "NOT_RUN",
+      "modelInference": "NOT_RUN",
+      "mainnetWrite": "NOT_RUN",
+      "cleanClientRecall": "NOT_RUN",
+      "workerCPU": "NOT_RUN",
+      "d1": "NOT_RUN"
+    }
+  },
+  "network": {
+    "npm": "ENOTFOUND",
+    "walrusHealth": "ENOTFOUND"
+  },
+  "liveAcceptance": "BLOCKED",
+  "modelCalls": 0,
+  "mainnetWrites": 0,
+  "additionalSpendLimitUSD": 0
+}

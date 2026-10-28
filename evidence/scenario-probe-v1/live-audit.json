@@ -1,0 +1,9 @@
+{
+  "status": "LIVE_JOURNAL_AND_PRIOR_STATE_VERIFIED",
+  "effects": 5,
+  "done": 5,
+  "unknown": 0,
+  "outbox": 0,
+  "bothPriorJournalsUnchanged": true,
+  "reportFileSHA256": "778fa79c981254c0ada1466090d7ddebfad2fadb7349ff1fadc88d510917a92f"
+}

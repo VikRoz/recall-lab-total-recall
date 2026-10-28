@@ -1,0 +1,31 @@
+{
+  "status": "OFFLINE_SCENARIO_VALIDATED",
+  "sourceHash": "24fbec8345012252c334a3063fdd244efc14d6131ef72eb39b7a203bbf7cf291",
+  "runtimeImageId": "sha256:67b99979e1c90cdf0de7ffaa744f01a26a5c370b9e1b5889e181876d5feb0f4f",
+  "tests": {
+    "pass": 148,
+    "fail": 0,
+    "skipped": 0
+  },
+  "syntaxFiles": 82,
+  "network": "DOCKER_NETWORK_NONE",
+  "readOnlySource": true,
+  "providerCredentialsPassed": false,
+  "cleanRuns": 2,
+  "planAndScenarioByteIdentical": true,
+  "reportsEqualExceptProcessIds": true,
+  "existingRehearsalByteUnchanged": true,
+  "bothJournalsUnchanged": true,
+  "planHash": "01a44fea2996b2881db7defeaee182c93536a5a2432658b32b9ab758746389f5",
+  "modelCalls": 0,
+  "providerCalls": 0,
+  "additionalSpendUSD": 0,
+  "files": {
+    "SCENARIO.md": "13b19d7159592e714b7f09865a7d995f6a39a34db7951daa1185ddce58f52a5f",
+    "memory-snapshot.json": "31f5ff3976708b24943583cdb7b6e85bc3e0accaf90881ec6215d217b8bb6863",
+    "model-inputs.json": "58a486a5b80026e5738032183298d40acc21a4925f47fbe6fe878ccd461e4663",
+    "plan.json": "25546e879ed4b4f29aeb5c92f5059d1a4552116fea5b390f5840e405c1e5c0c0",
+    "report.json": "dfd9511a6f06e53d5fd2a095bb3abbe8e2ec78a49d81456abd7794051461dd77",
+    "scenario.json": "0ab67fb9a1689a324411e32f09a05e65c3890c4646b00c598d0c56236faddce5"
+  }
+}

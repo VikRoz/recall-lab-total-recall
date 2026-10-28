@@ -1,0 +1,1104 @@
+{
+  "schema": 1,
+  "status": "PROPOSED_NOT_APPROVED_NOT_EXECUTABLE",
+  "date": "2026-10-27",
+  "additionalSpendLimitUSD": 0,
+  "currentMainnetCount": 2,
+  "targetMainnetCount": 10,
+  "proposedAdditionalMemories": 8,
+  "implementationReady": false,
+  "requiresSeparateLiveApproval": true,
+  "recordTemplates": [
+    {
+      "slot": 3,
+      "key": "sequence-availability",
+      "role": "verified_failure",
+      "experienceId": "experience:coverage-v1:03",
+      "operationKey": "coverage:v1:memory:03",
+      "serviceId": "cipher",
+      "serviceVersion": "v1",
+      "family": "checkpoint",
+      "evidenceSource": "tatum",
+      "expectedVerdict": "fail",
+      "expectedReasons": [
+        "missing:sequenceNumber"
+      ],
+      "supersedes": null,
+      "requiresSlots": [],
+      "realApiNow": false,
+      "recordTime": "MATERIALIZE_FROM_ACTUAL_VERIFICATION_CLOCK",
+      "proof": "Fresh pinned Tatum base plus disclosed owned projection/reference transformation; retain complete sidecar task/result/reference/verification"
+    },
+    {
+      "slot": 4,
+      "key": "sequence-availability",
+      "role": "verified_correction",
+      "experienceId": "experience:coverage-v1:04",
+      "operationKey": "coverage:v1:memory:04",
+      "serviceId": "cipher",
+      "serviceVersion": "v1",
+      "family": "checkpoint",
+      "evidenceSource": "tatum",
+      "expectedVerdict": "pass",
+      "expectedReasons": [],
+      "supersedes": "experience:coverage-v1:03",
+      "requiresSlots": [
+        3
+      ],
+      "realApiNow": false,
+      "recordTime": "MATERIALIZE_FROM_ACTUAL_VERIFICATION_CLOCK",
+      "proof": "Fresh pinned Tatum base plus disclosed owned projection/reference transformation; retain complete sidecar task/result/reference/verification"
+    },
+    {
+      "slot": 5,
+      "key": "digest-integrity",
+      "role": "verified_failure",
+      "experienceId": "experience:coverage-v1:05",
+      "operationKey": "coverage:v1:memory:05",
+      "serviceId": "beacon",
+      "serviceVersion": "v1",
+      "family": "checkpoint",
+      "evidenceSource": "tatum",
+      "expectedVerdict": "fail",
+      "expectedReasons": [
+        "mismatch:digest"
+      ],
+      "supersedes": null,
+      "requiresSlots": [],
+      "realApiNow": false,
+      "recordTime": "MATERIALIZE_FROM_ACTUAL_VERIFICATION_CLOCK",
+      "proof": "Fresh pinned Tatum base plus disclosed owned projection/reference transformation; retain complete sidecar task/result/reference/verification"
+    },
+    {
+      "slot": 6,
+      "key": "digest-integrity",
+      "role": "verified_correction",
+      "experienceId": "experience:coverage-v1:06",
+      "operationKey": "coverage:v1:memory:06",
+      "serviceId": "beacon",
+      "serviceVersion": "v1",
+      "family": "checkpoint",
+      "evidenceSource": "tatum",
+      "expectedVerdict": "pass",
+      "expectedReasons": [],
+      "supersedes": "experience:coverage-v1:05",
+      "requiresSlots": [
+        5
+      ],
+      "realApiNow": false,
+      "recordTime": "MATERIALIZE_FROM_ACTUAL_VERIFICATION_CLOCK",
+      "proof": "Fresh pinned Tatum base plus disclosed owned projection/reference transformation; retain complete sidecar task/result/reference/verification"
+    },
+    {
+      "slot": 7,
+      "key": "freshness",
+      "role": "verified_failure",
+      "experienceId": "experience:coverage-v1:07",
+      "operationKey": "coverage:v1:memory:07",
+      "serviceId": "atlas",
+      "serviceVersion": "v1",
+      "family": "freshness",
+      "evidenceSource": "tatum",
+      "expectedVerdict": "fail",
+      "expectedReasons": [
+        "outside-time-window"
+      ],
+      "supersedes": null,
+      "requiresSlots": [],
+      "realApiNow": false,
+      "recordTime": "MATERIALIZE_FROM_ACTUAL_VERIFICATION_CLOCK",
+      "proof": "Fresh pinned Tatum base plus disclosed owned projection/reference transformation; retain complete sidecar task/result/reference/verification"
+    },
+    {
+      "slot": 8,
+      "key": "freshness",
+      "role": "verified_correction",
+      "experienceId": "experience:coverage-v1:08",
+      "operationKey": "coverage:v1:memory:08",
+      "serviceId": "atlas",
+      "serviceVersion": "v1",
+      "family": "freshness",
+      "evidenceSource": "tatum",
+      "expectedVerdict": "pass",
+      "expectedReasons": [],
+      "supersedes": "experience:coverage-v1:07",
+      "requiresSlots": [
+        7
+      ],
+      "realApiNow": false,
+      "recordTime": "MATERIALIZE_FROM_ACTUAL_VERIFICATION_CLOCK",
+      "proof": "Fresh pinned Tatum base plus disclosed owned projection/reference transformation; retain complete sidecar task/result/reference/verification"
+    },
+    {
+      "slot": 9,
+      "key": "reference-uncertainty",
+      "role": "uncertain_observation",
+      "experienceId": "experience:coverage-v1:09",
+      "operationKey": "coverage:v1:memory:09",
+      "serviceId": "beacon",
+      "serviceVersion": "v1",
+      "family": "history",
+      "evidenceSource": "fixture",
+      "expectedVerdict": "unknown",
+      "expectedReasons": [
+        "reference-version-mismatch"
+      ],
+      "supersedes": null,
+      "requiresSlots": [],
+      "realApiNow": false,
+      "recordTime": "MATERIALIZE_FROM_ACTUAL_VERIFICATION_CLOCK",
+      "proof": "Fresh pinned Tatum base plus disclosed owned projection/reference transformation; retain complete sidecar task/result/reference/verification"
+    },
+    {
+      "slot": 10,
+      "key": "reference-uncertainty",
+      "role": "verified_correction",
+      "experienceId": "experience:coverage-v1:10",
+      "operationKey": "coverage:v1:memory:10",
+      "serviceId": "beacon",
+      "serviceVersion": "v1",
+      "family": "history",
+      "evidenceSource": "fixture",
+      "expectedVerdict": "pass",
+      "expectedReasons": [],
+      "supersedes": "experience:coverage-v1:09",
+      "requiresSlots": [
+        9
+      ],
+      "realApiNow": false,
+      "recordTime": "MATERIALIZE_FROM_ACTUAL_VERIFICATION_CLOCK",
+      "proof": "Fresh pinned Tatum base plus disclosed owned projection/reference transformation; retain complete sidecar task/result/reference/verification"
+    }
+  ],
+  "proposedLiveLimits": {
+    "tatumMainnetReads": 2,
+    "modelCalls": 0,
+    "walrusRemember": 8,
+    "statusReadsPerJob": 8,
+    "statusReadsTotal": 64,
+    "completeRecallCycles": 3,
+    "inventoryCalls": 6,
+    "inventoryPagesPerCall": 8,
+    "recallCalls": 3,
+    "maxNamespaceRecords": 20,
+    "maxRecordBytes": 4096,
+    "paidOperations": 0
+  },
+  "waves": {
+    "preflight": {
+      "expectedRecords": 2
+    },
+    "A": {
+      "slots": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "expectedAfterRead": 6
+    },
+    "B": {
+      "slots": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "expectedAfterFreshRead": 10
+    }
+  },
+  "sourceForOfflineFeasibility": {
+    "inputHash": "89efc4d0a5ecbd614b3582b96252ac65b1e56af2cdb1119194310b5b2d969dac",
+    "checkpoint": "338630541",
+    "sourceAsOf": "2026-10-27T08:38:29.017Z",
+    "mode": "SAVED_REAL_INPUT_VIRTUAL_CLOCK_ONLY"
+  },
+  "requiredFutureSource": "One fresh latest+pinned matching Tatum pair; verify all eight cases locally within the original 60s freshness bound before first remember. No live source or payload timestamps are frozen by this analysis.",
+  "simulation": {
+    "label": "VIRTUAL_CLOCK_NOT_PUBLISHABLE_NO_REAL_BLOBS",
+    "records": [
+      {
+        "evidence": {
+          "source": "tatum",
+          "target": "checkpoint:338359837",
+          "version": "338359837"
+        },
+        "family": "checkpoint",
+        "id": "experience:stage0-smoke",
+        "kind": "experience",
+        "network": "mainnet",
+        "observedAt": "2026-10-26T14:47:56.743Z",
+        "reasons": [
+          "missing:digest"
+        ],
+        "recordedAt": "2026-10-26T14:47:58.112Z",
+        "schema": 1,
+        "serviceId": "atlas",
+        "serviceVersion": "v1",
+        "supersedes": null,
+        "verdict": "fail"
+      },
+      {
+        "schema": 1,
+        "kind": "experience",
+        "id": "experience:atlas-v1-correction-1",
+        "network": "mainnet",
+        "family": "checkpoint",
+        "serviceId": "atlas",
+        "serviceVersion": "v1",
+        "observedAt": "2026-10-27T08:38:29.832Z",
+        "recordedAt": "2026-10-27T08:38:29.832Z",
+        "verdict": "pass",
+        "reasons": [],
+        "supersedes": "experience:stage0-smoke",
+        "evidence": {
+          "source": "tatum",
+          "target": "checkpoint:338630541",
+          "version": "338630541"
+        }
+      },
+      {
+        "schema": 1,
+        "kind": "experience",
+        "id": "experience:coverage-v1:03",
+        "network": "mainnet",
+        "family": "checkpoint",
+        "serviceId": "cipher",
+        "serviceVersion": "v1",
+        "observedAt": "2026-10-27T08:38:30.017Z",
+        "recordedAt": "2026-10-27T08:38:31.017Z",
+        "verdict": "fail",
+        "reasons": [
+          "missing:sequenceNumber"
+        ],
+        "supersedes": null,
+        "evidence": {
+          "source": "tatum",
+          "target": "checkpoint:338630541",
+          "version": "338630541"
+        }
+      },
+      {
+        "schema": 1,
+        "kind": "experience",
+        "id": "experience:coverage-v1:04",
+        "network": "mainnet",
+        "family": "checkpoint",
+        "serviceId": "cipher",
+        "serviceVersion": "v1",
+        "observedAt": "2026-10-27T08:38:30.017Z",
+        "recordedAt": "2026-10-27T08:38:35.017Z",
+        "verdict": "pass",
+        "reasons": [],
+        "supersedes": "experience:coverage-v1:03",
+        "evidence": {
+          "source": "tatum",
+          "target": "checkpoint:338630541",
+          "version": "338630541"
+        }
+      },
+      {
+        "schema": 1,
+        "kind": "experience",
+        "id": "experience:coverage-v1:05",
+        "network": "mainnet",
+        "family": "checkpoint",
+        "serviceId": "beacon",
+        "serviceVersion": "v1",
+        "observedAt": "2026-10-27T08:38:30.017Z",
+        "recordedAt": "2026-10-27T08:38:32.017Z",
+        "verdict": "fail",
+        "reasons": [
+          "mismatch:digest"
+        ],
+        "supersedes": null,
+        "evidence": {
+          "source": "tatum",
+          "target": "checkpoint:338630541",
+          "version": "338630541"
+        }
+      },
+      {
+        "schema": 1,
+        "kind": "experience",
+        "id": "experience:coverage-v1:06",
+        "network": "mainnet",
+        "family": "checkpoint",
+        "serviceId": "beacon",
+        "serviceVersion": "v1",
+        "observedAt": "2026-10-27T08:38:30.017Z",
+        "recordedAt": "2026-10-27T08:38:36.017Z",
+        "verdict": "pass",
+        "reasons": [],
+        "supersedes": "experience:coverage-v1:05",
+        "evidence": {
+          "source": "tatum",
+          "target": "checkpoint:338630541",
+          "version": "338630541"
+        }
+      },
+      {
+        "schema": 1,
+        "kind": "experience",
+        "id": "experience:coverage-v1:07",
+        "network": "mainnet",
+        "family": "freshness",
+        "serviceId": "atlas",
+        "serviceVersion": "v1",
+        "observedAt": "2026-10-27T08:38:30.017Z",
+        "recordedAt": "2026-10-27T08:38:33.017Z",
+        "verdict": "fail",
+        "reasons": [
+          "outside-time-window"
+        ],
+        "supersedes": null,
+        "evidence": {
+          "source": "tatum",
+          "target": "checkpoint:338630541",
+          "version": "338630541"
+        }
+      },
+      {
+        "schema": 1,
+        "kind": "experience",
+        "id": "experience:coverage-v1:08",
+        "network": "mainnet",
+        "family": "freshness",
+        "serviceId": "atlas",
+        "serviceVersion": "v1",
+        "observedAt": "2026-10-27T08:38:30.017Z",
+        "recordedAt": "2026-10-27T08:38:37.017Z",
+        "verdict": "pass",
+        "reasons": [],
+        "supersedes": "experience:coverage-v1:07",
+        "evidence": {
+          "source": "tatum",
+          "target": "checkpoint:338630541",
+          "version": "338630541"
+        }
+      },
+      {
+        "schema": 1,
+        "kind": "experience",
+        "id": "experience:coverage-v1:09",
+        "network": "mainnet",
+        "family": "history",
+        "serviceId": "beacon",
+        "serviceVersion": "v1",
+        "observedAt": "2026-10-27T08:38:30.017Z",
+        "recordedAt": "2026-10-27T08:38:34.017Z",
+        "verdict": "unknown",
+        "reasons": [
+          "reference-version-mismatch"
+        ],
+        "supersedes": null,
+        "evidence": {
+          "source": "fixture",
+          "target": "checkpoint:338630541",
+          "version": "338630541"
+        }
+      },
+      {
+        "schema": 1,
+        "kind": "experience",
+        "id": "experience:coverage-v1:10",
+        "network": "mainnet",
+        "family": "history",
+        "serviceId": "beacon",
+        "serviceVersion": "v1",
+        "observedAt": "2026-10-27T08:38:30.017Z",
+        "recordedAt": "2026-10-27T08:38:38.017Z",
+        "verdict": "pass",
+        "reasons": [],
+        "supersedes": "experience:coverage-v1:09",
+        "evidence": {
+          "source": "fixture",
+          "target": "checkpoint:338630541",
+          "version": "338630541"
+        }
+      }
+    ],
+    "cases": [
+      {
+        "ordinal": 3,
+        "task": {
+          "id": "coverage-v1-03",
+          "network": "mainnet",
+          "family": "checkpoint",
+          "target": "checkpoint:338630541",
+          "requiredFields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "maxAgeMs": 60000,
+          "budget": "1",
+          "cutoff": "2026-10-27T08:38:30.017Z"
+        },
+        "offer": {
+          "id": "cipher",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "checkpoint"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "1"
+        },
+        "result": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L"
+          },
+          "source": "tatum",
+          "serviceId": "cipher",
+          "serviceVersion": "v1"
+        },
+        "reference": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum"
+        },
+        "record": {
+          "schema": 1,
+          "kind": "experience",
+          "id": "experience:coverage-v1:03",
+          "network": "mainnet",
+          "family": "checkpoint",
+          "serviceId": "cipher",
+          "serviceVersion": "v1",
+          "observedAt": "2026-10-27T08:38:30.017Z",
+          "recordedAt": "2026-10-27T08:38:31.017Z",
+          "verdict": "fail",
+          "reasons": [
+            "missing:sequenceNumber"
+          ],
+          "supersedes": null,
+          "evidence": {
+            "source": "tatum",
+            "target": "checkpoint:338630541",
+            "version": "338630541"
+          }
+        },
+        "verification": {
+          "status": "fail",
+          "reasons": [
+            "missing:sequenceNumber"
+          ]
+        }
+      },
+      {
+        "ordinal": 4,
+        "task": {
+          "id": "coverage-v1-04",
+          "network": "mainnet",
+          "family": "checkpoint",
+          "target": "checkpoint:338630541",
+          "requiredFields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "maxAgeMs": 60000,
+          "budget": "1",
+          "cutoff": "2026-10-27T08:38:30.017Z"
+        },
+        "offer": {
+          "id": "cipher",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "checkpoint"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "1"
+        },
+        "result": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum",
+          "serviceId": "cipher",
+          "serviceVersion": "v1"
+        },
+        "reference": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum"
+        },
+        "record": {
+          "schema": 1,
+          "kind": "experience",
+          "id": "experience:coverage-v1:04",
+          "network": "mainnet",
+          "family": "checkpoint",
+          "serviceId": "cipher",
+          "serviceVersion": "v1",
+          "observedAt": "2026-10-27T08:38:30.017Z",
+          "recordedAt": "2026-10-27T08:38:35.017Z",
+          "verdict": "pass",
+          "reasons": [],
+          "supersedes": "experience:coverage-v1:03",
+          "evidence": {
+            "source": "tatum",
+            "target": "checkpoint:338630541",
+            "version": "338630541"
+          }
+        },
+        "verification": {
+          "status": "pass",
+          "reasons": []
+        }
+      },
+      {
+        "ordinal": 5,
+        "task": {
+          "id": "coverage-v1-05",
+          "network": "mainnet",
+          "family": "checkpoint",
+          "target": "checkpoint:338630541",
+          "requiredFields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "maxAgeMs": 60000,
+          "budget": "1",
+          "cutoff": "2026-10-27T08:38:30.017Z"
+        },
+        "offer": {
+          "id": "beacon",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "checkpoint"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "1"
+        },
+        "result": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "demo-corrupted:4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum",
+          "serviceId": "beacon",
+          "serviceVersion": "v1"
+        },
+        "reference": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum"
+        },
+        "record": {
+          "schema": 1,
+          "kind": "experience",
+          "id": "experience:coverage-v1:05",
+          "network": "mainnet",
+          "family": "checkpoint",
+          "serviceId": "beacon",
+          "serviceVersion": "v1",
+          "observedAt": "2026-10-27T08:38:30.017Z",
+          "recordedAt": "2026-10-27T08:38:32.017Z",
+          "verdict": "fail",
+          "reasons": [
+            "mismatch:digest"
+          ],
+          "supersedes": null,
+          "evidence": {
+            "source": "tatum",
+            "target": "checkpoint:338630541",
+            "version": "338630541"
+          }
+        },
+        "verification": {
+          "status": "fail",
+          "reasons": [
+            "mismatch:digest"
+          ]
+        }
+      },
+      {
+        "ordinal": 6,
+        "task": {
+          "id": "coverage-v1-06",
+          "network": "mainnet",
+          "family": "checkpoint",
+          "target": "checkpoint:338630541",
+          "requiredFields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "maxAgeMs": 60000,
+          "budget": "1",
+          "cutoff": "2026-10-27T08:38:30.017Z"
+        },
+        "offer": {
+          "id": "beacon",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "checkpoint"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "1"
+        },
+        "result": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum",
+          "serviceId": "beacon",
+          "serviceVersion": "v1"
+        },
+        "reference": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum"
+        },
+        "record": {
+          "schema": 1,
+          "kind": "experience",
+          "id": "experience:coverage-v1:06",
+          "network": "mainnet",
+          "family": "checkpoint",
+          "serviceId": "beacon",
+          "serviceVersion": "v1",
+          "observedAt": "2026-10-27T08:38:30.017Z",
+          "recordedAt": "2026-10-27T08:38:36.017Z",
+          "verdict": "pass",
+          "reasons": [],
+          "supersedes": "experience:coverage-v1:05",
+          "evidence": {
+            "source": "tatum",
+            "target": "checkpoint:338630541",
+            "version": "338630541"
+          }
+        },
+        "verification": {
+          "status": "pass",
+          "reasons": []
+        }
+      },
+      {
+        "ordinal": 7,
+        "task": {
+          "id": "coverage-v1-07",
+          "network": "mainnet",
+          "family": "freshness",
+          "target": "checkpoint:338630541",
+          "requiredFields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "maxAgeMs": 60000,
+          "budget": "1",
+          "cutoff": "2026-10-27T08:38:30.017Z"
+        },
+        "offer": {
+          "id": "atlas",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "freshness"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "1"
+        },
+        "result": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:36:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum",
+          "serviceId": "atlas",
+          "serviceVersion": "v1"
+        },
+        "reference": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum"
+        },
+        "record": {
+          "schema": 1,
+          "kind": "experience",
+          "id": "experience:coverage-v1:07",
+          "network": "mainnet",
+          "family": "freshness",
+          "serviceId": "atlas",
+          "serviceVersion": "v1",
+          "observedAt": "2026-10-27T08:38:30.017Z",
+          "recordedAt": "2026-10-27T08:38:33.017Z",
+          "verdict": "fail",
+          "reasons": [
+            "outside-time-window"
+          ],
+          "supersedes": null,
+          "evidence": {
+            "source": "tatum",
+            "target": "checkpoint:338630541",
+            "version": "338630541"
+          }
+        },
+        "verification": {
+          "status": "fail",
+          "reasons": [
+            "outside-time-window"
+          ]
+        }
+      },
+      {
+        "ordinal": 8,
+        "task": {
+          "id": "coverage-v1-08",
+          "network": "mainnet",
+          "family": "freshness",
+          "target": "checkpoint:338630541",
+          "requiredFields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "maxAgeMs": 60000,
+          "budget": "1",
+          "cutoff": "2026-10-27T08:38:30.017Z"
+        },
+        "offer": {
+          "id": "atlas",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "freshness"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "1"
+        },
+        "result": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum",
+          "serviceId": "atlas",
+          "serviceVersion": "v1"
+        },
+        "reference": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "tatum"
+        },
+        "record": {
+          "schema": 1,
+          "kind": "experience",
+          "id": "experience:coverage-v1:08",
+          "network": "mainnet",
+          "family": "freshness",
+          "serviceId": "atlas",
+          "serviceVersion": "v1",
+          "observedAt": "2026-10-27T08:38:30.017Z",
+          "recordedAt": "2026-10-27T08:38:37.017Z",
+          "verdict": "pass",
+          "reasons": [],
+          "supersedes": "experience:coverage-v1:07",
+          "evidence": {
+            "source": "tatum",
+            "target": "checkpoint:338630541",
+            "version": "338630541"
+          }
+        },
+        "verification": {
+          "status": "pass",
+          "reasons": []
+        }
+      },
+      {
+        "ordinal": 9,
+        "task": {
+          "id": "coverage-v1-09",
+          "network": "mainnet",
+          "family": "history",
+          "target": "checkpoint:338630541",
+          "requiredFields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "maxAgeMs": 60000,
+          "budget": "1",
+          "cutoff": "2026-10-27T08:38:30.017Z"
+        },
+        "offer": {
+          "id": "beacon",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "history"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "1"
+        },
+        "result": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "fixture",
+          "serviceId": "beacon",
+          "serviceVersion": "v1"
+        },
+        "reference": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "synthetic-unconfirmed-version",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "fixture"
+        },
+        "record": {
+          "schema": 1,
+          "kind": "experience",
+          "id": "experience:coverage-v1:09",
+          "network": "mainnet",
+          "family": "history",
+          "serviceId": "beacon",
+          "serviceVersion": "v1",
+          "observedAt": "2026-10-27T08:38:30.017Z",
+          "recordedAt": "2026-10-27T08:38:34.017Z",
+          "verdict": "unknown",
+          "reasons": [
+            "reference-version-mismatch"
+          ],
+          "supersedes": null,
+          "evidence": {
+            "source": "fixture",
+            "target": "checkpoint:338630541",
+            "version": "338630541"
+          }
+        },
+        "verification": {
+          "status": "unknown",
+          "reasons": [
+            "reference-version-mismatch"
+          ]
+        }
+      },
+      {
+        "ordinal": 10,
+        "task": {
+          "id": "coverage-v1-10",
+          "network": "mainnet",
+          "family": "history",
+          "target": "checkpoint:338630541",
+          "requiredFields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "maxAgeMs": 60000,
+          "budget": "1",
+          "cutoff": "2026-10-27T08:38:30.017Z"
+        },
+        "offer": {
+          "id": "beacon",
+          "version": "v1",
+          "network": "mainnet",
+          "families": [
+            "history"
+          ],
+          "fields": [
+            "digest",
+            "sequenceNumber"
+          ],
+          "price": "1"
+        },
+        "result": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "fixture",
+          "serviceId": "beacon",
+          "serviceVersion": "v1"
+        },
+        "reference": {
+          "network": "mainnet",
+          "target": "checkpoint:338630541",
+          "version": "338630541",
+          "asOf": "2026-10-27T08:38:29.017Z",
+          "fields": {
+            "digest": "4bhCfQpxkQask9VcbmCWpSTiVHf9FznhZRuWydYxUj3L",
+            "sequenceNumber": "338630541"
+          },
+          "source": "fixture"
+        },
+        "record": {
+          "schema": 1,
+          "kind": "experience",
+          "id": "experience:coverage-v1:10",
+          "network": "mainnet",
+          "family": "history",
+          "serviceId": "beacon",
+          "serviceVersion": "v1",
+          "observedAt": "2026-10-27T08:38:30.017Z",
+          "recordedAt": "2026-10-27T08:38:38.017Z",
+          "verdict": "pass",
+          "reasons": [],
+          "supersedes": "experience:coverage-v1:09",
+          "evidence": {
+            "source": "fixture",
+            "target": "checkpoint:338630541",
+            "version": "338630541"
+          }
+        },
+        "verification": {
+          "status": "pass",
+          "reasons": []
+        }
+      }
+    ],
+    "checks": [
+      {
+        "pair": "sequence-availability",
+        "beforeActive": [
+          "experience:coverage-v1:03"
+        ],
+        "afterActive": [
+          "experience:coverage-v1:04"
+        ],
+        "beforeGuard": [
+          "experience:coverage-v1:03"
+        ],
+        "afterGuard": [],
+        "citationStatusForBadProposal": "contradicted"
+      },
+      {
+        "pair": "digest-integrity",
+        "beforeActive": [
+          "experience:coverage-v1:05"
+        ],
+        "afterActive": [
+          "experience:coverage-v1:06"
+        ],
+        "beforeGuard": [
+          "experience:coverage-v1:05"
+        ],
+        "afterGuard": [],
+        "citationStatusForBadProposal": "contradicted"
+      },
+      {
+        "pair": "freshness",
+        "beforeActive": [
+          "experience:coverage-v1:07"
+        ],
+        "afterActive": [
+          "experience:coverage-v1:08"
+        ],
+        "beforeGuard": [],
+        "afterGuard": [],
+        "citationStatusForBadProposal": "unverifiable"
+      },
+      {
+        "pair": "reference-uncertainty",
+        "beforeActive": [
+          "experience:coverage-v1:09"
+        ],
+        "afterActive": [
+          "experience:coverage-v1:10"
+        ],
+        "beforeGuard": [],
+        "afterGuard": [],
+        "citationStatusForBadProposal": "unverifiable"
+      }
+    ]
+  },
+  "checksPassed": true,
+  "currentTaskApiCalls": 0,
+  "currentTaskWrites": 0
+}

@@ -1,0 +1,261 @@
+{
+  "status": "ADAPTER_DRY_RUN_COMPLETED",
+  "mode": "REAL_ADAPTERS_STUB_CLIENTS",
+  "planHash": "6d13e8a79d88c37fb5fbe10e73f0d35e64312e5e16253806b185391cf8cc7d6f",
+  "frozenBundleHash": "3c5d2bfd38b38df8464410af8766493b10079f1cf756d8661f6f344c71c71a4d",
+  "simulatedRecords": 10,
+  "simulatedNewWrites": 8,
+  "reservations": {
+    "tatum": 2,
+    "remember": 8,
+    "status": 8,
+    "inventory": 6,
+    "recall": 3
+  },
+  "perJob": [
+    {
+      "slot": 3,
+      "operation_key": "coverage:v1:memory:03",
+      "hash": "f0c9e12981efe76396e040122c049f2dc57e4c5c272f7ca8b0558109a7a4fcbb",
+      "state": "DONE",
+      "job_id": "stub-adapter-job-3",
+      "blob_id": "SIMULATED_ADAPTER_BLOB_3",
+      "polls": 1
+    },
+    {
+      "slot": 4,
+      "operation_key": "coverage:v1:memory:04",
+      "hash": "2d80bd025f9a9c330f70633f14c11ac267eaf645976c9747545b7f3924cec703",
+      "state": "DONE",
+      "job_id": "stub-adapter-job-4",
+      "blob_id": "SIMULATED_ADAPTER_BLOB_4",
+      "polls": 1
+    },
+    {
+      "slot": 5,
+      "operation_key": "coverage:v1:memory:05",
+      "hash": "0554a68414bfc307ca97281061875677aa1558e3a7ab9a61b4891477c9abd920",
+      "state": "DONE",
+      "job_id": "stub-adapter-job-5",
+      "blob_id": "SIMULATED_ADAPTER_BLOB_5",
+      "polls": 1
+    },
+    {
+      "slot": 6,
+      "operation_key": "coverage:v1:memory:06",
+      "hash": "c5c62340a5a235a9f35118b0b5f19b3119194b53fd7f4bf04f0d17228ec6495e",
+      "state": "DONE",
+      "job_id": "stub-adapter-job-6",
+      "blob_id": "SIMULATED_ADAPTER_BLOB_6",
+      "polls": 1
+    },
+    {
+      "slot": 7,
+      "operation_key": "coverage:v1:memory:07",
+      "hash": "aa742ddc02e8ad3a25dace4007882ab11e8e5fa79ce58f503d6d90b3d23b24f4",
+      "state": "DONE",
+      "job_id": "stub-adapter-job-7",
+      "blob_id": "SIMULATED_ADAPTER_BLOB_7",
+      "polls": 1
+    },
+    {
+      "slot": 8,
+      "operation_key": "coverage:v1:memory:08",
+      "hash": "c743fb31b746606e55a269e4ab1503edb46eee4057d3d28384829708ba06ee73",
+      "state": "DONE",
+      "job_id": "stub-adapter-job-8",
+      "blob_id": "SIMULATED_ADAPTER_BLOB_8",
+      "polls": 1
+    },
+    {
+      "slot": 9,
+      "operation_key": "coverage:v1:memory:09",
+      "hash": "a9f297dbbb472ab22216e1ddaeda3a1532ede69b62869359b2803cf1ac27834b",
+      "state": "DONE",
+      "job_id": "stub-adapter-job-9",
+      "blob_id": "SIMULATED_ADAPTER_BLOB_9",
+      "polls": 1
+    },
+    {
+      "slot": 10,
+      "operation_key": "coverage:v1:memory:10",
+      "hash": "62ae82b506ce204ca10a1418acf8c9a848a39f6b4e6ca3daea5d15d09badcbc7",
+      "state": "DONE",
+      "job_id": "stub-adapter-job-10",
+      "blob_id": "SIMULATED_ADAPTER_BLOB_10",
+      "polls": 1
+    }
+  ],
+  "waveA": {
+    "records": 6,
+    "manifestHash": "344bfced0dc2c3778e435fb3c3c7b4d29a1c01d2e5723b1599d7c569da3bc108"
+  },
+  "waveB": {
+    "records": 10,
+    "manifestHash": "425a6631f44eaf2fe568db204cb973890375fefcd0086cf9acb5c13edf1c670b"
+  },
+  "providerApiCalls": 0,
+  "mainnetWrites": 0,
+  "actualMainnetCountLastConfirmed": 2,
+  "additionalSpendLimitUSD": 0,
+  "liveBindingReady": true,
+  "requiresSeparateLiveApproval": true,
+  "adapterStatsThisInvocation": {
+    "memoryConnections": 1,
+    "tatumConnections": 1,
+    "closedTatum": 1,
+    "checkpointCalls": 2,
+    "parentStubClientCalls": {
+      "list": 2,
+      "recall": 1,
+      "remember": 8,
+      "status": 8
+    }
+  },
+  "readersThisInvocation": [
+    {
+      "wave": "A",
+      "pid": 917,
+      "stubClientCalls": {
+        "list": 4,
+        "recall": 1,
+        "remember": 0,
+        "status": 0
+      }
+    },
+    {
+      "wave": "B",
+      "pid": 924,
+      "stubClientCalls": {
+        "list": 6,
+        "recall": 1,
+        "remember": 0,
+        "status": 0
+      }
+    }
+  ],
+  "ledger": {
+    "run": {
+      "id": 1,
+      "plan_hash": "6d13e8a79d88c37fb5fbe10e73f0d35e64312e5e16253806b185391cf8cc7d6f",
+      "binding": "621e850f5a8b7c33cf6595111c16ed63cd62b54f596affb77fcf449cea75c534",
+      "state": "DONE",
+      "phase": "DONE",
+      "result": "{\"actualMainnetCountLastConfirmed\":2,\"additionalSpendLimitUSD\":0,\"frozenBundleHash\":\"3c5d2bfd38b38df8464410af8766493b10079f1cf756d8661f6f344c71c71a4d\",\"liveBindingReady\":true,\"mainnetWrites\":0,\"mode\":\"REAL_ADAPTERS_STUB_CLIENTS\",\"perJob\":[{\"blob_id\":\"SIMULATED_ADAPTER_BLOB_3\",\"hash\":\"f0c9e12981efe76396e040122c049f2dc57e4c5c272f7ca8b0558109a7a4fcbb\",\"job_id\":\"stub-adapter-job-3\",\"operation_key\":\"coverage:v1:memory:03\",\"polls\":1,\"slot\":3,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_ADAPTER_BLOB_4\",\"hash\":\"2d80bd025f9a9c330f70633f14c11ac267eaf645976c9747545b7f3924cec703\",\"job_id\":\"stub-adapter-job-4\",\"operation_key\":\"coverage:v1:memory:04\",\"polls\":1,\"slot\":4,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_ADAPTER_BLOB_5\",\"hash\":\"0554a68414bfc307ca97281061875677aa1558e3a7ab9a61b4891477c9abd920\",\"job_id\":\"stub-adapter-job-5\",\"operation_key\":\"coverage:v1:memory:05\",\"polls\":1,\"slot\":5,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_ADAPTER_BLOB_6\",\"hash\":\"c5c62340a5a235a9f35118b0b5f19b3119194b53fd7f4bf04f0d17228ec6495e\",\"job_id\":\"stub-adapter-job-6\",\"operation_key\":\"coverage:v1:memory:06\",\"polls\":1,\"slot\":6,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_ADAPTER_BLOB_7\",\"hash\":\"aa742ddc02e8ad3a25dace4007882ab11e8e5fa79ce58f503d6d90b3d23b24f4\",\"job_id\":\"stub-adapter-job-7\",\"operation_key\":\"coverage:v1:memory:07\",\"polls\":1,\"slot\":7,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_ADAPTER_BLOB_8\",\"hash\":\"c743fb31b746606e55a269e4ab1503edb46eee4057d3d28384829708ba06ee73\",\"job_id\":\"stub-adapter-job-8\",\"operation_key\":\"coverage:v1:memory:08\",\"polls\":1,\"slot\":8,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_ADAPTER_BLOB_9\",\"hash\":\"a9f297dbbb472ab22216e1ddaeda3a1532ede69b62869359b2803cf1ac27834b\",\"job_id\":\"stub-adapter-job-9\",\"operation_key\":\"coverage:v1:memory:09\",\"polls\":1,\"slot\":9,\"state\":\"DONE\"},{\"blob_id\":\"SIMULATED_ADAPTER_BLOB_10\",\"hash\":\"62ae82b506ce204ca10a1418acf8c9a848a39f6b4e6ca3daea5d15d09badcbc7\",\"job_id\":\"stub-adapter-job-10\",\"operation_key\":\"coverage:v1:memory:10\",\"polls\":1,\"slot\":10,\"state\":\"DONE\"}],\"planHash\":\"6d13e8a79d88c37fb5fbe10e73f0d35e64312e5e16253806b185391cf8cc7d6f\",\"providerApiCalls\":0,\"requiresSeparateLiveApproval\":true,\"reservations\":{\"inventory\":6,\"recall\":3,\"remember\":8,\"status\":8,\"tatum\":2},\"simulatedNewWrites\":8,\"simulatedRecords\":10,\"status\":\"ADAPTER_DRY_RUN_COMPLETED\",\"waveA\":{\"manifestHash\":\"344bfced0dc2c3778e435fb3c3c7b4d29a1c01d2e5723b1599d7c569da3bc108\",\"records\":6},\"waveB\":{\"manifestHash\":\"425a6631f44eaf2fe568db204cb973890375fefcd0086cf9acb5c13edf1c670b\",\"records\":10}}",
+      "code": null
+    },
+    "reservations": {
+      "tatum": 2,
+      "remember": 8,
+      "status": 8,
+      "inventory": 6,
+      "recall": 3
+    },
+    "outbox": [
+      {
+        "slot": 3,
+        "operation_key": "coverage:v1:memory:03",
+        "hash": "f0c9e12981efe76396e040122c049f2dc57e4c5c272f7ca8b0558109a7a4fcbb",
+        "state": "DONE",
+        "job_id": "stub-adapter-job-3",
+        "blob_id": "SIMULATED_ADAPTER_BLOB_3",
+        "polls": 1
+      },
+      {
+        "slot": 4,
+        "operation_key": "coverage:v1:memory:04",
+        "hash": "2d80bd025f9a9c330f70633f14c11ac267eaf645976c9747545b7f3924cec703",
+        "state": "DONE",
+        "job_id": "stub-adapter-job-4",
+        "blob_id": "SIMULATED_ADAPTER_BLOB_4",
+        "polls": 1
+      },
+      {
+        "slot": 5,
+        "operation_key": "coverage:v1:memory:05",
+        "hash": "0554a68414bfc307ca97281061875677aa1558e3a7ab9a61b4891477c9abd920",
+        "state": "DONE",
+        "job_id": "stub-adapter-job-5",
+        "blob_id": "SIMULATED_ADAPTER_BLOB_5",
+        "polls": 1
+      },
+      {
+        "slot": 6,
+        "operation_key": "coverage:v1:memory:06",
+        "hash": "c5c62340a5a235a9f35118b0b5f19b3119194b53fd7f4bf04f0d17228ec6495e",
+        "state": "DONE",
+        "job_id": "stub-adapter-job-6",
+        "blob_id": "SIMULATED_ADAPTER_BLOB_6",
+        "polls": 1
+      },
+      {
+        "slot": 7,
+        "operation_key": "coverage:v1:memory:07",
+        "hash": "aa742ddc02e8ad3a25dace4007882ab11e8e5fa79ce58f503d6d90b3d23b24f4",
+        "state": "DONE",
+        "job_id": "stub-adapter-job-7",
+        "blob_id": "SIMULATED_ADAPTER_BLOB_7",
+        "polls": 1
+      },
+      {
+        "slot": 8,
+        "operation_key": "coverage:v1:memory:08",
+        "hash": "c743fb31b746606e55a269e4ab1503edb46eee4057d3d28384829708ba06ee73",
+        "state": "DONE",
+        "job_id": "stub-adapter-job-8",
+        "blob_id": "SIMULATED_ADAPTER_BLOB_8",
+        "polls": 1
+      },
+      {
+        "slot": 9,
+        "operation_key": "coverage:v1:memory:09",
+        "hash": "a9f297dbbb472ab22216e1ddaeda3a1532ede69b62869359b2803cf1ac27834b",
+        "state": "DONE",
+        "job_id": "stub-adapter-job-9",
+        "blob_id": "SIMULATED_ADAPTER_BLOB_9",
+        "polls": 1
+      },
+      {
+        "slot": 10,
+        "operation_key": "coverage:v1:memory:10",
+        "hash": "62ae82b506ce204ca10a1418acf8c9a848a39f6b4e6ca3daea5d15d09badcbc7",
+        "state": "DONE",
+        "job_id": "stub-adapter-job-10",
+        "blob_id": "SIMULATED_ADAPTER_BLOB_10",
+        "polls": 1
+      }
+    ],
+    "readers": [
+      {
+        "wave": "A",
+        "hash": "344bfced0dc2c3778e435fb3c3c7b4d29a1c01d2e5723b1599d7c569da3bc108",
+        "state": "DONE"
+      },
+      {
+        "wave": "B",
+        "hash": "425a6631f44eaf2fe568db204cb973890375fefcd0086cf9acb5c13edf1c670b",
+        "state": "DONE"
+      },
+      {
+        "wave": "preflight",
+        "hash": "95a68994a4185deff52c7b5d6324a747de3aaa9d290deb3a789e7de3369f7ae3",
+        "state": "DONE"
+      }
+    ],
+    "effects": [
+      {
+        "id": "coverage:v1:tatum:latest",
+        "kind": "tatum",
+        "hash": "7e78ca781bbdc75859005319c69fc172af08e03ff0b27b8f7d6c077a2d16468d",
+        "state": "DONE"
+      },
+      {
+        "id": "coverage:v1:tatum:pinned",
+        "kind": "tatum",
+        "hash": "50deb61dee18dbbfd863e559809bddb38e5d56212cb2ea967a356ffdd884b419",
+        "state": "DONE"
+      }
+    ]
+  },
+  "disclosure": "Actual TatumData/WalrusMemory classes, stub clients and virtual clocks; no SDK preflights, API calls or Mainnet writes."
+}

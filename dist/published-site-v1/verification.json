@@ -1,0 +1,15 @@
+{
+  "status": "STATIC_SITE_WITH_ARTICLE_PREPARED",
+  "dataHash": "9aaf030a29cda4bafec663a994c5a741a5975efda51511c7c8d1f06ce78b549f",
+  "verifiedRecords": 10,
+  "correctionChains": 5,
+  "modelCallsThisBuild": 0,
+  "providerCallsThisBuild": 0,
+  "mainnetWritesThisBuild": 0,
+  "additionalSpendUSD": 0,
+  "networkPolicy": "CONNECT_NONE_NO_EXTERNAL_ASSETS",
+  "publication": "NOT_ATTESTED_BY_OFFLINE_CHECK",
+  "freshLocalProcessVerified": true,
+  "remoteRecallThisBuild": false,
+  "article": "./blog.html"
+}

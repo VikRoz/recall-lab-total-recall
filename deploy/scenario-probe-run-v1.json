@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "status": "PREPARED_NOT_AUTHORIZED",
+  "inputPlanHash": "01a44fea2996b2881db7defeaee182c93536a5a2432658b32b9ab758746389f5",
+  "preparedReportHash": "e7546e61037d4882372a2845255e1fdcd69aeb77e2e4a61c01229bc8d095a3cc",
+  "scenarioHash": "cfe1dae0fc0f979f7f8948395b7fa8822b51eee4df692e8c707ae35f5a3c4bf6",
+  "modelId": "@cf/meta/llama-3.1-8b-instruct-fp8-fast",
+  "requestKeys": [
+    "f3ed19a6c417650f5f4a8bd3df063edc7cca56387ae1a3e8d3cee6787987af2a",
+    "d6c8071a8a95c831abffc9c2a4a617d510b8c17665177aff104aa1af96fcfce5",
+    "6d4423d5ca1953c1509ac85da299fe84a34a55058e95cc38bad2136ee3ed6dea",
+    "bea9bcc2a173d8a15eab77b263bec67194a9b76befb9c20120e558e87286656d",
+    "dfe9976523bf07110f4721be746b7370a723824ab7700799a2f61503c9c055a5"
+  ],
+  "maxNewModelCalls": 5,
+  "maxInputMessagesBytes": 3500,
+  "maxOutputTokens": 512,
+  "temperature": 0,
+  "responseParser": "STRICT_DEFAULT_V1_UNCHANGED",
+  "tatumCalls": 0,
+  "walrusOperations": 0,
+  "additionalSpendLimitUSD": 0,
+  "retries": 0,
+  "accountIdHash": "e984d1d98a945fd8c66a8d60afeccb2235aaac7bf2a5a1930ce8ff47d566fe23",
+  "sourceHash": "0988a7408f80fce2ec24889e5adc1b688ea7effc2793208807cc61b23987cfeb",
+  "runtimeImageId": "sha256:9fc21ff074cdf7a031a1c67b0f83117289b1b5402ae78a348a0b1bf1192ae124"
+}

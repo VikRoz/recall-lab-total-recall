@@ -1,0 +1,117 @@
+{
+  "status": "BOUNDED_SCENARIO_COMPLETED",
+  "dateMoscow": "2026-10-28",
+  "permitHash": "40f12edf62f0c12d48445244f99d32a576b5b0ce70d555896a788f8624ee743d",
+  "uniqueModelCalls": 5,
+  "logicalModelArms": 9,
+  "rows": [
+    {
+      "stage": "repeat-required-field",
+      "conditions": {
+        "A": {
+          "service": "atlas",
+          "goalCompleted": false,
+          "rawVerdict": "fail",
+          "citation": "none_available"
+        },
+        "B": {
+          "service": "beacon",
+          "goalCompleted": true,
+          "rawVerdict": "pass",
+          "citation": "supported"
+        },
+        "C": {
+          "service": "beacon",
+          "goalCompleted": true,
+          "rawVerdict": "pass",
+          "citation": "supported"
+        },
+        "D": {
+          "service": "beacon",
+          "goalCompleted": true,
+          "rawVerdict": "pass"
+        }
+      }
+    },
+    {
+      "stage": "field-no-longer-required",
+      "conditions": {
+        "A": {
+          "service": "atlas",
+          "goalCompleted": true,
+          "rawVerdict": "pass",
+          "citation": "none_available"
+        },
+        "B": {
+          "service": "atlas",
+          "goalCompleted": true,
+          "rawVerdict": "pass",
+          "citation": "none_available"
+        },
+        "C": {
+          "service": "atlas",
+          "goalCompleted": true,
+          "rawVerdict": "pass",
+          "citation": "none_available"
+        },
+        "D": {
+          "service": "atlas",
+          "goalCompleted": true,
+          "rawVerdict": "pass"
+        }
+      }
+    },
+    {
+      "stage": "after-verified-correction",
+      "conditions": {
+        "A": {
+          "service": "atlas",
+          "goalCompleted": true,
+          "rawVerdict": "pass",
+          "citation": "none_available"
+        },
+        "B": {
+          "service": "atlas",
+          "goalCompleted": true,
+          "rawVerdict": "pass",
+          "citation": "unverifiable"
+        },
+        "C": {
+          "service": "atlas",
+          "goalCompleted": true,
+          "rawVerdict": "pass",
+          "citation": "unverifiable"
+        },
+        "D": {
+          "service": "atlas",
+          "goalCompleted": true,
+          "rawVerdict": "pass"
+        }
+      }
+    }
+  ],
+  "totalsByCondition": {
+    "A": 2,
+    "B": 3,
+    "C": 3,
+    "D": 3
+  },
+  "points": 3,
+  "mainCaseFailureCitationSupported": true,
+  "correctionCitationStatus": "unverifiable",
+  "directFactsAndRestoredRequestsIdentical": true,
+  "notIndependentTrials": true,
+  "generalLLMSuperiorityEstablished": false,
+  "tatumCalls": 0,
+  "walrusOperations": 0,
+  "retries": 0,
+  "additionalSpendUSD": 0,
+  "journal": {
+    "DONE": 5,
+    "UNKNOWN": 0,
+    "outbox": 0
+  },
+  "dashboardPostRunNeuronsDisplayed": 0,
+  "exactNeuronUsageKnown": false,
+  "reportCanonicalHash": "36b5f462e753b8af3f98dec355ceeaa94fb0bb27bd6a0eb8d1e3ca7fdd17c22d"
+}

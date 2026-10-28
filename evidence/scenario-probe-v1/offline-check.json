@@ -1,0 +1,15 @@
+{
+  "status": "SCENARIO_PROBE_OFFLINE_CHECKED",
+  "tests": {
+    "pass": 152,
+    "fail": 0,
+    "skipped": 0
+  },
+  "syntaxFiles": 85,
+  "network": "DOCKER_NETWORK_NONE",
+  "providerCalls": 0,
+  "bothJournalsUnchanged": true,
+  "oldScenarioAndRehearsalUnchanged": true,
+  "sourceHash": "0988a7408f80fce2ec24889e5adc1b688ea7effc2793208807cc61b23987cfeb",
+  "runtimeImageId": "sha256:9fc21ff074cdf7a031a1c67b0f83117289b1b5402ae78a348a0b1bf1192ae124"
+}

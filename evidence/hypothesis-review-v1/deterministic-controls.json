@@ -1,0 +1,253 @@
+{
+  "mode": "OFFLINE_REVIEW_SYNTHETIC_CASES_NO_MODEL_CALLS",
+  "cases": 16,
+  "summary": {
+    "pass": 11,
+    "fail": 2,
+    "unknown": 1,
+    "declined": 2,
+    "error": 0,
+    "runs": 16,
+    "totalDemoCredits": "9007199254741016",
+    "demoCreditsPerPass": {
+      "numerator": "9007199254741016",
+      "denominator": 11
+    }
+  },
+  "rows": [
+    {
+      "caseId": "evidence-known-failure",
+      "decision": {
+        "serviceId": "beacon",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": [
+          "experience:evidence-known-failure"
+        ]
+      },
+      "verdict": "pass",
+      "reasons": [],
+      "demoCredits": "2",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "evidence-field-not-required",
+      "decision": {
+        "serviceId": "atlas",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": []
+      },
+      "verdict": "pass",
+      "reasons": [],
+      "demoCredits": "1",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "evidence-repaired-version",
+      "decision": {
+        "serviceId": "atlas",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": []
+      },
+      "verdict": "pass",
+      "reasons": [],
+      "demoCredits": "1",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "evidence-budget-only-bad",
+      "decision": {
+        "serviceId": null,
+        "reason": "No compatible offer without a matching known failure.",
+        "memoryIds": [
+          "experience:evidence-budget-only-bad"
+        ]
+      },
+      "verdict": "declined",
+      "reasons": [],
+      "demoCredits": "0",
+      "executionStatus": "DECLINED",
+      "serviceProjections": 0
+    },
+    {
+      "caseId": "freshness-known-stale",
+      "decision": {
+        "serviceId": "beacon",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": [
+          "experience:freshness-known-stale"
+        ]
+      },
+      "verdict": "pass",
+      "reasons": [],
+      "demoCredits": "2",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "freshness-future-record",
+      "decision": {
+        "serviceId": "atlas",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": []
+      },
+      "verdict": "fail",
+      "reasons": [
+        "outside-time-window"
+      ],
+      "demoCredits": "1",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "freshness-wrong-network",
+      "decision": {
+        "serviceId": "atlas",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": []
+      },
+      "verdict": "fail",
+      "reasons": [
+        "outside-time-window"
+      ],
+      "demoCredits": "1",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "freshness-corrected-record",
+      "decision": {
+        "serviceId": "atlas",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": [
+          "correction:freshness"
+        ]
+      },
+      "verdict": "pass",
+      "reasons": [],
+      "demoCredits": "1",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "history-other-family",
+      "decision": {
+        "serviceId": "atlas",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": []
+      },
+      "verdict": "pass",
+      "reasons": [],
+      "demoCredits": "1",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "history-known-omission",
+      "decision": {
+        "serviceId": "beacon",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": [
+          "experience:history-known-omission"
+        ]
+      },
+      "verdict": "pass",
+      "reasons": [],
+      "demoCredits": "2",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "history-version-uncertain",
+      "decision": {
+        "serviceId": "atlas",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": []
+      },
+      "verdict": "unknown",
+      "reasons": [
+        "reference-version-mismatch"
+      ],
+      "demoCredits": "1",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "history-no-affordable-offer",
+      "decision": {
+        "serviceId": null,
+        "reason": "No compatible offer without a matching known failure.",
+        "memoryIds": []
+      },
+      "verdict": "declined",
+      "reasons": [],
+      "demoCredits": "0",
+      "executionStatus": "DECLINED",
+      "serviceProjections": 0
+    },
+    {
+      "caseId": "prospective-mixed-failures",
+      "decision": {
+        "serviceId": "orion",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": [
+          "experience:prospective-mixed-failures:lyra"
+        ]
+      },
+      "verdict": "pass",
+      "reasons": [],
+      "demoCredits": "7",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "prospective-history-integer-budget",
+      "decision": {
+        "serviceId": "iris",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": [
+          "experience:prospective-history-integer-budget:rhea"
+        ]
+      },
+      "verdict": "pass",
+      "reasons": [],
+      "demoCredits": "9007199254740993",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "prospective-future-correction",
+      "decision": {
+        "serviceId": "beacon",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": [
+          "experience:freshness-corrected-record"
+        ]
+      },
+      "verdict": "pass",
+      "reasons": [],
+      "demoCredits": "2",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    },
+    {
+      "caseId": "prospective-correction-budget-boundary",
+      "decision": {
+        "serviceId": "atlas",
+        "reason": "Lowest demo price among compatible offers without a matching known failure.",
+        "memoryIds": [
+          "correction:freshness"
+        ]
+      },
+      "verdict": "pass",
+      "reasons": [],
+      "demoCredits": "1",
+      "executionStatus": "VERIFIED",
+      "serviceProjections": 1
+    }
+  ],
+  "providerCalls": 0,
+  "additionalSpendUSD": 0
+}

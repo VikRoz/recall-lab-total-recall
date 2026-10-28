@@ -1,0 +1,12 @@
+{
+  "status": "OFFLINE_HOST_BROKER_VERIFIED",
+  "successBothWaves": true,
+  "responseThenReaderFailureBlocksB": true,
+  "kernelNetworkIsolation": "none/loopback only asserted inside test containers",
+  "readerWriterDbNotMounted": true,
+  "actualCredentialsUsed": false,
+  "providerApiCalls": 0,
+  "mainnetWrites": 0,
+  "mainLedgerUnchanged": true,
+  "testImagesOnly": "two derivative images override writer/reader entrypoints with explicit stub SDK clients; not the prepared production runtime"
+}

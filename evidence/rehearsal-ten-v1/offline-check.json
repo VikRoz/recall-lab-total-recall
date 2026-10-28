@@ -1,0 +1,23 @@
+{
+  "status": "OFFLINE_TEN_REHEARSAL_CHECKED",
+  "tests": {
+    "pass": 140,
+    "fail": 0,
+    "skipped": 0
+  },
+  "syntaxFiles": 77,
+  "network": "DOCKER_NETWORK_NONE",
+  "cleanRuns": 2,
+  "htmlRunbookByteIdentical": true,
+  "normalizedReportsIdentical": true,
+  "bothJournalsUnchanged": true,
+  "providerApiCalls": 0,
+  "additionalSpendLimitUSD": 0,
+  "image": "total-recall-demo:rehearsal-ten-f69f74f2-20261027",
+  "imageId": "sha256:67b99979e1c90cdf0de7ffaa744f01a26a5c370b9e1b5889e181876d5feb0f4f",
+  "files": {
+    "index.html": "754006a68de671aee3d1de5c6a9255e99b67ac5beeee5c04dc633e000eb2bcd5",
+    "report.json": "4783631954150465f2c8eec8fd50ffb170b9c2bc59588cce94210b64cad930ab",
+    "RUNBOOK.md": "7cd8dc761845705d5408b6cddce23960a891ef0d36f5efb8e6455c6dedbc6b8b"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PUBLIC_EVIDENCE_OFFLINE_AUDIT_PASSED",
+  "manifestHash": "bd030c1f107ee3c848f91148378b45965a8c1f9ac382105139f350f28fda37eb",
+  "frozenBundleHash": "c796aaaf1b1ee63aed1ed700af0249cf549df0bbff92cb9b50b7b236675a83c1",
+  "verifiedRecordHashes": 8,
+  "verifiedSupersedes": 4,
+  "readerCounts": [
+    2,
+    6,
+    10
+  ],
+  "limitsRespected": true,
+  "oldJournalUnchanged": true,
+  "newProviderCalls": 0
+}

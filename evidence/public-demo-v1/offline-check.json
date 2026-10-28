@@ -1,0 +1,24 @@
+{
+  "status": "PUBLIC_DEMO_LOCAL_PREPARATION_VERIFIED",
+  "date": "2026-10-28",
+  "tests": {
+    "pass": 154,
+    "fail": 0,
+    "skipped": 2,
+    "total": 156
+  },
+  "newTargetTests": 4,
+  "syntaxFiles": 89,
+  "htmlSHA256": "099ffee597080773fc891d5f6ee06197447fce29592b98335366ce58a531e8bc",
+  "zipSHA256": "4b278500f6c423fdcedb21c0accbcc23b10fa8df6116ebc211d1c54d5d618d19",
+  "dataHash": "9aaf030a29cda4bafec663a994c5a741a5975efda51511c7c8d1f06ce78b549f",
+  "reproducibleBuilds": true,
+  "cleanUnzipVerifier": "PASSED",
+  "tamperedPackageVerifier": "REJECTED",
+  "browserVisualQA": "NOT_PERFORMED_KNOWN_FILE_URL_POLICY",
+  "providerCalls": 0,
+  "mainnetWrites": 0,
+  "additionalSpendUSD": 0,
+  "serverAccessThisStage": false,
+  "published": false
+}
