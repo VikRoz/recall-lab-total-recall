@@ -1,13 +1,13 @@
-# Демо Recall Lab — 2–3 минуты
+# Recall Lab — 2–3 minute walkthrough
 
-Режим: сохранённые данные/replay. Статус внешнего размещения подтверждается отдельно. Новые API-вызовы0, расходы$0.
+Mode: saved-evidence replay. No new provider calls or writes; additional spend $0. Hosting and browser access are verified separately from the offline build.
 
-1. **00:00–00:25. Обзор.** «Мы проверяем, может ли агент использовать проверенный опыт после восстановления сессии. Эти10 Mainnet-записей и5 ответов модели получены ранее. Страница сейчас работает локально».
-2. **00:25–01:05. Повтор задачи.** Сравните A/B/C/D. Без истории Atlas не вернул digest. Прямые факты и восстановленная память дали Beacon/pass с supported-ссылкой. Простой алгоритм получил тот же результат. Раскройте ответ и проверку, подчеркните отсутствие исправления модельного решения guard.
-3. **01:05–01:35. Контроли.** Переключите «Смена требований»: digest не требуется, ошибка отфильтрована заранее, A/B/C используют общий ответ. «После correction»: Atlas проходит, но ссылка модели остаётся unverifiable. Не называйте её подтверждённой.
-4. **01:35–02:15. Память.** Откройте receipt записи и одну correction-цепочку. Фильтр «Только correction» показывает5, «Синтетические» —2. Поясните: записи действительно Mainnet, поломки принадлежат нашим контролируемым проекциям. Новый локальный процесс проверяет сохранённые данные, ранее независимые live-клиенты читали Walrus.
-5. **02:15–02:45. Ограничения.** Алгоритм также3/3. Ранний 8B-пилот провалился с памятью и без. Один положительный сценарий не доказывает общую устойчивость LLM. Память не чинит сервис, перенос между аккаунтами не проверен. Покажите раздел ограничений и кнопку выгрузки JSON.
+1. **00:00–00:25 — Overview.** Explain the question: can an agent recover verified experience in a fresh session? Ten Mainnet records and five unique model responses were obtained previously; this page replays their evidence.
+2. **00:25–01:05 — Repeat task.** Compare A/B/C/D. Without history, Atlas is missing digest. Direct facts and restored memory select Beacon/pass with a supported citation. The simple algorithm ties. Expand the response and action guard; do not present controller policy as improved model reasoning.
+3. **01:05–01:35 — Controls.** Select Changed requirements: digest is not required, the irrelevant failure is filtered, and A/B/C share one response. Select After correction: Atlas passes, but the pass citation remains unverifiable. Do not call it supported.
+4. **01:35–02:15 — Memory.** Expand a record receipt and inspect a correction chain. Corrections only shows five; Synthetic examples shows two. These are real Mainnet records, with controlled projection faults. A fresh local process checks saved data; independent live clients read Walrus previously.
+5. **02:15–02:45 — Limitations.** The algorithm also passes 3/3. An earlier 8B pilot failed with and without memory. One positive scenario does not establish general stability. Memory does not repair service code; cross-account access is untested. Show the limitations and Download evidence JSON.
 
-Не говорить «агент обучился», «память всегда улучшает модель», «все ссылки подтверждены», «это live», «мы экономим реальные деньги» или «получен независимый benchmark». Пять ответов/девять веток не являются девятью независимыми вызовами.
+Avoid claims that the agent learned, memory always improves the model, every citation is supported, this is live, real money was saved, or this is an independent benchmark. Five responses across nine logical arms are not nine independent calls.
 
-Если браузер не открывает локальный файл из-за политики среды, сообщите ограничение и сохраните пакет для разрешённого просмотра. Не отключайте защиту браузера и не выдавайте структурные тесты за визуальную проверку. Новые provider-вызовы для fallback не нужны.
+If a browser cannot open a local file, report the restriction and use an authorized hosted copy. Do not weaken browser security or present structural checks as visual QA. No new provider calls are needed as a fallback.

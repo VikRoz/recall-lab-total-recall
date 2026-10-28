@@ -1,27 +1,33 @@
-# Recall Lab — локальный пакет публичного демо
+# Recall Lab — static evidence demo
 
-Подготовлено 28 октября 2026 года. **Статический replay со статьёй.** Offline-проверка не устанавливает статус внешней публикации.
+Prepared 28 October 2026. Viewing this package makes no provider calls, writes or payments. Additional spend: $0.
 
-Откройте `index.html` в обычном браузере. Данные и стили встроены: интернет, установка библиотек, ключи и сервер приложению не нужны. Поиск, переключение трёх точек и выгрузка JSON работают локально. При отключённом JavaScript остаются все точки и записи; поиск/переключение/выгрузка отключены. Браузерный визуальный проход этой версии не выполнен: в доступной среде ранее заблокирован file:// security policy. Ограничение не обходилось; desktop/mobile layout пока нельзя считать визуально подтверждённым.
+Open `index.html` in a browser. Data, styles and controls are bundled; no credentials, dependency installation or application server are required. The article is in `blog.html`. The interface is in English. Original evidence and saved model responses remain verbatim, including any original-language text.
 
-## Проверка пакета
+## Verify the package
 
-При наличии Node.js 18+ выполните `node verify.mjs` из этой папки. Установка зависимостей и сеть не используются. Проверяются checksums, фиксированный исходный модельный report, hashes записей, totals и встроенные данные HTML. Checksums подтверждают целостность поставленного пакета; это не подпись независимой стороны и не новое чтение Mainnet.
+With Node.js 18+, run `node verify.mjs` from this directory. No dependencies or network access are needed. It checks checksums, saved model-report and record hashes, totals and embedded page data. Checksums establish integrity, not independent authenticity or a new Mainnet read. Offline verification does not attest to publication or browser QA; those are checked separately.
 
-`demo-data.json` содержит проверенные данные страницы, все10 записей/receipts, пять цепочек и отрицательный исторический пилот. `model-report.json` — исходный сохранённый итог пяти разрешённых вызовов. `verification.json` — границы локальной сборки. `RUNBOOK.md` — последовательность демонстрации.
+`demo-data.json` contains ten real Mainnet records, their receipts, five correction chains and an earlier negative pilot. `model-report.json` preserves the five-call diagnostic. `verification.json` records offline build boundaries. `RUNBOOK.md` is the demonstration sequence.
 
-## Честные границы
+## Honest limitations
 
-- Актуальный сохранённый запуск: A2/3; B/C/D3/3. Одна известная задача с двумя контролями, не статистическая оценка.
-- B/C используют одинаковый запрос и один ответ. Во второй точке A/B/C тоже совпадают. Девять веток — пять уникальных ответов.
-- В основной точке B/C получили pass и supported-ссылку; после correction pass-ссылка остаётся unverifiable.
-- Простой алгоритм справился так же. Прежний отрицательный 8B-пилот сохранён. Превосходство/стабильность LLM не установлены.
-- Mainnet-записи реальные; поломки собственных demo-проекций управляемые, две history-записи синтетические. Это не реальные сбои Tatum или продавцов.
-- Переносимость ранее проверялась независимыми клиентами одного аккаунта. Новое межаккаунтное чтение не выполнялось.
-- Эта страница не выполняет inference, recall, записи, платежи или wallet signing. CSP запрещает соединения; внешних шрифтов, изображений и аналитики нет. Цены в карточках — demo-кредиты.
+- A passes 2/3 task points; B/C/D pass 3/3. This is one known scenario and two controls, not a statistical benchmark.
+- B/C share identical requests and responses. A/B/C also share one response in the changed-requirements control. Nine logical arms use five unique saved responses.
+- Main-task B/C citations are supported. The correction pass citation remains unverifiable.
+- The simple algorithm ties. The earlier 8B pilot failed with and without memory. General LLM superiority and stability are not established.
+- Mainnet records are real. Faults belong to controlled owned projections, not real Tatum/vendor outages. Two history records are explicitly synthetic.
+- Independent clients previously verified reads using the same account. Cross-account portability is untested.
+- This is saved-evidence replay, with no live inference, recall, writes, wallet signing or payments. Card prices are demo credits. CSP blocks connections; no external fonts, images or analytics are used.
 
-## Будущая публикация
+## Public materials
 
-Архив содержит статические файлы, не credentials, SQLite или операторский backend. Перед публикацией нужны разрешение на выбранное размещение/стоимость, браузерная проверка desktop/mobile и затем внешняя проверка доступности. Live endpoints, логин, гостевые записи и новые API-вызовы не входят в этот пакет. Пакет не означает завершённую submission: repo, blog, видео и подача остаются отдельными работами.
+Demo: https://recall-lab-evidence-20261028.mightytoast34.chatgpt.site/
 
-Интеграции: Tatum, Walrus Memory, Cloudflare Workers AI. Сторонних графических материалов и библиотек интерфейса нет; системные шрифты. Источники фактов и canonical hashes доступны в данных страницы. Это независимый прототип, не заявление о партнёрстве или поддержке перечисленных платформ.
+Source (MIT): https://github.com/VikRoz/recall-lab-total-recall
+
+Article: https://recall-lab-evidence-20261028.mightytoast34.chatgpt.site/blog
+
+The package contains no credentials, runtime databases or operator backend. It does not imply a submitted hackathon application.
+
+Integrations: Tatum, Walrus Memory and Cloudflare Workers AI. Independent prototype; no claim of partnership or endorsement. AI assistance was used for implementation, testing and documentation. System fonts and authored CSS; no third-party graphic assets or UI libraries.

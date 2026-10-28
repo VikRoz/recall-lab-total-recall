@@ -17,6 +17,13 @@ test('published static build keeps the model evidence, includes approved article
     assert.ok(article.includes('The deterministic selector passed all three points too.'));
     assert.ok(article.includes('pass citation remains unverifiable'));
     assert.ok(!article.includes('Draft for publication'));
+    assert.match(html, /<html lang="en">/);
+    const ui = html.replace(/<pre\b[^>]*>[\s\S]*?<\/pre>|<script\b[^>]*>[\s\S]*?<\/script>/g, '');
+    assert.ok(!/[\u0400-\u04ff]/.test(ui), 'All interface text and accessibility labels are English');
+    assert.ok(html.includes('Showing ${count} of ${records.length} records'));
+    const original = readFileSync(join(import.meta.dirname, '../evidence/scenario-probe-v1/live-report.json'));
+    assert.deepEqual(readFileSync(join(dir, 'model-report.json')), original);
+    for (const name of ['README.md', 'RUNBOOK.md']) assert.ok(!/[\u0400-\u04ff]/.test(readFileSync(join(dir, name), 'utf8')));
     const checks = JSON.parse(readFileSync(join(dir, 'CHECKSUMS.json'), 'utf8')); assert.equal(Object.keys(checks).length, 8);
     const result = spawnSync(process.execPath, [join(dir, 'verify.mjs')], { cwd: dir, env: {}, encoding: 'utf8' });
     assert.equal(result.status, 0); assert.equal(JSON.parse(result.stdout).providerCalls, 0);

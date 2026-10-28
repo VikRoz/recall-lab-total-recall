@@ -6,6 +6,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { assert, Fault } from '../src/domain.ts';
 import { buildPublicDemo } from './build-public-demo.ts';
 import { escapeHtml } from '../src/public-demo-view.ts';
+import { englishPublicDemoHtml } from '../src/public-demo-english.ts';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const sha = (b: string | Buffer) => createHash('sha256').update(b).digest('hex');
 export const REPOSITORY_URL = 'https://github.com/VikRoz/recall-lab-total-recall';
@@ -40,11 +41,7 @@ export function articleHtml(markdown: string) {
 
 export async function buildPublishedSite(output: string) {
   const data = await buildPublicDemo(output);
-  let html = readFileSync(join(output, 'index.html'), 'utf8');
-  assert(html.includes('Локальная подготовка') && html.includes('Не опубликовано<br>'), 'PUBLISHED_SITE_LABEL_SOURCE_CHANGED');
-  html = html.replace('Локальная подготовка', 'Статическое демо').replace('Не опубликовано<br>Без запросов к API', 'Сохранённые результаты<br>Без запросов к API')
-    .replace('Локальный пакет · не опубликован · новые API-вызовы отключены', 'Статическое демо · сохранённые результаты · новые API-вызовы отключены')
-    .replace('Total Recall</span><span>Статическое', 'Total Recall <span class="footer-sep">/</span> <a href="./blog.html">Статья</a></span><span>Статическое');
+  const html = englishPublicDemoHtml(data, readFileSync(join(root, 'public-demo/style.css'), 'utf8'), readFileSync(join(root, 'public-demo/client.js'), 'utf8'));
   assert(html.includes('href="./blog.html"'), 'PUBLISHED_SITE_ARTICLE_LINK_MISSING');
   writeFileSync(join(output, 'index.html'), html);
   writeFileSync(join(output, 'blog.html'), articleHtml(readFileSync(join(root, 'public-demo/BLOG.en.md'), 'utf8')));
@@ -53,9 +50,8 @@ export async function buildPublishedSite(output: string) {
   verification.article = './blog.html'; writeFileSync(join(output, 'verification.json'), JSON.stringify(verification, null, 2));
   const verifier = readFileSync(join(output, 'verify.mjs'), 'utf8').replace("verification.publication, 'NOT_PUBLISHED'", "verification.publication, 'NOT_ATTESTED_BY_OFFLINE_CHECK'").replace("publication: 'NOT_PUBLISHED'", "publication: 'NOT_ATTESTED_BY_OFFLINE_CHECK'");
   writeFileSync(join(output, 'verify.mjs'), verifier);
-  const readme = readFileSync(join(output, 'README.md'), 'utf8').replace('**Не опубликовано. Новых API-вызовов и расходов нет.**', '**Статический replay со статьёй.** Offline-проверка не устанавливает статус внешней публикации.');
-  writeFileSync(join(output, 'README.md'), readme);
-  writeFileSync(join(output, 'RUNBOOK.md'), readFileSync(join(output, 'RUNBOOK.md'), 'utf8').replace('Пакет не опубликован.', 'Статус внешнего размещения подтверждается отдельно.'));
+  writeFileSync(join(output, 'README.md'), readFileSync(join(root, 'public-demo/PUBLISHED-README.en.md'), 'utf8'));
+  writeFileSync(join(output, 'RUNBOOK.md'), readFileSync(join(root, 'public-demo/PUBLISHED-RUNBOOK.en.md'), 'utf8'));
   const names = ['index.html', 'blog.html', 'demo-data.json', 'model-report.json', 'verification.json', 'README.md', 'RUNBOOK.md', 'verify.mjs'];
   writeFileSync(join(output, 'CHECKSUMS.json'), JSON.stringify(Object.fromEntries(names.map(n => [n, sha(readFileSync(join(output, n)))])), null, 2));
   return data;

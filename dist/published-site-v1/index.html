@@ -1,4 +1,4 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;sha256-chIPniArHp99ErOtWkI9tThLuHQOJidvdiwjtbYVffM=&#39; &#39;sha256-ot72fcZT76t4gpDhaFMhseRDc8hsd/ug3/DkwbG1lPE=&#39;; style-src &#39;sha256-U/h3v4LxAu4mMZNb7XeD6UFQtNFUEkt5RC+PNCgkyrE=&#39;; connect-src &#39;none&#39;; img-src &#39;none&#39;; font-src &#39;none&#39;; object-src &#39;none&#39;; frame-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;"><meta name="referrer" content="no-referrer"><meta name="description" content="Recall Lab: проверяемая память для агента. Сохранённые реальные результаты, 10 записей Mainnet и честные ограничения."><title>Recall Lab — проверяемая память</title><style>:root{--ink:#182b26;--muted:#64716a;--paper:#f7f7f0;--line:#dce1d7;--green:#234c3d;--accent:#e4b655;--red:#a34735;--sidebar:224px;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);font-synthesis:none}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button,a,input,select,summary{touch-action:manipulation}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #bf8120;outline-offset:4px}[hidden]{display:none!important}::selection{background:#ead396}.skip-link{position:fixed;left:240px;top:-60px;z-index:10;background:#fff;padding:12px}.skip-link:focus{top:8px}.sidebar{position:fixed;inset:0 auto 0 0;width:var(--sidebar);background:#182e26;color:#e1e8da;padding:32px 22px;display:flex;flex-direction:column;z-index:3}.brand{display:flex;gap:12px;align-items:center;font-size:23px;font-weight:650;letter-spacing:-.7px}.brand small{display:block;font-size:9px;font-weight:500;letter-spacing:2.7px;color:#a6baaa;margin-top:7px}.brand-mark{display:grid;place-items:center;color:#e4b655;font-size:42px;width:37px;height:42px;line-height:1;transform:rotate(-12deg)}.sidebar-label{font-size:10px;text-transform:uppercase;letter-spacing:1.7px;color:#9aac9c;margin:61px 0 18px}nav{display:grid;gap:8px}nav a{padding:13px 9px;border-radius:5px;font-size:12px;display:flex;align-items:center;gap:10px;color:#c9d6c8}nav a:hover{background:#294338;color:#fff}nav a span{font-size:9px;color:#7e9c88}nav b{font-size:9px;background:#355443;padding:3px 5px;border-radius:4px;margin-left:auto}.sidebar-bottom{margin-top:auto;border-top:1px solid #3b4c3f;padding-top:22px;font-size:11px;color:#d6dfcc;line-height:1.8}.sidebar-bottom p{font-size:10px;color:#a6b6a3;padding-left:15px;margin-bottom:0}.status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#a6c39e;margin-right:7px;vertical-align:middle}.page{margin-left:var(--sidebar)}.topbar{position:sticky;top:0;z-index:2;min-height:61px;border-bottom:1px solid var(--line);background:rgba(247,247,240,.97);display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 5.5%}.replay-badge{font-size:9px;font-weight:700;letter-spacing:1px;display:inline-flex;align-items:center;gap:7px;padding:7px 9px;background:#f2e8c7;color:#7a5c23;border:1px solid #e4d3a7;border-radius:4px}.replay-badge:before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:#b17b24}.topbar-meta{font-size:10px;color:var(--muted)}main{max-width:1560px;padding:0 5.5%;margin:auto}.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(270px,.8fr);gap:50px;padding:62px 0 43px;align-items:center}.eyebrow{font-size:9px;letter-spacing:1.7px;font-weight:700;color:#7a896a;margin:0 0 20px}h1{font-size:clamp(38px,3.9vw,66px);font-weight:600;letter-spacing:-2.7px;line-height:1.07;margin:0 0 25px}h1>span{color:#b48b3d}.hero-copy{font-size:13px;line-height:1.85;max-width:480px;color:#5b6961}.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:27px}.button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:43px;padding:12px 17px;font-size:11px;font-weight:600;border:1px solid transparent;border-radius:5px}.primary{background:var(--green);color:#fff}.primary:hover{background:#163c2c}.text-button{color:#4f6554;gap:8px}.secondary{background:#fff;border-color:#b8c8b5;white-space:nowrap}.trace-card{background:#edf0e7;border:1px solid #d7dece;border-radius:10px;padding:21px 23px;transform:rotate(.4deg)}.trace-title{display:flex;justify-content:space-between;color:#79866d;font-size:8px;letter-spacing:1.1px;padding-bottom:17px;border-bottom:1px solid #d7dece}.trace-card ol{list-style:none;padding:0;margin:0}.trace-card li{display:flex;align-items:center;gap:14px;padding:17px 0;border-bottom:1px solid #d7dece}.trace-card li>span{font-size:9px;color:#8b997d;font-family:ui-monospace,monospace}.trace-card li>div{font-size:12px;font-weight:600}.trace-card small{display:block;font-weight:400;font-size:9px;color:#788570;margin-top:5px}.trace-card b{font-size:9px;font-weight:500;margin-left:auto;color:#6f7b61}.trace-card>p{font-size:9px;line-height:1.7;color:#839077;margin:17px 0 0}.trace-card .fail-text{color:var(--red)}.trace-card .pass-text{color:#41613f}.metrics{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:23px 0;margin:0 0 8px}.metrics>div{padding:0 24px;border-left:1px solid var(--line)}.metrics>div:first-child{padding-left:0;border:0}.metrics strong{font-weight:500;font-size:28px;letter-spacing:-1px;display:block;margin-bottom:7px}.metrics span{font-size:10px;color:var(--muted)}.block{padding:48px 0;border-bottom:1px solid var(--line)}.section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}.section-heading .eyebrow{margin-bottom:12px}h2{font-size:27px;line-height:1.2;letter-spacing:-.9px;font-weight:550;margin:0}h3{font-size:15px;font-weight:600;letter-spacing:-.2px;margin:0 0 12px}.section-meta{font-size:9px;color:#7c877a;text-align:right;max-width:230px;line-height:1.6}.section-intro{font-size:12px;color:var(--muted);line-height:1.85;max-width:780px;margin:17px 0 23px}.stage-tabs{display:flex;gap:4px;padding:5px;background:#e9ede2;border-radius:7px;width:fit-content;max-width:100%;margin:25px 0 21px}.stage-tabs button{border:1px solid transparent;background:transparent;color:#62705e;border-radius:5px;font-size:10px;padding:11px 17px;white-space:nowrap}.stage-tabs button span{font-size:8px;margin-right:6px;opacity:.6}.stage-tabs button[aria-pressed=true]{border-color:#d5ddcc;background:var(--paper);color:var(--ink);box-shadow:0 1px 2px #223b1c0a}.task-line{display:flex;justify-content:space-between;gap:12px;font-size:9px;color:#84907c;margin:18px 0}.task-line strong{color:#5b6d54;font-weight:500;margin-left:7px}.arms{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.arm{min-width:0;border:1px solid #d9dfd1;border-radius:7px;background:#fffef8;padding:18px 14px 13px}.arm-c{border-color:#89a17c;background:#f0f4e9;box-shadow:inset 0 3px #4f7045}.arm-head{display:flex;gap:8px;align-items:center;font-size:9px;line-height:1.5;min-height:28px;color:#6f7a66}.letter{display:grid;place-items:center;width:22px;height:22px;flex-shrink:0;font-size:9px;border:1px solid #d6dfcf;border-radius:4px;color:#5f7355;background:#edf0e7}.choice{font-size:29px;text-transform:capitalize;letter-spacing:-1px;margin:23px 0 13px;font-weight:500}.verdict{font-size:8px;line-height:1.5;display:inline-block;padding:4px 7px;border-radius:3px;background:#e9eee1;color:#4c6546;font-weight:600;white-space:nowrap}.verdict.fail{background:#f4e7dc;color:#9b553b}.verdict.unknown{background:#f2e7c5;color:#8c6c22}.arm-reason{color:#7a816f;font-family:ui-monospace,monospace;line-height:1.6;font-size:9px;min-height:30px;margin:17px 0 12px;overflow-wrap:anywhere}.arm-note{font-size:9px;font-weight:550;color:#69795e;min-height:25px}.credits{font-size:8px;line-height:1.5;color:#8b927f;margin:11px 0 15px}details{font-size:10px;border-top:1px solid #dfe4d8;padding:12px 0 0;margin-top:12px;min-width:0}summary{font-size:9px;color:#5c6e53;cursor:pointer;line-height:1.5;overflow-wrap:anywhere}pre{font-size:9px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere;max-height:340px;overflow:auto;background:#e9ede3;color:#43563c;padding:12px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.shared-note{font-size:9px;color:#85907b;line-height:1.8;margin:16px 0 22px}.finding{display:flex;gap:18px;background:#edf1e4;border-left:2px solid #9caf88;padding:17px 21px;margin-top:24px}.finding-mark{color:#749263;font-size:28px}.finding p{font-size:11px;line-height:1.9;color:#718064;margin:0}.finding strong{color:#455e38;font-weight:600}.receipt-label{font-size:9px;color:#6b805e;white-space:nowrap}.memory-layout{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:32px;margin-top:27px}.ledger-tools{display:flex;gap:12px;align-items:flex-end}.ledger-tools label{display:block;font-size:9px;color:#74806a}.search-label{flex:1}input,select{margin-top:8px;border:1px solid #d4ddc9;background:#fffef8;color:#4a5f41;border-radius:5px;min-height:38px;padding:10px 11px;font-size:10px;max-width:100%}input{width:100%}select{width:148px}.count{font-size:9px;color:#8c9780;margin:17px 0 11px}.memory-row{display:flex;gap:15px;border-top:1px solid #dde3d4;padding:20px 0;min-width:0}.memory-number{font-family:ui-monospace,monospace;color:#9ca78e;font-size:9px;margin-top:3px}.memory-main{min-width:0;flex:1}.memory-heading{display:flex;justify-content:space-between;gap:12px;align-items:center}.memory-heading strong{font-size:11px;font-weight:600;text-transform:capitalize}.memory-heading strong span{color:#95a085;font-size:10px;font-weight:400}.record-id{font-family:ui-monospace,monospace;font-size:9px;color:#7e8c72;overflow-wrap:anywhere;margin:10px 0}.source-label,.supersedes{font-size:9px;line-height:1.7;color:#879177;margin:6px 0;overflow-wrap:anywhere}.supersedes{color:#6e8360}.chains{align-self:start;background:#edf0e5;border:1px solid #dae1ce;border-radius:7px;padding:22px 20px}.chains>p{font-size:10px;line-height:1.8;color:#809071}.chains ul{list-style:none;margin:0;padding:0}.chains li{padding:18px 0;border-bottom:1px solid #d8e0cb}.chain-scope{font-size:10px;display:block;overflow-wrap:anywhere}.chain-path{display:flex;gap:9px;align-items:center;margin:10px 0;color:#9da88e}.chains small{display:block;font-size:8px;font-family:ui-monospace,monospace;color:#7a896c;line-height:1.9;overflow-wrap:anywhere}.notice{font-size:10px;line-height:1.9;color:#758565;margin-top:20px}.notice.amber{background:#f3ebd5;border:1px solid #e1d4ae;padding:16px;color:#876c34;border-radius:5px}.limits-block{border-bottom:0;padding-bottom:35px}.limits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin:30px 0}.limits-grid article{padding-top:20px;border-top:1px solid #d8e0ce}.mini-label{display:block;font-size:8px;letter-spacing:.7px;color:#80936f;margin-bottom:19px}.warning-label{color:#a57e37}.limits-grid p{font-size:11px;color:#7a876c;line-height:1.9}.evidence-footer{border-top:1px solid #d7dfca;padding-top:25px;display:flex;align-items:center;gap:30px;justify-content:space-between}.evidence-footer p{font-size:10px;line-height:1.8;color:#849173;max-width:660px}.hash-line{overflow-wrap:anywhere;font-size:8px!important}.hash-line code{font-size:8px}.footer{border-top:1px solid var(--line);padding:24px 5.5%;display:flex;justify-content:space-between;gap:20px;font-size:9px;color:#839077}.footer-sep{margin:0 9px;color:#b3bca7}#empty-records{font-size:12px;padding:30px 0;color:#7a876b}noscript p{font-size:12px;color:#8b6c31}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src &#39;none&#39;; script-src &#39;sha256-re253wrYG1Oj7QrmBW0fSBeAAkEJ9zEeSPLf5ykHvUc=&#39; &#39;sha256-ot72fcZT76t4gpDhaFMhseRDc8hsd/ug3/DkwbG1lPE=&#39;; style-src &#39;sha256-U/h3v4LxAu4mMZNb7XeD6UFQtNFUEkt5RC+PNCgkyrE=&#39;; connect-src &#39;none&#39;; img-src &#39;none&#39;; font-src &#39;none&#39;; object-src &#39;none&#39;; frame-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;"><meta name="referrer" content="no-referrer"><meta name="description" content="Recall Lab: verifiable memory for Sui agents. Saved real results, 10 Mainnet records and honest limitations."><title>Recall Lab — Verifiable Memory</title><style>:root{--ink:#182b26;--muted:#64716a;--paper:#f7f7f0;--line:#dce1d7;--green:#234c3d;--accent:#e4b655;--red:#a34735;--sidebar:224px;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);font-synthesis:none}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button,a,input,select,summary{touch-action:manipulation}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #bf8120;outline-offset:4px}[hidden]{display:none!important}::selection{background:#ead396}.skip-link{position:fixed;left:240px;top:-60px;z-index:10;background:#fff;padding:12px}.skip-link:focus{top:8px}.sidebar{position:fixed;inset:0 auto 0 0;width:var(--sidebar);background:#182e26;color:#e1e8da;padding:32px 22px;display:flex;flex-direction:column;z-index:3}.brand{display:flex;gap:12px;align-items:center;font-size:23px;font-weight:650;letter-spacing:-.7px}.brand small{display:block;font-size:9px;font-weight:500;letter-spacing:2.7px;color:#a6baaa;margin-top:7px}.brand-mark{display:grid;place-items:center;color:#e4b655;font-size:42px;width:37px;height:42px;line-height:1;transform:rotate(-12deg)}.sidebar-label{font-size:10px;text-transform:uppercase;letter-spacing:1.7px;color:#9aac9c;margin:61px 0 18px}nav{display:grid;gap:8px}nav a{padding:13px 9px;border-radius:5px;font-size:12px;display:flex;align-items:center;gap:10px;color:#c9d6c8}nav a:hover{background:#294338;color:#fff}nav a span{font-size:9px;color:#7e9c88}nav b{font-size:9px;background:#355443;padding:3px 5px;border-radius:4px;margin-left:auto}.sidebar-bottom{margin-top:auto;border-top:1px solid #3b4c3f;padding-top:22px;font-size:11px;color:#d6dfcc;line-height:1.8}.sidebar-bottom p{font-size:10px;color:#a6b6a3;padding-left:15px;margin-bottom:0}.status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#a6c39e;margin-right:7px;vertical-align:middle}.page{margin-left:var(--sidebar)}.topbar{position:sticky;top:0;z-index:2;min-height:61px;border-bottom:1px solid var(--line);background:rgba(247,247,240,.97);display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 5.5%}.replay-badge{font-size:9px;font-weight:700;letter-spacing:1px;display:inline-flex;align-items:center;gap:7px;padding:7px 9px;background:#f2e8c7;color:#7a5c23;border:1px solid #e4d3a7;border-radius:4px}.replay-badge:before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:#b17b24}.topbar-meta{font-size:10px;color:var(--muted)}main{max-width:1560px;padding:0 5.5%;margin:auto}.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(270px,.8fr);gap:50px;padding:62px 0 43px;align-items:center}.eyebrow{font-size:9px;letter-spacing:1.7px;font-weight:700;color:#7a896a;margin:0 0 20px}h1{font-size:clamp(38px,3.9vw,66px);font-weight:600;letter-spacing:-2.7px;line-height:1.07;margin:0 0 25px}h1>span{color:#b48b3d}.hero-copy{font-size:13px;line-height:1.85;max-width:480px;color:#5b6961}.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:27px}.button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:43px;padding:12px 17px;font-size:11px;font-weight:600;border:1px solid transparent;border-radius:5px}.primary{background:var(--green);color:#fff}.primary:hover{background:#163c2c}.text-button{color:#4f6554;gap:8px}.secondary{background:#fff;border-color:#b8c8b5;white-space:nowrap}.trace-card{background:#edf0e7;border:1px solid #d7dece;border-radius:10px;padding:21px 23px;transform:rotate(.4deg)}.trace-title{display:flex;justify-content:space-between;color:#79866d;font-size:8px;letter-spacing:1.1px;padding-bottom:17px;border-bottom:1px solid #d7dece}.trace-card ol{list-style:none;padding:0;margin:0}.trace-card li{display:flex;align-items:center;gap:14px;padding:17px 0;border-bottom:1px solid #d7dece}.trace-card li>span{font-size:9px;color:#8b997d;font-family:ui-monospace,monospace}.trace-card li>div{font-size:12px;font-weight:600}.trace-card small{display:block;font-weight:400;font-size:9px;color:#788570;margin-top:5px}.trace-card b{font-size:9px;font-weight:500;margin-left:auto;color:#6f7b61}.trace-card>p{font-size:9px;line-height:1.7;color:#839077;margin:17px 0 0}.trace-card .fail-text{color:var(--red)}.trace-card .pass-text{color:#41613f}.metrics{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:23px 0;margin:0 0 8px}.metrics>div{padding:0 24px;border-left:1px solid var(--line)}.metrics>div:first-child{padding-left:0;border:0}.metrics strong{font-weight:500;font-size:28px;letter-spacing:-1px;display:block;margin-bottom:7px}.metrics span{font-size:10px;color:var(--muted)}.block{padding:48px 0;border-bottom:1px solid var(--line)}.section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}.section-heading .eyebrow{margin-bottom:12px}h2{font-size:27px;line-height:1.2;letter-spacing:-.9px;font-weight:550;margin:0}h3{font-size:15px;font-weight:600;letter-spacing:-.2px;margin:0 0 12px}.section-meta{font-size:9px;color:#7c877a;text-align:right;max-width:230px;line-height:1.6}.section-intro{font-size:12px;color:var(--muted);line-height:1.85;max-width:780px;margin:17px 0 23px}.stage-tabs{display:flex;gap:4px;padding:5px;background:#e9ede2;border-radius:7px;width:fit-content;max-width:100%;margin:25px 0 21px}.stage-tabs button{border:1px solid transparent;background:transparent;color:#62705e;border-radius:5px;font-size:10px;padding:11px 17px;white-space:nowrap}.stage-tabs button span{font-size:8px;margin-right:6px;opacity:.6}.stage-tabs button[aria-pressed=true]{border-color:#d5ddcc;background:var(--paper);color:var(--ink);box-shadow:0 1px 2px #223b1c0a}.task-line{display:flex;justify-content:space-between;gap:12px;font-size:9px;color:#84907c;margin:18px 0}.task-line strong{color:#5b6d54;font-weight:500;margin-left:7px}.arms{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.arm{min-width:0;border:1px solid #d9dfd1;border-radius:7px;background:#fffef8;padding:18px 14px 13px}.arm-c{border-color:#89a17c;background:#f0f4e9;box-shadow:inset 0 3px #4f7045}.arm-head{display:flex;gap:8px;align-items:center;font-size:9px;line-height:1.5;min-height:28px;color:#6f7a66}.letter{display:grid;place-items:center;width:22px;height:22px;flex-shrink:0;font-size:9px;border:1px solid #d6dfcf;border-radius:4px;color:#5f7355;background:#edf0e7}.choice{font-size:29px;text-transform:capitalize;letter-spacing:-1px;margin:23px 0 13px;font-weight:500}.verdict{font-size:8px;line-height:1.5;display:inline-block;padding:4px 7px;border-radius:3px;background:#e9eee1;color:#4c6546;font-weight:600;white-space:nowrap}.verdict.fail{background:#f4e7dc;color:#9b553b}.verdict.unknown{background:#f2e7c5;color:#8c6c22}.arm-reason{color:#7a816f;font-family:ui-monospace,monospace;line-height:1.6;font-size:9px;min-height:30px;margin:17px 0 12px;overflow-wrap:anywhere}.arm-note{font-size:9px;font-weight:550;color:#69795e;min-height:25px}.credits{font-size:8px;line-height:1.5;color:#8b927f;margin:11px 0 15px}details{font-size:10px;border-top:1px solid #dfe4d8;padding:12px 0 0;margin-top:12px;min-width:0}summary{font-size:9px;color:#5c6e53;cursor:pointer;line-height:1.5;overflow-wrap:anywhere}pre{font-size:9px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere;max-height:340px;overflow:auto;background:#e9ede3;color:#43563c;padding:12px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}.shared-note{font-size:9px;color:#85907b;line-height:1.8;margin:16px 0 22px}.finding{display:flex;gap:18px;background:#edf1e4;border-left:2px solid #9caf88;padding:17px 21px;margin-top:24px}.finding-mark{color:#749263;font-size:28px}.finding p{font-size:11px;line-height:1.9;color:#718064;margin:0}.finding strong{color:#455e38;font-weight:600}.receipt-label{font-size:9px;color:#6b805e;white-space:nowrap}.memory-layout{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:32px;margin-top:27px}.ledger-tools{display:flex;gap:12px;align-items:flex-end}.ledger-tools label{display:block;font-size:9px;color:#74806a}.search-label{flex:1}input,select{margin-top:8px;border:1px solid #d4ddc9;background:#fffef8;color:#4a5f41;border-radius:5px;min-height:38px;padding:10px 11px;font-size:10px;max-width:100%}input{width:100%}select{width:148px}.count{font-size:9px;color:#8c9780;margin:17px 0 11px}.memory-row{display:flex;gap:15px;border-top:1px solid #dde3d4;padding:20px 0;min-width:0}.memory-number{font-family:ui-monospace,monospace;color:#9ca78e;font-size:9px;margin-top:3px}.memory-main{min-width:0;flex:1}.memory-heading{display:flex;justify-content:space-between;gap:12px;align-items:center}.memory-heading strong{font-size:11px;font-weight:600;text-transform:capitalize}.memory-heading strong span{color:#95a085;font-size:10px;font-weight:400}.record-id{font-family:ui-monospace,monospace;font-size:9px;color:#7e8c72;overflow-wrap:anywhere;margin:10px 0}.source-label,.supersedes{font-size:9px;line-height:1.7;color:#879177;margin:6px 0;overflow-wrap:anywhere}.supersedes{color:#6e8360}.chains{align-self:start;background:#edf0e5;border:1px solid #dae1ce;border-radius:7px;padding:22px 20px}.chains>p{font-size:10px;line-height:1.8;color:#809071}.chains ul{list-style:none;margin:0;padding:0}.chains li{padding:18px 0;border-bottom:1px solid #d8e0cb}.chain-scope{font-size:10px;display:block;overflow-wrap:anywhere}.chain-path{display:flex;gap:9px;align-items:center;margin:10px 0;color:#9da88e}.chains small{display:block;font-size:8px;font-family:ui-monospace,monospace;color:#7a896c;line-height:1.9;overflow-wrap:anywhere}.notice{font-size:10px;line-height:1.9;color:#758565;margin-top:20px}.notice.amber{background:#f3ebd5;border:1px solid #e1d4ae;padding:16px;color:#876c34;border-radius:5px}.limits-block{border-bottom:0;padding-bottom:35px}.limits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin:30px 0}.limits-grid article{padding-top:20px;border-top:1px solid #d8e0ce}.mini-label{display:block;font-size:8px;letter-spacing:.7px;color:#80936f;margin-bottom:19px}.warning-label{color:#a57e37}.limits-grid p{font-size:11px;color:#7a876c;line-height:1.9}.evidence-footer{border-top:1px solid #d7dfca;padding-top:25px;display:flex;align-items:center;gap:30px;justify-content:space-between}.evidence-footer p{font-size:10px;line-height:1.8;color:#849173;max-width:660px}.hash-line{overflow-wrap:anywhere;font-size:8px!important}.hash-line code{font-size:8px}.footer{border-top:1px solid var(--line);padding:24px 5.5%;display:flex;justify-content:space-between;gap:20px;font-size:9px;color:#839077}.footer-sep{margin:0 9px;color:#b3bca7}#empty-records{font-size:12px;padding:30px 0;color:#7a876b}noscript p{font-size:12px;color:#8b6c31}
 @media(min-width:1650px){main{padding:0 6.5%}.hero{gap:80px}.arm{padding:22px 20px}.choice{font-size:34px}.section-intro{font-size:13px}}
 @media(max-width:1150px){:root{--sidebar:190px}.sidebar{padding:30px 16px}.brand{font-size:20px}nav a{font-size:10px;gap:7px}.hero{gap:25px}.hero-copy{font-size:12px}.trace-card{padding:18px 15px}.trace-card small{font-size:8px}.memory-layout{grid-template-columns:minmax(0,1fr) 230px;gap:20px}.arms{gap:7px}.arm{padding:16px 10px}.arm-head{font-size:8px}.arm-note{font-size:8px}.section-heading{align-items:flex-start}.stage-tabs button{padding:10px 11px}.limits-grid{gap:20px}}
 @media(max-width:900px){:root{--sidebar:0px}.sidebar{position:static;width:100%;padding:17px 5.5%;flex-direction:row;align-items:center;justify-content:space-between;gap:15px}.brand{font-size:20px}.brand small{font-size:7px;margin-top:3px}.brand-mark{font-size:32px;height:35px}.sidebar-label,.sidebar-bottom{display:none}nav{display:flex;gap:0}nav a{font-size:9px;padding:10px 8px}nav a span,nav b{display:none}.hero{padding-top:40px}.topbar{min-height:52px}.memory-layout{grid-template-columns:minmax(0,1fr) 250px}.section-meta{font-size:8px}.choice{font-size:26px}h2{font-size:25px}.hero-copy{max-width:440px}.trace-card{transform:none}.metrics span{font-size:9px}.footer{flex-wrap:wrap}}
@@ -7,23 +7,23 @@
 @media(max-width:650px){.hero-copy,.section-intro{font-size:13px}.stage-tabs button{font-size:10px}.arm-head,.arm-note,.credits,.source-label,.supersedes,.record-id{font-size:10px}.arm-reason{font-size:9px}.arm-head{min-height:36px}.memory-heading strong{font-size:11px}.limits-grid p,.finding p{font-size:12px}.button{font-size:11px}.ledger-tools label{font-size:10px}.trace-card small{font-size:11px}.shared-note{font-size:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{.sidebar,.topbar,.hero-actions,.stage-tabs,.ledger-tools,#download-data{display:none}.page{margin:0}.stage-panel[hidden],.memory-row[hidden]{display:block!important}.arms{display:grid;grid-template-columns:repeat(4,1fr)}.block,.memory-row{break-inside:avoid}.hero{padding-top:0}.trace-card{transform:none}main{padding:0}.limits-grid{grid-template-columns:1fr 1fr 1fr}.memory-layout{grid-template-columns:1fr}.chains ul{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.footer{font-size:8px}}
 </style></head><body>
-  <a class="skip-link" href="#main">К содержанию</a><aside class="sidebar"><a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true">≋</span><span>Recall Lab<small>TOTAL RECALL</small></span></a><p class="sidebar-label">Доказательства опыта</p><nav aria-label="Разделы демо"><a href="#overview"><span>01</span> Обзор</a><a href="#comparison"><span>02</span> Четыре сравнения</a><a href="#memory"><span>03</span> Память <b>10</b></a><a href="#limits"><span>04</span> Границы результата</a></nav><div class="sidebar-bottom"><span class="status-dot"></span> Статическое демо<p>Сохранённые результаты<br>Без запросов к API</p></div></aside>
-  <div class="page"><header class="topbar"><span class="replay-badge">СОХРАНЁННЫЕ ДАННЫЕ · REPLAY</span><span class="topbar-meta">Mainnet evidence / 27–28.10.2026</span></header><main id="main">
-  <section id="overview" class="hero"><div><p class="eyebrow">ПАМЯТЬ ДЛЯ АГЕНТА · SUI / WALRUS / TATUM</p><h1>Опыт, который<br>можно проверить<span>.</span></h1><p class="hero-copy">Агент выбирает Sui demo-проекцию, учитывая прошлую ошибку. Проверенный опыт сохраняется, восстанавливается новым клиентом и исправляется через correction-запись.</p><div class="hero-actions"><a class="button primary" href="#comparison">Посмотреть результат <span aria-hidden="true">↗</span></a><a class="button text-button" href="#memory">Открыть память →</a></div></div><div class="trace-card"><div class="trace-title"><span>ПУТЬ ОДНОГО РЕШЕНИЯ</span><span>01 → 04</span></div><ol><li><span>01</span><div>Наблюдение<small>У Atlas отсутствует digest</small></div><b class="fail-text">fail</b></li><li><span>02</span><div>Сохранённый опыт<small>Реальная запись в Walrus Mainnet</small></div><b>DONE</b></li><li><span>03</span><div>Восстановление<small>Другой клиент, тот же факт</small></div><b>read</b></li><li><span>04</span><div>Следующий выбор<small>Beacon проходит проверку</small></div><b class="pass-text">pass</b></li></ol><p>Здесь показаны сохранённые ответы и локально пересчитанные проверки.</p></div></section>
-  <div class="metrics" aria-label="Состав доказательств"><div><strong>10</strong><span>реальных записей Mainnet</span></div><div><strong>5</strong><span>цепочек с correction</span></div><div><strong>5</strong><span>сохранённых ответов LLM</span></div><div><strong>$0</strong><span>новых расходов этого демо</span></div></div>
-  <section id="comparison" class="block"><div class="section-heading"><div><p class="eyebrow">01 / ПРОВЕРКА ПОЛЬЗЫ</p><h2>Что изменилось с памятью</h2></div><span class="section-meta">Llama 3.1 8B · V1 · сохранённый запуск 28 октября</span></div><p class="section-intro">Один известный сценарий и два контроля. Без истории — 2/3 успешных точек; с фактами, памятью и алгоритмом — 3/3. Это не статистическая оценка качества.</p>
-  <div class="stage-tabs" role="group" aria-label="Точки сценария"><button type="button" id="stage-button-0" data-stage="0" aria-controls="stage-0" aria-pressed="true"><span>01</span> Повтор задачи</button><button type="button" id="stage-button-1" data-stage="1" aria-controls="stage-1" aria-pressed="false"><span>02</span> Смена требований</button><button type="button" id="stage-button-2" data-stage="2" aria-controls="stage-2" aria-pressed="false"><span>03</span> После correction</button></div><section class="stage-panel" id="stage-0" aria-labelledby="stage-button-0">
-    <div class="task-line"><span>Требуется <strong>digest + sequenceNumber</strong></span><span>Бюджет <strong>2 demo-кредита</strong></span></div>
-    <div class="arms"><article class="arm arm-a"><div class="arm-head"><span class="letter">A</span><span>Без истории</span></div>
-    <div class="choice">atlas</div><span class="verdict fail">Ошибка результата</span>
+  <a class="skip-link" href="#main">Skip to content</a><aside class="sidebar"><a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true">≋</span><span>Recall Lab<small>TOTAL RECALL</small></span></a><p class="sidebar-label">Evidence of experience</p><nav aria-label="Demo sections"><a href="#overview"><span>01</span> Overview</a><a href="#comparison"><span>02</span> Four comparisons</a><a href="#memory"><span>03</span> Memory <b>10</b></a><a href="#limits"><span>04</span> Limitations</a></nav><div class="sidebar-bottom"><span class="status-dot"></span> Static demo<p>Saved results<br>No API calls</p></div></aside>
+  <div class="page"><header class="topbar"><span class="replay-badge">SAVED EVIDENCE · REPLAY</span><span class="topbar-meta">Mainnet evidence / 27–28.10.2026</span></header><main id="main">
+  <section id="overview" class="hero"><div><p class="eyebrow">AGENT MEMORY · SUI / WALRUS / TATUM</p><h1>Experience you<br>can verify<span>.</span></h1><p class="hero-copy">An agent selects a Sui demo projection using a verified past failure. Experience is saved, restored by a fresh client and updated through a correction record.</p><div class="hero-actions"><a class="button primary" href="#comparison">See the results <span aria-hidden="true">↗</span></a><a class="button text-button" href="#memory">Explore memory →</a></div></div><div class="trace-card"><div class="trace-title"><span>ONE DECISION, STEP BY STEP</span><span>01 → 04</span></div><ol><li><span>01</span><div>Observation<small>Atlas is missing digest</small></div><b class="fail-text">fail</b></li><li><span>02</span><div>Saved experience<small>Real Walrus Mainnet record</small></div><b>DONE</b></li><li><span>03</span><div>Recall<small>A fresh client, the same fact</small></div><b>read</b></li><li><span>04</span><div>Next selection<small>Beacon passes verification</small></div><b class="pass-text">pass</b></li></ol><p>This page replays saved responses and locally recomputed checks.</p></div></section>
+  <div class="metrics" aria-label="Evidence at a glance"><div><strong>10</strong><span>real Mainnet memory records</span></div><div><strong>5</strong><span>correction chains</span></div><div><strong>5</strong><span>saved unique LLM responses</span></div><div><strong>$0</strong><span>additional spend in this demo</span></div></div>
+  <section id="comparison" class="block"><div class="section-heading"><div><p class="eyebrow">01 / TESTING THE BENEFIT</p><h2>What changed with memory</h2></div><span class="section-meta">Llama 3.1 8B · V1 · saved run from 28 October</span></div><p class="section-intro">One known scenario and two controls. No history: 2/3 successful points; direct facts, memory and rules: 3/3. This is not a statistical quality estimate.</p>
+  <div class="stage-tabs" role="group" aria-label="Scenario points"><button type="button" id="stage-button-0" data-stage="0" aria-controls="stage-0" aria-pressed="true"><span>01</span> Repeat task</button><button type="button" id="stage-button-1" data-stage="1" aria-controls="stage-1" aria-pressed="false"><span>02</span> Changed requirements</button><button type="button" id="stage-button-2" data-stage="2" aria-controls="stage-2" aria-pressed="false"><span>03</span> After correction</button></div><section class="stage-panel" id="stage-0" aria-labelledby="stage-button-0">
+    <div class="task-line"><span>Required <strong>digest + sequenceNumber</strong></span><span>Budget <strong>2 demo credits</strong></span></div>
+    <div class="arms"><article class="arm arm-a"><div class="arm-head"><span class="letter">A</span><span>No history</span></div>
+    <div class="choice">atlas</div><span class="verdict fail">Failed result</span>
     <p class="arm-reason">missing:digest</p>
-    <div class="arm-note">Ссылок на память нет</div><p class="credits">1 demo-кредит · условная цена</p>
-    <details><summary>Сохранённый ответ модели</summary><pre>{
+    <div class="arm-note">No memory citations</div><p class="credits">1 demo credit · illustrative cost</p>
+    <details><summary>Saved model response</summary><pre>{
   &quot;memoryIds&quot;: [],
   &quot;reason&quot;: &quot;Within budget and meets requirements&quot;,
   &quot;serviceId&quot;: &quot;atlas&quot;
 }</pre></details>
-    <details><summary>Проверка и допуск</summary><pre>{
+    <details><summary>Verification and action guard</summary><pre>{
   &quot;rawVerifier&quot;: {
     &quot;status&quot;: &quot;fail&quot;,
     &quot;reasons&quot;: [
@@ -41,18 +41,18 @@
     &quot;assessments&quot;: []
   },
   &quot;requestHash&quot;: &quot;f3ed19a6c417650f5f4a8bd3df063edc7cca56387ae1a3e8d3cee6787987af2a&quot;
-}</pre></details></article><article class="arm arm-b"><div class="arm-head"><span class="letter">B</span><span>Факты в контексте</span></div>
-    <div class="choice">beacon</div><span class="verdict pass">Успешный результат</span>
-    <p class="arm-reason">Требуемые поля прошли проверку</p>
-    <div class="arm-note">Ссылка подтверждена</div><p class="credits">2 demo-кредита · условная цена</p>
-    <details><summary>Сохранённый ответ модели</summary><pre>{
+}</pre></details></article><article class="arm arm-b"><div class="arm-head"><span class="letter">B</span><span>Facts in context</span></div>
+    <div class="choice">beacon</div><span class="verdict pass">Successful result</span>
+    <p class="arm-reason">Required fields passed verification</p>
+    <div class="arm-note">Citation supported</div><p class="credits">2 demo credits · illustrative cost</p>
+    <details><summary>Saved model response</summary><pre>{
   &quot;memoryIds&quot;: [
     &quot;experience:stage0-smoke&quot;
   ],
   &quot;reason&quot;: &quot;Within budget and offers more than atlas&quot;,
   &quot;serviceId&quot;: &quot;beacon&quot;
 }</pre></details>
-    <details><summary>Проверка и допуск</summary><pre>{
+    <details><summary>Verification and action guard</summary><pre>{
   &quot;rawVerifier&quot;: {
     &quot;status&quot;: &quot;pass&quot;,
     &quot;reasons&quot;: []
@@ -81,18 +81,18 @@
     ]
   },
   &quot;requestHash&quot;: &quot;d6c8071a8a95c831abffc9c2a4a617d510b8c17665177aff104aa1af96fcfce5&quot;
-}</pre></details></article><article class="arm arm-c"><div class="arm-head"><span class="letter">C</span><span>Восстановленная память</span></div>
-    <div class="choice">beacon</div><span class="verdict pass">Успешный результат</span>
-    <p class="arm-reason">Требуемые поля прошли проверку</p>
-    <div class="arm-note">Ссылка подтверждена</div><p class="credits">2 demo-кредита · условная цена</p>
-    <details><summary>Сохранённый ответ модели</summary><pre>{
+}</pre></details></article><article class="arm arm-c"><div class="arm-head"><span class="letter">C</span><span>Restored memory</span></div>
+    <div class="choice">beacon</div><span class="verdict pass">Successful result</span>
+    <p class="arm-reason">Required fields passed verification</p>
+    <div class="arm-note">Citation supported</div><p class="credits">2 demo credits · illustrative cost</p>
+    <details><summary>Saved model response</summary><pre>{
   &quot;memoryIds&quot;: [
     &quot;experience:stage0-smoke&quot;
   ],
   &quot;reason&quot;: &quot;Within budget and offers more than atlas&quot;,
   &quot;serviceId&quot;: &quot;beacon&quot;
 }</pre></details>
-    <details><summary>Проверка и допуск</summary><pre>{
+    <details><summary>Verification and action guard</summary><pre>{
   &quot;rawVerifier&quot;: {
     &quot;status&quot;: &quot;pass&quot;,
     &quot;reasons&quot;: []
@@ -121,18 +121,18 @@
     ]
   },
   &quot;requestHash&quot;: &quot;d6c8071a8a95c831abffc9c2a4a617d510b8c17665177aff104aa1af96fcfce5&quot;
-}</pre></details></article><article class="arm arm-d"><div class="arm-head"><span class="letter">D</span><span>Простой алгоритм</span></div>
-    <div class="choice">beacon</div><span class="verdict pass">Успешный результат</span>
-    <p class="arm-reason">Требуемые поля прошли проверку</p>
-    <div class="arm-note">Детерминированное правило</div><p class="credits">2 demo-кредита · условная цена</p>
-    <details><summary>Решение алгоритма</summary><pre>{
+}</pre></details></article><article class="arm arm-d"><div class="arm-head"><span class="letter">D</span><span>Simple algorithm</span></div>
+    <div class="choice">beacon</div><span class="verdict pass">Successful result</span>
+    <p class="arm-reason">Required fields passed verification</p>
+    <div class="arm-note">Deterministic rule</div><p class="credits">2 demo credits · illustrative cost</p>
+    <details><summary>Algorithm decision</summary><pre>{
   &quot;serviceId&quot;: &quot;beacon&quot;,
   &quot;reason&quot;: &quot;Lowest demo price among compatible offers without a matching known failure.&quot;,
   &quot;memoryIds&quot;: [
     &quot;experience:stage0-smoke&quot;
   ]
 }</pre></details>
-    <details><summary>Проверка и допуск</summary><pre>{
+    <details><summary>Verification and action guard</summary><pre>{
   &quot;rawVerifier&quot;: {
     &quot;status&quot;: &quot;pass&quot;,
     &quot;reasons&quot;: []
@@ -142,9 +142,9 @@
   &quot;citationAudit&quot;: null,
   &quot;requestHash&quot;: null
 }</pre></details></article></div>
-    <p class="shared-note">B и C используют один ответ: факты и восстановленная память дали одинаковый запрос. Это не независимые испытания.</p>
+    <p class="shared-note">B and C share one response: direct facts and restored memory produced the same request. These are not independent trials.</p>
     
-    <details><summary>Требования задачи и доступные проекции</summary><pre>{
+    <details><summary>Task requirements and available projections</summary><pre>{
   &quot;task&quot;: {
     &quot;budget&quot;: &quot;2&quot;,
     &quot;cutoff&quot;: &quot;2026-10-26T14:47:59.112Z&quot;,
@@ -187,17 +187,17 @@
     }
   ]
 }</pre></details></section><section class="stage-panel" id="stage-1" aria-labelledby="stage-button-1">
-    <div class="task-line"><span>Требуется <strong>sequenceNumber</strong></span><span>Бюджет <strong>1 demo-кредита</strong></span></div>
-    <div class="arms"><article class="arm arm-a"><div class="arm-head"><span class="letter">A</span><span>Без истории</span></div>
-    <div class="choice">atlas</div><span class="verdict pass">Успешный результат</span>
-    <p class="arm-reason">Требуемые поля прошли проверку</p>
-    <div class="arm-note">Ссылок на память нет</div><p class="credits">1 demo-кредит · условная цена</p>
-    <details><summary>Сохранённый ответ модели</summary><pre>{
+    <div class="task-line"><span>Required <strong>sequenceNumber</strong></span><span>Budget <strong>1 demo credits</strong></span></div>
+    <div class="arms"><article class="arm arm-a"><div class="arm-head"><span class="letter">A</span><span>No history</span></div>
+    <div class="choice">atlas</div><span class="verdict pass">Successful result</span>
+    <p class="arm-reason">Required fields passed verification</p>
+    <div class="arm-note">No memory citations</div><p class="credits">1 demo credit · illustrative cost</p>
+    <details><summary>Saved model response</summary><pre>{
   &quot;memoryIds&quot;: [],
   &quot;reason&quot;: &quot;Lowest price within budget&quot;,
   &quot;serviceId&quot;: &quot;atlas&quot;
 }</pre></details>
-    <details><summary>Проверка и допуск</summary><pre>{
+    <details><summary>Verification and action guard</summary><pre>{
   &quot;rawVerifier&quot;: {
     &quot;status&quot;: &quot;pass&quot;,
     &quot;reasons&quot;: []
@@ -213,16 +213,16 @@
     &quot;assessments&quot;: []
   },
   &quot;requestHash&quot;: &quot;6d4423d5ca1953c1509ac85da299fe84a34a55058e95cc38bad2136ee3ed6dea&quot;
-}</pre></details></article><article class="arm arm-b"><div class="arm-head"><span class="letter">B</span><span>Факты в контексте</span></div>
-    <div class="choice">atlas</div><span class="verdict pass">Успешный результат</span>
-    <p class="arm-reason">Требуемые поля прошли проверку</p>
-    <div class="arm-note">Ссылок на память нет</div><p class="credits">1 demo-кредит · условная цена</p>
-    <details><summary>Сохранённый ответ модели</summary><pre>{
+}</pre></details></article><article class="arm arm-b"><div class="arm-head"><span class="letter">B</span><span>Facts in context</span></div>
+    <div class="choice">atlas</div><span class="verdict pass">Successful result</span>
+    <p class="arm-reason">Required fields passed verification</p>
+    <div class="arm-note">No memory citations</div><p class="credits">1 demo credit · illustrative cost</p>
+    <details><summary>Saved model response</summary><pre>{
   &quot;memoryIds&quot;: [],
   &quot;reason&quot;: &quot;Lowest price within budget&quot;,
   &quot;serviceId&quot;: &quot;atlas&quot;
 }</pre></details>
-    <details><summary>Проверка и допуск</summary><pre>{
+    <details><summary>Verification and action guard</summary><pre>{
   &quot;rawVerifier&quot;: {
     &quot;status&quot;: &quot;pass&quot;,
     &quot;reasons&quot;: []
@@ -238,16 +238,16 @@
     &quot;assessments&quot;: []
   },
   &quot;requestHash&quot;: &quot;6d4423d5ca1953c1509ac85da299fe84a34a55058e95cc38bad2136ee3ed6dea&quot;
-}</pre></details></article><article class="arm arm-c"><div class="arm-head"><span class="letter">C</span><span>Восстановленная память</span></div>
-    <div class="choice">atlas</div><span class="verdict pass">Успешный результат</span>
-    <p class="arm-reason">Требуемые поля прошли проверку</p>
-    <div class="arm-note">Ссылок на память нет</div><p class="credits">1 demo-кредит · условная цена</p>
-    <details><summary>Сохранённый ответ модели</summary><pre>{
+}</pre></details></article><article class="arm arm-c"><div class="arm-head"><span class="letter">C</span><span>Restored memory</span></div>
+    <div class="choice">atlas</div><span class="verdict pass">Successful result</span>
+    <p class="arm-reason">Required fields passed verification</p>
+    <div class="arm-note">No memory citations</div><p class="credits">1 demo credit · illustrative cost</p>
+    <details><summary>Saved model response</summary><pre>{
   &quot;memoryIds&quot;: [],
   &quot;reason&quot;: &quot;Lowest price within budget&quot;,
   &quot;serviceId&quot;: &quot;atlas&quot;
 }</pre></details>
-    <details><summary>Проверка и допуск</summary><pre>{
+    <details><summary>Verification and action guard</summary><pre>{
   &quot;rawVerifier&quot;: {
     &quot;status&quot;: &quot;pass&quot;,
     &quot;reasons&quot;: []
@@ -263,16 +263,16 @@
     &quot;assessments&quot;: []
   },
   &quot;requestHash&quot;: &quot;6d4423d5ca1953c1509ac85da299fe84a34a55058e95cc38bad2136ee3ed6dea&quot;
-}</pre></details></article><article class="arm arm-d"><div class="arm-head"><span class="letter">D</span><span>Простой алгоритм</span></div>
-    <div class="choice">atlas</div><span class="verdict pass">Успешный результат</span>
-    <p class="arm-reason">Требуемые поля прошли проверку</p>
-    <div class="arm-note">Детерминированное правило</div><p class="credits">1 demo-кредит · условная цена</p>
-    <details><summary>Решение алгоритма</summary><pre>{
+}</pre></details></article><article class="arm arm-d"><div class="arm-head"><span class="letter">D</span><span>Simple algorithm</span></div>
+    <div class="choice">atlas</div><span class="verdict pass">Successful result</span>
+    <p class="arm-reason">Required fields passed verification</p>
+    <div class="arm-note">Deterministic rule</div><p class="credits">1 demo credit · illustrative cost</p>
+    <details><summary>Algorithm decision</summary><pre>{
   &quot;serviceId&quot;: &quot;atlas&quot;,
   &quot;reason&quot;: &quot;Lowest demo price among compatible offers without a matching known failure.&quot;,
   &quot;memoryIds&quot;: []
 }</pre></details>
-    <details><summary>Проверка и допуск</summary><pre>{
+    <details><summary>Verification and action guard</summary><pre>{
   &quot;rawVerifier&quot;: {
     &quot;status&quot;: &quot;pass&quot;,
     &quot;reasons&quot;: []
@@ -282,9 +282,9 @@
   &quot;citationAudit&quot;: null,
   &quot;requestHash&quot;: null
 }</pre></details></article></div>
-    <p class="shared-note">A, B и C используют один ответ: нерелевантная ошибка заранее отфильтрована. Это не независимые испытания.</p>
+    <p class="shared-note">A, B and C share one response: the irrelevant failure was filtered before selection. These are not independent trials.</p>
     
-    <details><summary>Требования задачи и доступные проекции</summary><pre>{
+    <details><summary>Task requirements and available projections</summary><pre>{
   &quot;task&quot;: {
     &quot;budget&quot;: &quot;1&quot;,
     &quot;cutoff&quot;: &quot;2026-10-26T14:47:59.112Z&quot;,
@@ -326,17 +326,17 @@
     }
   ]
 }</pre></details></section><section class="stage-panel" id="stage-2" aria-labelledby="stage-button-2">
-    <div class="task-line"><span>Требуется <strong>digest + sequenceNumber</strong></span><span>Бюджет <strong>1 demo-кредита</strong></span></div>
-    <div class="arms"><article class="arm arm-a"><div class="arm-head"><span class="letter">A</span><span>Без истории</span></div>
-    <div class="choice">atlas</div><span class="verdict pass">Успешный результат</span>
-    <p class="arm-reason">Требуемые поля прошли проверку</p>
-    <div class="arm-note">Ссылок на память нет</div><p class="credits">1 demo-кредит · условная цена</p>
-    <details><summary>Сохранённый ответ модели</summary><pre>{
+    <div class="task-line"><span>Required <strong>digest + sequenceNumber</strong></span><span>Budget <strong>1 demo credits</strong></span></div>
+    <div class="arms"><article class="arm arm-a"><div class="arm-head"><span class="letter">A</span><span>No history</span></div>
+    <div class="choice">atlas</div><span class="verdict pass">Successful result</span>
+    <p class="arm-reason">Required fields passed verification</p>
+    <div class="arm-note">No memory citations</div><p class="credits">1 demo credit · illustrative cost</p>
+    <details><summary>Saved model response</summary><pre>{
   &quot;memoryIds&quot;: [],
   &quot;reason&quot;: &quot;Lowest price within budget&quot;,
   &quot;serviceId&quot;: &quot;atlas&quot;
 }</pre></details>
-    <details><summary>Проверка и допуск</summary><pre>{
+    <details><summary>Verification and action guard</summary><pre>{
   &quot;rawVerifier&quot;: {
     &quot;status&quot;: &quot;pass&quot;,
     &quot;reasons&quot;: []
@@ -352,18 +352,18 @@
     &quot;assessments&quot;: []
   },
   &quot;requestHash&quot;: &quot;bea9bcc2a173d8a15eab77b263bec67194a9b76befb9c20120e558e87286656d&quot;
-}</pre></details></article><article class="arm arm-b"><div class="arm-head"><span class="letter">B</span><span>Факты в контексте</span></div>
-    <div class="choice">atlas</div><span class="verdict pass">Успешный результат</span>
-    <p class="arm-reason">Требуемые поля прошли проверку</p>
-    <div class="arm-note">Ссылка непроверяема</div><p class="credits">1 demo-кредит · условная цена</p>
-    <details><summary>Сохранённый ответ модели</summary><pre>{
+}</pre></details></article><article class="arm arm-b"><div class="arm-head"><span class="letter">B</span><span>Facts in context</span></div>
+    <div class="choice">atlas</div><span class="verdict pass">Successful result</span>
+    <p class="arm-reason">Required fields passed verification</p>
+    <div class="arm-note">Citation unverifiable</div><p class="credits">1 demo credit · illustrative cost</p>
+    <details><summary>Saved model response</summary><pre>{
   &quot;memoryIds&quot;: [
     &quot;experience:atlas-v1-correction-1&quot;
   ],
   &quot;reason&quot;: &quot;Within budget&quot;,
   &quot;serviceId&quot;: &quot;atlas&quot;
 }</pre></details>
-    <details><summary>Проверка и допуск</summary><pre>{
+    <details><summary>Verification and action guard</summary><pre>{
   &quot;rawVerifier&quot;: {
     &quot;status&quot;: &quot;pass&quot;,
     &quot;reasons&quot;: []
@@ -392,18 +392,18 @@
     ]
   },
   &quot;requestHash&quot;: &quot;dfe9976523bf07110f4721be746b7370a723824ab7700799a2f61503c9c055a5&quot;
-}</pre></details></article><article class="arm arm-c"><div class="arm-head"><span class="letter">C</span><span>Восстановленная память</span></div>
-    <div class="choice">atlas</div><span class="verdict pass">Успешный результат</span>
-    <p class="arm-reason">Требуемые поля прошли проверку</p>
-    <div class="arm-note">Ссылка непроверяема</div><p class="credits">1 demo-кредит · условная цена</p>
-    <details><summary>Сохранённый ответ модели</summary><pre>{
+}</pre></details></article><article class="arm arm-c"><div class="arm-head"><span class="letter">C</span><span>Restored memory</span></div>
+    <div class="choice">atlas</div><span class="verdict pass">Successful result</span>
+    <p class="arm-reason">Required fields passed verification</p>
+    <div class="arm-note">Citation unverifiable</div><p class="credits">1 demo credit · illustrative cost</p>
+    <details><summary>Saved model response</summary><pre>{
   &quot;memoryIds&quot;: [
     &quot;experience:atlas-v1-correction-1&quot;
   ],
   &quot;reason&quot;: &quot;Within budget&quot;,
   &quot;serviceId&quot;: &quot;atlas&quot;
 }</pre></details>
-    <details><summary>Проверка и допуск</summary><pre>{
+    <details><summary>Verification and action guard</summary><pre>{
   &quot;rawVerifier&quot;: {
     &quot;status&quot;: &quot;pass&quot;,
     &quot;reasons&quot;: []
@@ -432,18 +432,18 @@
     ]
   },
   &quot;requestHash&quot;: &quot;dfe9976523bf07110f4721be746b7370a723824ab7700799a2f61503c9c055a5&quot;
-}</pre></details></article><article class="arm arm-d"><div class="arm-head"><span class="letter">D</span><span>Простой алгоритм</span></div>
-    <div class="choice">atlas</div><span class="verdict pass">Успешный результат</span>
-    <p class="arm-reason">Требуемые поля прошли проверку</p>
-    <div class="arm-note">Детерминированное правило</div><p class="credits">1 demo-кредит · условная цена</p>
-    <details><summary>Решение алгоритма</summary><pre>{
+}</pre></details></article><article class="arm arm-d"><div class="arm-head"><span class="letter">D</span><span>Simple algorithm</span></div>
+    <div class="choice">atlas</div><span class="verdict pass">Successful result</span>
+    <p class="arm-reason">Required fields passed verification</p>
+    <div class="arm-note">Deterministic rule</div><p class="credits">1 demo credit · illustrative cost</p>
+    <details><summary>Algorithm decision</summary><pre>{
   &quot;serviceId&quot;: &quot;atlas&quot;,
   &quot;reason&quot;: &quot;Lowest demo price among compatible offers without a matching known failure.&quot;,
   &quot;memoryIds&quot;: [
     &quot;experience:atlas-v1-correction-1&quot;
   ]
 }</pre></details>
-    <details><summary>Проверка и допуск</summary><pre>{
+    <details><summary>Verification and action guard</summary><pre>{
   &quot;rawVerifier&quot;: {
     &quot;status&quot;: &quot;pass&quot;,
     &quot;reasons&quot;: []
@@ -453,9 +453,9 @@
   &quot;citationAudit&quot;: null,
   &quot;requestHash&quot;: null
 }</pre></details></article></div>
-    <p class="shared-note">B и C используют один ответ: факты и восстановленная память дали одинаковый запрос. Это не независимые испытания.</p>
-    <div class="notice amber"><strong>Успешный результат ≠ подтверждённая ссылка.</strong> Модель указала правильную correction-запись, но её pass-ссылка остаётся unverifiable по текущему контракту. Без истории эта точка тоже проходит.</div>
-    <details><summary>Требования задачи и доступные проекции</summary><pre>{
+    <p class="shared-note">B and C share one response: direct facts and restored memory produced the same request. These are not independent trials.</p>
+    <div class="notice amber"><strong>A successful result ≠ a supported citation.</strong> The model cited the correct correction record, but its pass citation remains unverifiable under the current contract. This point also passes without history.</div>
+    <details><summary>Task requirements and available projections</summary><pre>{
   &quot;task&quot;: {
     &quot;budget&quot;: &quot;1&quot;,
     &quot;cutoff&quot;: &quot;2026-10-27T08:38:29.832Z&quot;,
@@ -498,13 +498,13 @@
     }
   ]
 }</pre></details></section>
-  <div class="finding"><span class="finding-mark" aria-hidden="true">↳</span><p><strong>В основной точке опыт помог избежать повторной ошибки.</strong><br>Прямые факты и восстановленная память дали один и тот же запрос. Простой алгоритм получил такой же результат. Преимущество LLM над алгоритмом не доказано.</p></div></section>
-  <section id="memory" class="block"><div class="section-heading"><div><p class="eyebrow">02 / СОХРАННОСТЬ И ИСПРАВЛЕНИЯ</p><h2>История остаётся проверяемой</h2></div><span class="receipt-label"><span class="status-dot"></span> 10 / 10 receipts DONE</span></div><p class="section-intro">Исходная пара Atlas и четыре дополнительные пары. Независимые live-клиенты ранее подтвердили чтение. При подготовке этой страницы новый локальный процесс заново проверил сохранённые записи, revisions и cutoff без ключей и сети.</p>
-  <div class="memory-layout"><div class="memory-ledger"><div class="ledger-tools"><label class="search-label">Найти запись<input id="memory-search" type="search" placeholder="Сервис, ID или вердикт" autocomplete="off"></label><label class="filter-label">Тип<select id="memory-filter"><option value="all">Все записи</option><option value="correction">Только correction</option><option value="fixture">Синтетические</option></select></label></div><p id="record-count" class="count" aria-live="polite">Показано 10 из 10 записей</p><div id="record-list"><article class="memory-row" data-record data-kind="observation" data-source="tatum" data-search="experience:stage0-smoke atlas checkpoint fail ">
+  <div class="finding"><span class="finding-mark" aria-hidden="true">↳</span><p><strong>In the main task, experience helped avoid repeating a failure.</strong><br>Direct facts and restored memory produced the same request. The simple algorithm achieved the same result. LLM superiority over the algorithm is not established.</p></div></section>
+  <section id="memory" class="block"><div class="section-heading"><div><p class="eyebrow">02 / PERSISTENCE AND CORRECTIONS</p><h2>History stays inspectable</h2></div><span class="receipt-label"><span class="status-dot"></span> 10 / 10 receipts DONE</span></div><p class="section-intro">The original Atlas pair and four additional pairs. Independent live clients previously verified reads. To prepare this page, a fresh local process checked the saved records, revisions and cutoff again without credentials or network access.</p>
+  <div class="memory-layout"><div class="memory-ledger"><div class="ledger-tools"><label class="search-label">Find a record<input id="memory-search" type="search" placeholder="Service, ID or verdict" autocomplete="off"></label><label class="filter-label">Type<select id="memory-filter"><option value="all">All records</option><option value="correction">Corrections only</option><option value="fixture">Synthetic examples</option></select></label></div><p id="record-count" class="count" aria-live="polite">Showing 10 of 10 records</p><div id="record-list"><article class="memory-row" data-record data-kind="observation" data-source="tatum" data-search="experience:stage0-smoke atlas checkpoint fail ">
     <div class="memory-number">01</div><div class="memory-main"><div class="memory-heading"><strong>atlas <span>/ checkpoint / v1</span></strong><span class="verdict fail">fail</span></div>
-    <p class="record-id">experience:stage0-smoke</p><p class="source-label">Tatum · собственная управляемая demo-проекция</p>
+    <p class="record-id">experience:stage0-smoke</p><p class="source-label">Tatum · controlled, owned demo projection</p>
     
-    <details><summary>Receipt, blob и содержимое записи</summary><pre>{
+    <details><summary>Receipt, blob and original record</summary><pre>{
   &quot;blobId&quot;: &quot;DiyAqT9ArzQxgIpjGRy8wh7euL3MdOeJInmswZAGfvM&quot;,
   &quot;recordHash&quot;: &quot;b997a6c090e8acf83bf357947affe323c90d20dba56ef3b7a84c999f8bef8980&quot;,
   &quot;receipt&quot;: {
@@ -537,9 +537,9 @@
   }
 }</pre></details></div></article><article class="memory-row" data-record data-kind="correction" data-source="tatum" data-search="experience:atlas-v1-correction-1 atlas checkpoint pass experience:stage0-smoke">
     <div class="memory-number">02</div><div class="memory-main"><div class="memory-heading"><strong>atlas <span>/ checkpoint / v1</span></strong><span class="verdict pass">pass</span></div>
-    <p class="record-id">experience:atlas-v1-correction-1</p><p class="source-label">Tatum · собственная управляемая demo-проекция · correction</p>
-    <p class="supersedes">Замещает experience:stage0-smoke</p>
-    <details><summary>Receipt, blob и содержимое записи</summary><pre>{
+    <p class="record-id">experience:atlas-v1-correction-1</p><p class="source-label">Tatum · controlled, owned demo projection · correction</p>
+    <p class="supersedes">Supersedes experience:stage0-smoke</p>
+    <details><summary>Receipt, blob and original record</summary><pre>{
   &quot;blobId&quot;: &quot;qpQxhrCw4zsgJm3UmZSUpwzotfOsEF6lcH3A2qyKRIE&quot;,
   &quot;recordHash&quot;: &quot;29cb08f637671b0a6ce3ae0660048000ebe2ecb01c9368f0e62bb444e73ff671&quot;,
   &quot;receipt&quot;: {
@@ -568,9 +568,9 @@
   }
 }</pre></details></div></article><article class="memory-row" data-record data-kind="observation" data-source="tatum" data-search="experience:coverage-v1:03 cipher checkpoint fail ">
     <div class="memory-number">03</div><div class="memory-main"><div class="memory-heading"><strong>cipher <span>/ checkpoint / v1</span></strong><span class="verdict fail">fail</span></div>
-    <p class="record-id">experience:coverage-v1:03</p><p class="source-label">Tatum · собственная управляемая demo-проекция</p>
+    <p class="record-id">experience:coverage-v1:03</p><p class="source-label">Tatum · controlled, owned demo projection</p>
     
-    <details><summary>Receipt, blob и содержимое записи</summary><pre>{
+    <details><summary>Receipt, blob and original record</summary><pre>{
   &quot;blobId&quot;: &quot;IQzIXKHwTADNd6YumObZgYVSf1WDR0IT9afHDebNlHI&quot;,
   &quot;recordHash&quot;: &quot;453a35a15593e326499b8cb40e449734959c870bbb16249cba58c7bf5cae5372&quot;,
   &quot;receipt&quot;: {
@@ -605,9 +605,9 @@
   }
 }</pre></details></div></article><article class="memory-row" data-record data-kind="observation" data-source="tatum" data-search="experience:coverage-v1:05 beacon checkpoint fail ">
     <div class="memory-number">04</div><div class="memory-main"><div class="memory-heading"><strong>beacon <span>/ checkpoint / v1</span></strong><span class="verdict fail">fail</span></div>
-    <p class="record-id">experience:coverage-v1:05</p><p class="source-label">Tatum · собственная управляемая demo-проекция</p>
+    <p class="record-id">experience:coverage-v1:05</p><p class="source-label">Tatum · controlled, owned demo projection</p>
     
-    <details><summary>Receipt, blob и содержимое записи</summary><pre>{
+    <details><summary>Receipt, blob and original record</summary><pre>{
   &quot;blobId&quot;: &quot;IHutsuaeSKVEk09QT6_dxvrCpDivizw-qxVjEnMIEGw&quot;,
   &quot;recordHash&quot;: &quot;e6533f951e32b75da4479ebe7af574194980f730dad21d32d6fff8f67113e104&quot;,
   &quot;receipt&quot;: {
@@ -642,9 +642,9 @@
   }
 }</pre></details></div></article><article class="memory-row" data-record data-kind="observation" data-source="tatum" data-search="experience:coverage-v1:07 atlas freshness fail ">
     <div class="memory-number">05</div><div class="memory-main"><div class="memory-heading"><strong>atlas <span>/ freshness / v1</span></strong><span class="verdict fail">fail</span></div>
-    <p class="record-id">experience:coverage-v1:07</p><p class="source-label">Tatum · собственная управляемая demo-проекция</p>
+    <p class="record-id">experience:coverage-v1:07</p><p class="source-label">Tatum · controlled, owned demo projection</p>
     
-    <details><summary>Receipt, blob и содержимое записи</summary><pre>{
+    <details><summary>Receipt, blob and original record</summary><pre>{
   &quot;blobId&quot;: &quot;ce8Ast4hy9VIw5cdnR-BbFRaN7OJjbZghsqZhFwul74&quot;,
   &quot;recordHash&quot;: &quot;7f5dd46b21c0ddd3e36484f55adc35dab50d2289c0747bebbf0e1e6ae930792b&quot;,
   &quot;receipt&quot;: {
@@ -679,9 +679,9 @@
   }
 }</pre></details></div></article><article class="memory-row" data-record data-kind="observation" data-source="fixture" data-search="experience:coverage-v1:09 beacon history unknown ">
     <div class="memory-number">06</div><div class="memory-main"><div class="memory-heading"><strong>beacon <span>/ history / v1</span></strong><span class="verdict unknown">unknown</span></div>
-    <p class="record-id">experience:coverage-v1:09</p><p class="source-label">Синтетический пример · реальная запись Mainnet</p>
+    <p class="record-id">experience:coverage-v1:09</p><p class="source-label">Synthetic example · real Mainnet record</p>
     
-    <details><summary>Receipt, blob и содержимое записи</summary><pre>{
+    <details><summary>Receipt, blob and original record</summary><pre>{
   &quot;blobId&quot;: &quot;zhFfmMj4H0NieBUsnGFbKcc2zIJQChOhZBVqBT-QV8w&quot;,
   &quot;recordHash&quot;: &quot;dcbfe94a5f9fa154ef269e8d0bcac7d6bcc8cb8bf2eb3880880cb3ad73618d9b&quot;,
   &quot;receipt&quot;: {
@@ -716,9 +716,9 @@
   }
 }</pre></details></div></article><article class="memory-row" data-record data-kind="correction" data-source="tatum" data-search="experience:coverage-v1:04 cipher checkpoint pass experience:coverage-v1:03">
     <div class="memory-number">07</div><div class="memory-main"><div class="memory-heading"><strong>cipher <span>/ checkpoint / v1</span></strong><span class="verdict pass">pass</span></div>
-    <p class="record-id">experience:coverage-v1:04</p><p class="source-label">Tatum · собственная управляемая demo-проекция · correction</p>
-    <p class="supersedes">Замещает experience:coverage-v1:03</p>
-    <details><summary>Receipt, blob и содержимое записи</summary><pre>{
+    <p class="record-id">experience:coverage-v1:04</p><p class="source-label">Tatum · controlled, owned demo projection · correction</p>
+    <p class="supersedes">Supersedes experience:coverage-v1:03</p>
+    <details><summary>Receipt, blob and original record</summary><pre>{
   &quot;blobId&quot;: &quot;HVkc1DZkGsMjI2aZBEzCvsAsXy9bda1kKnpsZrtY8_k&quot;,
   &quot;recordHash&quot;: &quot;b3eeba14bb9c084ffc32b5fff955c6b0ab694ee10e49d16f961037a2d751ae46&quot;,
   &quot;receipt&quot;: {
@@ -751,9 +751,9 @@
   }
 }</pre></details></div></article><article class="memory-row" data-record data-kind="correction" data-source="tatum" data-search="experience:coverage-v1:06 beacon checkpoint pass experience:coverage-v1:05">
     <div class="memory-number">08</div><div class="memory-main"><div class="memory-heading"><strong>beacon <span>/ checkpoint / v1</span></strong><span class="verdict pass">pass</span></div>
-    <p class="record-id">experience:coverage-v1:06</p><p class="source-label">Tatum · собственная управляемая demo-проекция · correction</p>
-    <p class="supersedes">Замещает experience:coverage-v1:05</p>
-    <details><summary>Receipt, blob и содержимое записи</summary><pre>{
+    <p class="record-id">experience:coverage-v1:06</p><p class="source-label">Tatum · controlled, owned demo projection · correction</p>
+    <p class="supersedes">Supersedes experience:coverage-v1:05</p>
+    <details><summary>Receipt, blob and original record</summary><pre>{
   &quot;blobId&quot;: &quot;Cb_5qxuzA8lAC1IIFrlP3JLLguivZEx7znKT5BKMu5s&quot;,
   &quot;recordHash&quot;: &quot;e73bae3572950c961c89c34f8e457a7d50a3f37a2d18cecf9029ef74690f8ac4&quot;,
   &quot;receipt&quot;: {
@@ -786,9 +786,9 @@
   }
 }</pre></details></div></article><article class="memory-row" data-record data-kind="correction" data-source="tatum" data-search="experience:coverage-v1:08 atlas freshness pass experience:coverage-v1:07">
     <div class="memory-number">09</div><div class="memory-main"><div class="memory-heading"><strong>atlas <span>/ freshness / v1</span></strong><span class="verdict pass">pass</span></div>
-    <p class="record-id">experience:coverage-v1:08</p><p class="source-label">Tatum · собственная управляемая demo-проекция · correction</p>
-    <p class="supersedes">Замещает experience:coverage-v1:07</p>
-    <details><summary>Receipt, blob и содержимое записи</summary><pre>{
+    <p class="record-id">experience:coverage-v1:08</p><p class="source-label">Tatum · controlled, owned demo projection · correction</p>
+    <p class="supersedes">Supersedes experience:coverage-v1:07</p>
+    <details><summary>Receipt, blob and original record</summary><pre>{
   &quot;blobId&quot;: &quot;YvuaUX3rF8BAzpP2beMnwKBYBbMboNHgnWeDnZKudN4&quot;,
   &quot;recordHash&quot;: &quot;96d852141c929b9e7a974a61b0348b542862d8157d9fbb8a1b5d4e9924fc6cc1&quot;,
   &quot;receipt&quot;: {
@@ -821,9 +821,9 @@
   }
 }</pre></details></div></article><article class="memory-row" data-record data-kind="correction" data-source="fixture" data-search="experience:coverage-v1:10 beacon history pass experience:coverage-v1:09">
     <div class="memory-number">10</div><div class="memory-main"><div class="memory-heading"><strong>beacon <span>/ history / v1</span></strong><span class="verdict pass">pass</span></div>
-    <p class="record-id">experience:coverage-v1:10</p><p class="source-label">Синтетический пример · реальная запись Mainnet · correction</p>
-    <p class="supersedes">Замещает experience:coverage-v1:09</p>
-    <details><summary>Receipt, blob и содержимое записи</summary><pre>{
+    <p class="record-id">experience:coverage-v1:10</p><p class="source-label">Synthetic example · real Mainnet record · correction</p>
+    <p class="supersedes">Supersedes experience:coverage-v1:09</p>
+    <details><summary>Receipt, blob and original record</summary><pre>{
   &quot;blobId&quot;: &quot;00o9ygazsRX7mH_KdIwCIDyjIoxsEo3HNEgKJJDNB7k&quot;,
   &quot;recordHash&quot;: &quot;5c5f43332d52d23c4225cd67843cb25cd5ed852f6ac032a6d11cecd70e0ba86d&quot;,
   &quot;receipt&quot;: {
@@ -854,9 +854,9 @@
     &quot;supersedes&quot;: &quot;experience:coverage-v1:09&quot;,
     &quot;verdict&quot;: &quot;pass&quot;
   }
-}</pre></details></div></article></div><p id="empty-records" hidden>Таких записей нет. Измените поиск или фильтр.</p></div><aside class="chains"><h3>Correction-цепочки</h3><p>Новая запись замещает прежнюю в том же scope после своего cutoff.</p><ul><li><span class="chain-scope">atlas/checkpoint/v1</span><span class="chain-path"><span class="verdict fail">fail</span><span aria-hidden="true">→</span><span class="verdict pass">pass</span></span><small>experience:stage0-smoke<br>↳ experience:atlas-v1-correction-1</small></li><li><span class="chain-scope">cipher/checkpoint/v1</span><span class="chain-path"><span class="verdict fail">fail</span><span aria-hidden="true">→</span><span class="verdict pass">pass</span></span><small>experience:coverage-v1:03<br>↳ experience:coverage-v1:04</small></li><li><span class="chain-scope">beacon/checkpoint/v1</span><span class="chain-path"><span class="verdict fail">fail</span><span aria-hidden="true">→</span><span class="verdict pass">pass</span></span><small>experience:coverage-v1:05<br>↳ experience:coverage-v1:06</small></li><li><span class="chain-scope">atlas/freshness/v1</span><span class="chain-path"><span class="verdict fail">fail</span><span aria-hidden="true">→</span><span class="verdict pass">pass</span></span><small>experience:coverage-v1:07<br>↳ experience:coverage-v1:08</small></li><li><span class="chain-scope">beacon/history/v1</span><span class="chain-path"><span class="verdict unknown">unknown</span><span aria-hidden="true">→</span><span class="verdict pass">pass</span></span><small>experience:coverage-v1:09<br>↳ experience:coverage-v1:10</small></li></ul><div class="notice">Память сама не чинит сервис. Старый сломанный код продолжает давать fail или unknown даже после pass-записи.</div></aside></div></section>
-  <section id="limits" class="block limits-block"><div class="section-heading"><div><p class="eyebrow">03 / ЧЕСТНЫЕ ГРАНИЦЫ</p><h2>Что результат позволяет утверждать</h2></div></div><div class="limits-grid"><article><span class="mini-label">ПОДТВЕРЖДЕНО В ЭТОМ СЦЕНАРИИ</span><h3>Проверенный факт меняет выбор</h3><p>В основной точке A выбрал Atlas с ошибкой, B/C выбрали Beacon с pass и подтверждённой ссылкой. Хранение и переносимость проверены ранее реальными независимыми чтениями.</p></article><article><span class="mini-label warning-label">ОГРАНИЧЕНИЯ</span><h3>Алгоритм справился так же</h3><p>Общее превосходство и стабильность LLM не установлены. B/C совпадают по построению. Прежние отрицательные пилоты сохранены. Pass-ссылка после correction остаётся непроверяемой.</p></article><article><span class="mini-label">ЧТО ИМЕННО ЗАПИСАНО</span><h3>Управляемые demo-проекции</h3><p>Ошибки полей и устаревшие данные внесены в собственные проекции; это не реальные отказы Tatum или сторонних продавцов. Две history-записи — явно синтетический пример, реально сохранённый в Mainnet.</p></article></div>
-  <div class="notice amber"><strong>Ранний 8B-пилот дал отрицательный результат:</strong> Atlas/fail без памяти и с памятью. Новый положительный пример не доказывает стабильность модели. Переносимость проверялась новыми клиентами того же аккаунта; доступ между аккаунтами не проверялся.<details><summary>Сохранённый отрицательный пилот и его условия</summary><pre>{
+}</pre></details></div></article></div><p id="empty-records" hidden>No matching records. Change the search or filter.</p></div><aside class="chains"><h3>Correction chains</h3><p>A new record supersedes its parent within the same scope after its cutoff.</p><ul><li><span class="chain-scope">atlas/checkpoint/v1</span><span class="chain-path"><span class="verdict fail">fail</span><span aria-hidden="true">→</span><span class="verdict pass">pass</span></span><small>experience:stage0-smoke<br>↳ experience:atlas-v1-correction-1</small></li><li><span class="chain-scope">cipher/checkpoint/v1</span><span class="chain-path"><span class="verdict fail">fail</span><span aria-hidden="true">→</span><span class="verdict pass">pass</span></span><small>experience:coverage-v1:03<br>↳ experience:coverage-v1:04</small></li><li><span class="chain-scope">beacon/checkpoint/v1</span><span class="chain-path"><span class="verdict fail">fail</span><span aria-hidden="true">→</span><span class="verdict pass">pass</span></span><small>experience:coverage-v1:05<br>↳ experience:coverage-v1:06</small></li><li><span class="chain-scope">atlas/freshness/v1</span><span class="chain-path"><span class="verdict fail">fail</span><span aria-hidden="true">→</span><span class="verdict pass">pass</span></span><small>experience:coverage-v1:07<br>↳ experience:coverage-v1:08</small></li><li><span class="chain-scope">beacon/history/v1</span><span class="chain-path"><span class="verdict unknown">unknown</span><span aria-hidden="true">→</span><span class="verdict pass">pass</span></span><small>experience:coverage-v1:09<br>↳ experience:coverage-v1:10</small></li></ul><div class="notice">Memory does not repair a service. The old faulty code still returns fail or unknown even after a pass record.</div></aside></div></section>
+  <section id="limits" class="block limits-block"><div class="section-heading"><div><p class="eyebrow">03 / HONEST LIMITATIONS</p><h2>What the evidence supports</h2></div></div><div class="limits-grid"><article><span class="mini-label">SUPPORTED IN THIS SCENARIO</span><h3>A verified fact changes the choice</h3><p>In the main task, A selected Atlas and failed; B/C selected Beacon and passed with a supported citation. Persistence and portability were previously verified through real independent reads.</p></article><article><span class="mini-label warning-label">LIMITATIONS</span><h3>The algorithm did just as well</h3><p>General LLM superiority and stability are not established. B/C are identical by design. Earlier negative pilots are retained. The pass citation after correction remains unverifiable.</p></article><article><span class="mini-label">WHAT WAS ACTUALLY STORED</span><h3>Controlled demo projections</h3><p>Field failures and stale data were injected into our own projections; these are not real Tatum or third-party vendor outages. Two history records are explicitly synthetic examples actually stored on Mainnet.</p></article></div>
+  <div class="notice amber"><strong>An earlier 8B pilot had a negative result:</strong> Atlas/fail with and without memory. A new positive example does not establish model stability. Fresh clients verified portability within the same account; cross-account access was not tested.<details><summary>Saved negative pilot and its conditions</summary><pre>{
   &quot;title&quot;: &quot;Сохранённый 8B pilot: fail без памяти и с памятью.&quot;,
   &quot;mode&quot;: &quot;LIVE_MODEL_RECORDED_TATUM_FROZEN_WALRUS&quot;,
   &quot;modelId&quot;: &quot;@cf/meta/llama-3.1-8b-instruct-fp8-fast&quot;,
@@ -1052,7 +1052,7 @@
     &quot;citedExpectedMemory&quot;: true
   }
 }</pre></details></div>
-  <div class="evidence-footer"><div><h3>Проверить исходные данные</h3><p>Пять уникальных вызовов в сохранённом запуске. В этом демо: API 0, записи 0, новые расходы $0. Суммы в карточках — условные demo-кредиты.</p><p class="hash-line">Отчёт: <code>36b5f462e753b8af3f98dec355ceeaa94fb0bb27bd6a0eb8d1e3ca7fdd17c22d</code></p></div><button type="button" class="button secondary" id="download-data">Скачать данные JSON ↓</button></div><details><summary>Происхождение и границы проверки</summary><pre>{
+  <div class="evidence-footer"><div><h3>Inspect the source evidence</h3><p>Five unique model calls in the saved run. This demo makes 0 API calls and 0 writes, with $0 additional spend. Card prices are illustrative demo credits.</p><p class="hash-line">Report: <code>36b5f462e753b8af3f98dec355ceeaa94fb0bb27bd6a0eb8d1e3ca7fdd17c22d</code></p></div><button type="button" class="button secondary" id="download-data">Download evidence JSON ↓</button></div><details><summary>Provenance and verification boundaries</summary><pre>{
   &quot;modelReportHash&quot;: &quot;36b5f462e753b8af3f98dec355ceeaa94fb0bb27bd6a0eb8d1e3ca7fdd17c22d&quot;,
   &quot;permitHash&quot;: &quot;40f12edf62f0c12d48445244f99d32a576b5b0ce70d555896a788f8624ee743d&quot;,
   &quot;inputPlanHash&quot;: &quot;01a44fea2996b2881db7defeaee182c93536a5a2432658b32b9ab758746389f5&quot;,
@@ -1062,8 +1062,8 @@
   &quot;projectionEvaluation&quot;: &quot;RECOMPUTED_LOCALLY_FROM_SAVED_CONTROLLED_DATA&quot;,
   &quot;deterministicBaseline&quot;: &quot;PREVIOUSLY_EXECUTED_OFFLINE&quot;,
   &quot;memoryRead&quot;: &quot;SAVED_REAL_MAINNET_READ_PLUS_LOCAL_RESTORATION&quot;
-}</pre></details><noscript><p>JavaScript отключён: все три точки и записи доступны ниже/выше. Переключатели, поиск и скачивание JSON требуют JavaScript.</p></noscript></section>
-  </main><footer class="footer"><span>Recall Lab <span class="footer-sep">/</span> Total Recall <span class="footer-sep">/</span> <a href="./blog.html">Статья</a></span><span>Статическое демо · сохранённые результаты · новые API-вызовы отключены</span></footer></div>
+}</pre></details><noscript><p>JavaScript is disabled: all three points and records remain available. Scenario controls, search and JSON download require JavaScript.</p></noscript></section>
+  </main><footer class="footer"><span>Recall Lab <span class="footer-sep">/</span> Total Recall <span class="footer-sep">/</span> <a href="./blog.html">Article</a></span><span>Static demo · saved evidence · no new API calls</span></footer></div>
   <script type="application/json" id="demo-data">{"schema":1,"mode":"SAVED_EVIDENCE_REPLAY","savedModelRunDate":"2026-10-28","savedMemoryReadDate":"2026-10-27","modelId":"@cf/meta/llama-3.1-8b-instruct-fp8-fast","providerCallsThisBuild":0,"newMainnetWrites":0,"additionalSpendUSD":0,"savedUniqueModelCalls":5,"logicalModelArms":9,"records":[{"blobId":"DiyAqT9ArzQxgIpjGRy8wh7euL3MdOeJInmswZAGfvM","hash":"b997a6c090e8acf83bf357947affe323c90d20dba56ef3b7a84c999f8bef8980","id":"experience:stage0-smoke","record":{"evidence":{"source":"tatum","target":"checkpoint:338359837","version":"338359837"},"family":"checkpoint","id":"experience:stage0-smoke","kind":"experience","network":"mainnet","observedAt":"2026-10-26T14:47:56.743Z","reasons":["missing:digest"],"recordedAt":"2026-10-26T14:47:58.112Z","schema":1,"serviceId":"atlas","serviceVersion":"v1","supersedes":null,"verdict":"fail"},"receipt":{"id":"stage0:experience:1","hash":"b997a6c090e8acf83bf357947affe323c90d20dba56ef3b7a84c999f8bef8980","state":"DONE","job_id":"57082e95-f18f-4015-b677-1e1adfe62f3b","blob_id":"DiyAqT9ArzQxgIpjGRy8wh7euL3MdOeJInmswZAGfvM"},"receiptSource":"ORIGINAL_REHEARSAL_RECEIPTS"},{"blobId":"qpQxhrCw4zsgJm3UmZSUpwzotfOsEF6lcH3A2qyKRIE","hash":"29cb08f637671b0a6ce3ae0660048000ebe2ecb01c9368f0e62bb444e73ff671","id":"experience:atlas-v1-correction-1","record":{"evidence":{"source":"tatum","target":"checkpoint:338630541","version":"338630541"},"family":"checkpoint","id":"experience:atlas-v1-correction-1","kind":"experience","network":"mainnet","observedAt":"2026-10-27T08:38:29.832Z","reasons":[],"recordedAt":"2026-10-27T08:38:29.832Z","schema":1,"serviceId":"atlas","serviceVersion":"v1","supersedes":"experience:stage0-smoke","verdict":"pass"},"receipt":{"state":"done","jobId":"eeef6880-3198-4a51-a6a7-ec9f301789f6","blobId":"qpQxhrCw4zsgJm3UmZSUpwzotfOsEF6lcH3A2qyKRIE"},"receiptSource":"ORIGINAL_REHEARSAL_RECEIPTS"},{"blobId":"IQzIXKHwTADNd6YumObZgYVSf1WDR0IT9afHDebNlHI","hash":"453a35a15593e326499b8cb40e449734959c870bbb16249cba58c7bf5cae5372","id":"experience:coverage-v1:03","record":{"evidence":{"source":"tatum","target":"checkpoint:338746862","version":"338746862"},"family":"checkpoint","id":"experience:coverage-v1:03","kind":"experience","network":"mainnet","observedAt":"2026-10-27T16:19:40.113Z","reasons":["missing:sequenceNumber"],"recordedAt":"2026-10-27T16:19:40.114Z","schema":1,"serviceId":"cipher","serviceVersion":"v1","supersedes":null,"verdict":"fail"},"receipt":{"slot":3,"operation_key":"coverage:v1:memory:03","hash":"453a35a15593e326499b8cb40e449734959c870bbb16249cba58c7bf5cae5372","state":"DONE","job_id":"99461ac1-eee9-4c17-a0bf-8c7cfb3484fd","blob_id":"IQzIXKHwTADNd6YumObZgYVSf1WDR0IT9afHDebNlHI","polls":6},"receiptSource":"COVERAGE_LIVE_RECEIPT"},{"blobId":"IHutsuaeSKVEk09QT6_dxvrCpDivizw-qxVjEnMIEGw","hash":"e6533f951e32b75da4479ebe7af574194980f730dad21d32d6fff8f67113e104","id":"experience:coverage-v1:05","record":{"evidence":{"source":"tatum","target":"checkpoint:338746862","version":"338746862"},"family":"checkpoint","id":"experience:coverage-v1:05","kind":"experience","network":"mainnet","observedAt":"2026-10-27T16:19:40.115Z","reasons":["mismatch:digest"],"recordedAt":"2026-10-27T16:19:40.115Z","schema":1,"serviceId":"beacon","serviceVersion":"v1","supersedes":null,"verdict":"fail"},"receipt":{"slot":5,"operation_key":"coverage:v1:memory:05","hash":"e6533f951e32b75da4479ebe7af574194980f730dad21d32d6fff8f67113e104","state":"DONE","job_id":"5fcf2f6b-20d0-4214-9fcc-272a30ae9c9d","blob_id":"IHutsuaeSKVEk09QT6_dxvrCpDivizw-qxVjEnMIEGw","polls":4},"receiptSource":"COVERAGE_LIVE_RECEIPT"},{"blobId":"ce8Ast4hy9VIw5cdnR-BbFRaN7OJjbZghsqZhFwul74","hash":"7f5dd46b21c0ddd3e36484f55adc35dab50d2289c0747bebbf0e1e6ae930792b","id":"experience:coverage-v1:07","record":{"evidence":{"source":"tatum","target":"checkpoint:338746862","version":"338746862"},"family":"freshness","id":"experience:coverage-v1:07","kind":"experience","network":"mainnet","observedAt":"2026-10-27T16:19:40.116Z","reasons":["outside-time-window"],"recordedAt":"2026-10-27T16:19:40.117Z","schema":1,"serviceId":"atlas","serviceVersion":"v1","supersedes":null,"verdict":"fail"},"receipt":{"slot":7,"operation_key":"coverage:v1:memory:07","hash":"7f5dd46b21c0ddd3e36484f55adc35dab50d2289c0747bebbf0e1e6ae930792b","state":"DONE","job_id":"38d5f789-370e-4353-8e40-624939dd89e1","blob_id":"ce8Ast4hy9VIw5cdnR-BbFRaN7OJjbZghsqZhFwul74","polls":5},"receiptSource":"COVERAGE_LIVE_RECEIPT"},{"blobId":"zhFfmMj4H0NieBUsnGFbKcc2zIJQChOhZBVqBT-QV8w","hash":"dcbfe94a5f9fa154ef269e8d0bcac7d6bcc8cb8bf2eb3880880cb3ad73618d9b","id":"experience:coverage-v1:09","record":{"evidence":{"source":"fixture","target":"checkpoint:338746862","version":"338746862"},"family":"history","id":"experience:coverage-v1:09","kind":"experience","network":"mainnet","observedAt":"2026-10-27T16:19:40.118Z","reasons":["reference-version-mismatch"],"recordedAt":"2026-10-27T16:19:40.118Z","schema":1,"serviceId":"beacon","serviceVersion":"v1","supersedes":null,"verdict":"unknown"},"receipt":{"slot":9,"operation_key":"coverage:v1:memory:09","hash":"dcbfe94a5f9fa154ef269e8d0bcac7d6bcc8cb8bf2eb3880880cb3ad73618d9b","state":"DONE","job_id":"2862753c-c0e3-45ab-b791-837e52c87723","blob_id":"zhFfmMj4H0NieBUsnGFbKcc2zIJQChOhZBVqBT-QV8w","polls":5},"receiptSource":"COVERAGE_LIVE_RECEIPT"},{"blobId":"HVkc1DZkGsMjI2aZBEzCvsAsXy9bda1kKnpsZrtY8_k","hash":"b3eeba14bb9c084ffc32b5fff955c6b0ab694ee10e49d16f961037a2d751ae46","id":"experience:coverage-v1:04","record":{"evidence":{"source":"tatum","target":"checkpoint:338746862","version":"338746862"},"family":"checkpoint","id":"experience:coverage-v1:04","kind":"experience","network":"mainnet","observedAt":"2026-10-27T16:19:40.119Z","reasons":[],"recordedAt":"2026-10-27T16:19:40.119Z","schema":1,"serviceId":"cipher","serviceVersion":"v1","supersedes":"experience:coverage-v1:03","verdict":"pass"},"receipt":{"slot":4,"operation_key":"coverage:v1:memory:04","hash":"b3eeba14bb9c084ffc32b5fff955c6b0ab694ee10e49d16f961037a2d751ae46","state":"DONE","job_id":"7fe7c043-bb17-4a89-89d8-8eb50f68f95e","blob_id":"HVkc1DZkGsMjI2aZBEzCvsAsXy9bda1kKnpsZrtY8_k","polls":5},"receiptSource":"COVERAGE_LIVE_RECEIPT"},{"blobId":"Cb_5qxuzA8lAC1IIFrlP3JLLguivZEx7znKT5BKMu5s","hash":"e73bae3572950c961c89c34f8e457a7d50a3f37a2d18cecf9029ef74690f8ac4","id":"experience:coverage-v1:06","record":{"evidence":{"source":"tatum","target":"checkpoint:338746862","version":"338746862"},"family":"checkpoint","id":"experience:coverage-v1:06","kind":"experience","network":"mainnet","observedAt":"2026-10-27T16:19:40.120Z","reasons":[],"recordedAt":"2026-10-27T16:19:40.121Z","schema":1,"serviceId":"beacon","serviceVersion":"v1","supersedes":"experience:coverage-v1:05","verdict":"pass"},"receipt":{"slot":6,"operation_key":"coverage:v1:memory:06","hash":"e73bae3572950c961c89c34f8e457a7d50a3f37a2d18cecf9029ef74690f8ac4","state":"DONE","job_id":"aa918116-421b-42e9-80af-ad0a1370096e","blob_id":"Cb_5qxuzA8lAC1IIFrlP3JLLguivZEx7znKT5BKMu5s","polls":4},"receiptSource":"COVERAGE_LIVE_RECEIPT"},{"blobId":"YvuaUX3rF8BAzpP2beMnwKBYBbMboNHgnWeDnZKudN4","hash":"96d852141c929b9e7a974a61b0348b542862d8157d9fbb8a1b5d4e9924fc6cc1","id":"experience:coverage-v1:08","record":{"evidence":{"source":"tatum","target":"checkpoint:338746862","version":"338746862"},"family":"freshness","id":"experience:coverage-v1:08","kind":"experience","network":"mainnet","observedAt":"2026-10-27T16:19:40.122Z","reasons":[],"recordedAt":"2026-10-27T16:19:40.123Z","schema":1,"serviceId":"atlas","serviceVersion":"v1","supersedes":"experience:coverage-v1:07","verdict":"pass"},"receipt":{"slot":8,"operation_key":"coverage:v1:memory:08","hash":"96d852141c929b9e7a974a61b0348b542862d8157d9fbb8a1b5d4e9924fc6cc1","state":"DONE","job_id":"71cea527-553f-4a70-96f7-d7d2040f7bc7","blob_id":"YvuaUX3rF8BAzpP2beMnwKBYBbMboNHgnWeDnZKudN4","polls":4},"receiptSource":"COVERAGE_LIVE_RECEIPT"},{"blobId":"00o9ygazsRX7mH_KdIwCIDyjIoxsEo3HNEgKJJDNB7k","hash":"5c5f43332d52d23c4225cd67843cb25cd5ed852f6ac032a6d11cecd70e0ba86d","id":"experience:coverage-v1:10","record":{"evidence":{"source":"fixture","target":"checkpoint:338746862","version":"338746862"},"family":"history","id":"experience:coverage-v1:10","kind":"experience","network":"mainnet","observedAt":"2026-10-27T16:19:40.124Z","reasons":[],"recordedAt":"2026-10-27T16:19:40.124Z","schema":1,"serviceId":"beacon","serviceVersion":"v1","supersedes":"experience:coverage-v1:09","verdict":"pass"},"receipt":{"slot":10,"operation_key":"coverage:v1:memory:10","hash":"5c5f43332d52d23c4225cd67843cb25cd5ed852f6ac032a6d11cecd70e0ba86d","state":"DONE","job_id":"9fadd272-0c5c-4eee-9408-0fbcbdf09f00","blob_id":"00o9ygazsRX7mH_KdIwCIDyjIoxsEo3HNEgKJJDNB7k","polls":5},"receiptSource":"COVERAGE_LIVE_RECEIPT"}],"chains":[{"scope":"atlas/checkpoint/v1","parentId":"experience:stage0-smoke","correctionId":"experience:atlas-v1-correction-1","before":"fail","after":"pass","source":"tatum"},{"scope":"cipher/checkpoint/v1","parentId":"experience:coverage-v1:03","correctionId":"experience:coverage-v1:04","before":"fail","after":"pass","source":"tatum"},{"scope":"beacon/checkpoint/v1","parentId":"experience:coverage-v1:05","correctionId":"experience:coverage-v1:06","before":"fail","after":"pass","source":"tatum"},{"scope":"atlas/freshness/v1","parentId":"experience:coverage-v1:07","correctionId":"experience:coverage-v1:08","before":"fail","after":"pass","source":"tatum"},{"scope":"beacon/history/v1","parentId":"experience:coverage-v1:09","correctionId":"experience:coverage-v1:10","before":"unknown","after":"pass","source":"fixture"}],"historicalNegativePilot":{"title":"Сохранённый 8B pilot: fail без памяти и с памятью.","mode":"LIVE_MODEL_RECORDED_TATUM_FROZEN_WALRUS","modelId":"@cf/meta/llama-3.1-8b-instruct-fp8-fast","sourceReportSha256":"dfb138bd2cb527d30d93d9867a29690ad9a4f9a945276f51e863ab027506f236","rows":[{"selector":"model","caseId":"pilot-checkpoint-1","memoryEnabled":false,"selectorMode":"live","context":{"task":{"id":"pilot-checkpoint-1","network":"mainnet","family":"checkpoint","target":"checkpoint:338359837","requiredFields":["digest","sequenceNumber"],"maxAgeMs":600000,"budget":"3","cutoff":"2026-10-26T14:47:59.112Z"},"offers":[{"id":"atlas","version":"v1","network":"mainnet","families":["checkpoint"],"fields":["digest","sequenceNumber"],"price":"1"},{"id":"beacon","version":"v1","network":"mainnet","families":["checkpoint"],"fields":["digest","sequenceNumber"],"price":"2"},{"id":"cipher","version":"v1","network":"mainnet","families":["checkpoint"],"fields":["digest","sequenceNumber"],"price":"3"}],"memories":[]},"contextHash":"211d9cffe3fdb3fa5a8378fecd8f5522b8040dd8d2fa1d39d023e46957979fd4","selections":1,"serviceProjections":1,"selectedServiceId":"atlas","decision":{"serviceId":"atlas","reason":"Lowest price within budget","memoryIds":[]},"memoryIdsAvailable":[],"verdict":"fail","reasons":["missing:digest"],"demoCredits":"1"},{"selector":"model","caseId":"pilot-checkpoint-1","memoryEnabled":true,"selectorMode":"live","context":{"task":{"id":"pilot-checkpoint-1","network":"mainnet","family":"checkpoint","target":"checkpoint:338359837","requiredFields":["digest","sequenceNumber"],"maxAgeMs":600000,"budget":"3","cutoff":"2026-10-26T14:47:59.112Z"},"offers":[{"id":"atlas","version":"v1","network":"mainnet","families":["checkpoint"],"fields":["digest","sequenceNumber"],"price":"1"},{"id":"beacon","version":"v1","network":"mainnet","families":["checkpoint"],"fields":["digest","sequenceNumber"],"price":"2"},{"id":"cipher","version":"v1","network":"mainnet","families":["checkpoint"],"fields":["digest","sequenceNumber"],"price":"3"}],"memories":[{"evidence":{"source":"tatum","target":"checkpoint:338359837","version":"338359837"},"family":"checkpoint","id":"experience:stage0-smoke","kind":"experience","network":"mainnet","observedAt":"2026-10-26T14:47:56.743Z","reasons":["missing:digest"],"recordedAt":"2026-10-26T14:47:58.112Z","schema":1,"serviceId":"atlas","serviceVersion":"v1","supersedes":null,"verdict":"fail"}]},"contextHash":"c818aa7461a766408a96cd0e52cf1fdcf5ced7901c0fa77dce8c177ef16e7a4c","selections":1,"serviceProjections":1,"selectedServiceId":"atlas","decision":{"serviceId":"atlas","reason":"Lowest price","memoryIds":["experience:stage0-smoke"]},"memoryIdsAvailable":["experience:stage0-smoke"],"verdict":"fail","reasons":["missing:digest"],"demoCredits":"1"}],"result":{"modelOff":"fail","modelOn":"fail","improvedValidResult":false,"citedExpectedMemory":true}},"totals":{"A":2,"B":3,"C":3,"D":3},"stages":[{"id":"repeat-required-field","label":"Новый сеанс: digest по-прежнему нужен","arms":[{"condition":"A","requestHash":"f3ed19a6c417650f5f4a8bd3df063edc7cca56387ae1a3e8d3cee6787987af2a","status":"MODEL_RESPONSE_SCORED","rawResponseHash":"b5377f1cc8dd096597d275e734bef0dfacd053f8b032373e4efb5ed9599fe7dc","proposal":{"memoryIds":[],"reason":"Within budget and meets requirements","serviceId":"atlas"},"rawVerifier":{"status":"fail","reasons":["missing:digest"]},"goalCompleted":false,"controllerOutcome":"LOCAL_PROJECTION_VERIFIED","guardEvidenceIds":[],"localServiceExecutions":1,"demoCredits":"1","citationAudit":{"contract":"memory-citations-v1","status":"none_available","citationGatePassed":false,"providedMemoryIds":[],"declaredMemoryIds":[],"assessments":[]}},{"condition":"B","requestHash":"d6c8071a8a95c831abffc9c2a4a617d510b8c17665177aff104aa1af96fcfce5","status":"MODEL_RESPONSE_SCORED","rawResponseHash":"0daa50ac1ce56a6c3ca9122f2b98e059a5ad85d02bcffad2610953bb3529596e","proposal":{"memoryIds":["experience:stage0-smoke"],"reason":"Within budget and offers more than atlas","serviceId":"beacon"},"rawVerifier":{"status":"pass","reasons":[]},"goalCompleted":true,"controllerOutcome":"LOCAL_PROJECTION_VERIFIED","guardEvidenceIds":[],"localServiceExecutions":1,"demoCredits":"2","citationAudit":{"contract":"memory-citations-v1","status":"supported","citationGatePassed":true,"providedMemoryIds":["experience:stage0-smoke"],"declaredMemoryIds":["experience:stage0-smoke"],"assessments":[{"id":"experience:stage0-smoke","declared":true,"relevance":"relevant_failure","reasons":["required_field_failure_same_version"]}]}},{"condition":"C","requestHash":"d6c8071a8a95c831abffc9c2a4a617d510b8c17665177aff104aa1af96fcfce5","status":"MODEL_RESPONSE_SCORED","rawResponseHash":"0daa50ac1ce56a6c3ca9122f2b98e059a5ad85d02bcffad2610953bb3529596e","proposal":{"memoryIds":["experience:stage0-smoke"],"reason":"Within budget and offers more than atlas","serviceId":"beacon"},"rawVerifier":{"status":"pass","reasons":[]},"goalCompleted":true,"controllerOutcome":"LOCAL_PROJECTION_VERIFIED","guardEvidenceIds":[],"localServiceExecutions":1,"demoCredits":"2","citationAudit":{"contract":"memory-citations-v1","status":"supported","citationGatePassed":true,"providedMemoryIds":["experience:stage0-smoke"],"declaredMemoryIds":["experience:stage0-smoke"],"assessments":[{"id":"experience:stage0-smoke","declared":true,"relevance":"relevant_failure","reasons":["required_field_failure_same_version"]}]}}],"D":{"condition":"D","status":"DETERMINISTIC_BASELINE_EXECUTED_OFFLINE","selector":"EXISTING_FIELD_AWARE_RULES","contextHash":"ce4e8948b607be9bd431dc1ece3ec413761ce1cc19fd54fe27630b0a6cde4097","proposal":{"serviceId":"beacon","reason":"Lowest demo price among compatible offers without a matching known failure.","memoryIds":["experience:stage0-smoke"]},"rawVerifier":{"status":"pass","reasons":[]},"goalCompleted":true,"controllerOutcome":"LOCAL_PROJECTION_VERIFIED","guardEvidenceIds":[],"localServiceExecutions":1,"demoCredits":"2","providerCalls":0},"BAndCShareOneResponse":true,"task":{"budget":"2","cutoff":"2026-10-26T14:47:59.112Z","family":"checkpoint","id":"memory-scenario-repeat","maxAgeMs":60000,"network":"mainnet","requiredFields":["digest","sequenceNumber"],"target":"checkpoint:338359837"},"offers":[{"families":["checkpoint"],"fields":["digest","sequenceNumber"],"id":"atlas","network":"mainnet","price":"1","version":"v1"},{"families":["checkpoint"],"fields":["digest","sequenceNumber"],"id":"beacon","network":"mainnet","price":"2","version":"v1"}],"rawResponses":{"A":{"memoryIds":[],"reason":"Within budget and meets requirements","serviceId":"atlas"},"B":{"memoryIds":["experience:stage0-smoke"],"reason":"Within budget and offers more than atlas","serviceId":"beacon"},"C":{"memoryIds":["experience:stage0-smoke"],"reason":"Within budget and offers more than atlas","serviceId":"beacon"}}},{"id":"field-no-longer-required","label":"Контроль: нужен только sequenceNumber, бюджет1","arms":[{"condition":"A","requestHash":"6d4423d5ca1953c1509ac85da299fe84a34a55058e95cc38bad2136ee3ed6dea","status":"MODEL_RESPONSE_SCORED","rawResponseHash":"fa7d5fb0d28a56950d77e4bc52d995bb32d1b25deef12bff67369112fca58bde","proposal":{"memoryIds":[],"reason":"Lowest price within budget","serviceId":"atlas"},"rawVerifier":{"status":"pass","reasons":[]},"goalCompleted":true,"controllerOutcome":"LOCAL_PROJECTION_VERIFIED","guardEvidenceIds":[],"localServiceExecutions":1,"demoCredits":"1","citationAudit":{"contract":"memory-citations-v1","status":"none_available","citationGatePassed":false,"providedMemoryIds":[],"declaredMemoryIds":[],"assessments":[]}},{"condition":"B","requestHash":"6d4423d5ca1953c1509ac85da299fe84a34a55058e95cc38bad2136ee3ed6dea","status":"MODEL_RESPONSE_SCORED","rawResponseHash":"fa7d5fb0d28a56950d77e4bc52d995bb32d1b25deef12bff67369112fca58bde","proposal":{"memoryIds":[],"reason":"Lowest price within budget","serviceId":"atlas"},"rawVerifier":{"status":"pass","reasons":[]},"goalCompleted":true,"controllerOutcome":"LOCAL_PROJECTION_VERIFIED","guardEvidenceIds":[],"localServiceExecutions":1,"demoCredits":"1","citationAudit":{"contract":"memory-citations-v1","status":"none_available","citationGatePassed":false,"providedMemoryIds":[],"declaredMemoryIds":[],"assessments":[]}},{"condition":"C","requestHash":"6d4423d5ca1953c1509ac85da299fe84a34a55058e95cc38bad2136ee3ed6dea","status":"MODEL_RESPONSE_SCORED","rawResponseHash":"fa7d5fb0d28a56950d77e4bc52d995bb32d1b25deef12bff67369112fca58bde","proposal":{"memoryIds":[],"reason":"Lowest price within budget","serviceId":"atlas"},"rawVerifier":{"status":"pass","reasons":[]},"goalCompleted":true,"controllerOutcome":"LOCAL_PROJECTION_VERIFIED","guardEvidenceIds":[],"localServiceExecutions":1,"demoCredits":"1","citationAudit":{"contract":"memory-citations-v1","status":"none_available","citationGatePassed":false,"providedMemoryIds":[],"declaredMemoryIds":[],"assessments":[]}}],"D":{"condition":"D","status":"DETERMINISTIC_BASELINE_EXECUTED_OFFLINE","selector":"EXISTING_FIELD_AWARE_RULES","contextHash":"61efd7df102a8a0423870571464b87293357bbacf902ce80e1f332c57f4c7294","proposal":{"serviceId":"atlas","reason":"Lowest demo price among compatible offers without a matching known failure.","memoryIds":[]},"rawVerifier":{"status":"pass","reasons":[]},"goalCompleted":true,"controllerOutcome":"LOCAL_PROJECTION_VERIFIED","guardEvidenceIds":[],"localServiceExecutions":1,"demoCredits":"1","providerCalls":0},"BAndCShareOneResponse":true,"task":{"budget":"1","cutoff":"2026-10-26T14:47:59.112Z","family":"checkpoint","id":"memory-scenario-narrow","maxAgeMs":60000,"network":"mainnet","requiredFields":["sequenceNumber"],"target":"checkpoint:338359837"},"offers":[{"families":["checkpoint"],"fields":["digest","sequenceNumber"],"id":"atlas","network":"mainnet","price":"1","version":"v1"},{"families":["checkpoint"],"fields":["digest","sequenceNumber"],"id":"beacon","network":"mainnet","price":"2","version":"v1"}],"rawResponses":{"A":{"memoryIds":[],"reason":"Lowest price within budget","serviceId":"atlas"},"B":{"memoryIds":[],"reason":"Lowest price within budget","serviceId":"atlas"},"C":{"memoryIds":[],"reason":"Lowest price within budget","serviceId":"atlas"}}},{"id":"after-verified-correction","label":"После correction: Atlas исправлен, бюджет1","arms":[{"condition":"A","requestHash":"bea9bcc2a173d8a15eab77b263bec67194a9b76befb9c20120e558e87286656d","status":"MODEL_RESPONSE_SCORED","rawResponseHash":"fa7d5fb0d28a56950d77e4bc52d995bb32d1b25deef12bff67369112fca58bde","proposal":{"memoryIds":[],"reason":"Lowest price within budget","serviceId":"atlas"},"rawVerifier":{"status":"pass","reasons":[]},"goalCompleted":true,"controllerOutcome":"LOCAL_PROJECTION_VERIFIED","guardEvidenceIds":[],"localServiceExecutions":1,"demoCredits":"1","citationAudit":{"contract":"memory-citations-v1","status":"none_available","citationGatePassed":false,"providedMemoryIds":[],"declaredMemoryIds":[],"assessments":[]}},{"condition":"B","requestHash":"dfe9976523bf07110f4721be746b7370a723824ab7700799a2f61503c9c055a5","status":"MODEL_RESPONSE_SCORED","rawResponseHash":"568f345f374f9d755bc3d58f48296961aeb3ea69c4c8f1670a118a241c68518d","proposal":{"memoryIds":["experience:atlas-v1-correction-1"],"reason":"Within budget","serviceId":"atlas"},"rawVerifier":{"status":"pass","reasons":[]},"goalCompleted":true,"controllerOutcome":"LOCAL_PROJECTION_VERIFIED","guardEvidenceIds":[],"localServiceExecutions":1,"demoCredits":"1","citationAudit":{"contract":"memory-citations-v1","status":"unverifiable","citationGatePassed":false,"providedMemoryIds":["experience:atlas-v1-correction-1"],"declaredMemoryIds":["experience:atlas-v1-correction-1"],"assessments":[{"id":"experience:atlas-v1-correction-1","declared":true,"relevance":"unassessable","reasons":["observation_contract_insufficient"]}]}},{"condition":"C","requestHash":"dfe9976523bf07110f4721be746b7370a723824ab7700799a2f61503c9c055a5","status":"MODEL_RESPONSE_SCORED","rawResponseHash":"568f345f374f9d755bc3d58f48296961aeb3ea69c4c8f1670a118a241c68518d","proposal":{"memoryIds":["experience:atlas-v1-correction-1"],"reason":"Within budget","serviceId":"atlas"},"rawVerifier":{"status":"pass","reasons":[]},"goalCompleted":true,"controllerOutcome":"LOCAL_PROJECTION_VERIFIED","guardEvidenceIds":[],"localServiceExecutions":1,"demoCredits":"1","citationAudit":{"contract":"memory-citations-v1","status":"unverifiable","citationGatePassed":false,"providedMemoryIds":["experience:atlas-v1-correction-1"],"declaredMemoryIds":["experience:atlas-v1-correction-1"],"assessments":[{"id":"experience:atlas-v1-correction-1","declared":true,"relevance":"unassessable","reasons":["observation_contract_insufficient"]}]}}],"D":{"condition":"D","status":"DETERMINISTIC_BASELINE_EXECUTED_OFFLINE","selector":"EXISTING_FIELD_AWARE_RULES","contextHash":"d135a1a17d3153b5faa46d60df96fde80f2cf6c261e5a79b9d6c5d0c858d1953","proposal":{"serviceId":"atlas","reason":"Lowest demo price among compatible offers without a matching known failure.","memoryIds":["experience:atlas-v1-correction-1"]},"rawVerifier":{"status":"pass","reasons":[]},"goalCompleted":true,"controllerOutcome":"LOCAL_PROJECTION_VERIFIED","guardEvidenceIds":[],"localServiceExecutions":1,"demoCredits":"1","providerCalls":0},"BAndCShareOneResponse":true,"task":{"budget":"1","cutoff":"2026-10-27T08:38:29.832Z","family":"checkpoint","id":"memory-scenario-corrected","maxAgeMs":600000,"network":"mainnet","requiredFields":["digest","sequenceNumber"],"target":"checkpoint:338630541"},"offers":[{"families":["checkpoint"],"fields":["digest","sequenceNumber"],"id":"atlas","network":"mainnet","price":"1","version":"v1"},{"families":["checkpoint"],"fields":["digest","sequenceNumber"],"id":"beacon","network":"mainnet","price":"2","version":"v1"}],"rawResponses":{"A":{"memoryIds":[],"reason":"Lowest price within budget","serviceId":"atlas"},"B":{"memoryIds":["experience:atlas-v1-correction-1"],"reason":"Within budget","serviceId":"atlas"},"C":{"memoryIds":["experience:atlas-v1-correction-1"],"reason":"Within budget","serviceId":"atlas"}}}],"localVerification":{"freshProcess":true,"records":10,"credentials":"NONE","remoteRecall":false,"description":"Fresh local process verified saved blobs/revisions; earlier separate live readers verified Mainnet."},"provenance":{"modelReportHash":"36b5f462e753b8af3f98dec355ceeaa94fb0bb27bd6a0eb8d1e3ca7fdd17c22d","permitHash":"40f12edf62f0c12d48445244f99d32a576b5b0ce70d555896a788f8624ee743d","inputPlanHash":"01a44fea2996b2881db7defeaee182c93536a5a2432658b32b9ab758746389f5","originalMemoryInputHash":"89efc4d0a5ecbd614b3582b96252ac65b1e56af2cdb1119194310b5b2d969dac","coverageInputHash":"92f3fd8103b9fe0fb784af07c88b10fad8b3091a6d7eb5e06345fe5f5c954f0f","modelInference":"SAVED_REAL_8B_V1_RESPONSES","projectionEvaluation":"RECOMPUTED_LOCALLY_FROM_SAVED_CONTROLLED_DATA","deterministicBaseline":"PREVIOUSLY_EXECUTED_OFFLINE","memoryRead":"SAVED_REAL_MAINNET_READ_PLUS_LOCAL_RESTORATION"}}</script><script>// Local presentation controls only. No network, credentials, model or storage writes.
 (() => {
   const buttons = [...document.querySelectorAll('[data-stage]')];
@@ -1086,7 +1086,7 @@
       record.hidden = !(matchesType && record.dataset.search.includes(query));
       if (!record.hidden) count++;
     });
-    document.getElementById('record-count').textContent = `Показано ${count} из ${records.length} записей`;
+    document.getElementById('record-count').textContent = `Showing ${count} of ${records.length} records`;
     document.getElementById('empty-records').hidden = count !== 0;
   }
   search.addEventListener('input', filterRecords);
