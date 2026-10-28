@@ -2,11 +2,12 @@
 
 Verified experience for agents choosing controlled Sui data projections, using real Tatum Mainnet data and Walrus Memory Mainnet records.
 
-- **Demo:** https://recall-lab-evidence-20261028.mightytoast34.chatgpt.site
-- **Article:** https://recall-lab-evidence-20261028.mightytoast34.chatgpt.site/blog
+- **Demo:** https://vikroz.github.io/recall-lab-total-recall/
+- **Backup mirror:** https://recall-lab-evidence-20261028.mightytoast34.chatgpt.site
+- **Article:** https://vikroz.github.io/recall-lab-total-recall/blog.html
 - **License:** [MIT](LICENSE)
 
-The published interface and walkthrough are in English; original evidence remains verbatim. Published JSON translates descriptive labels only; the original journals and raw responses remain unchanged, with separate source and published hashes. The website presents saved real responses and receipts with a permanent replay label. Viewing it makes no provider API calls. It is a controlled prototype, not an independent vendor marketplace or a live trading system.
+The published interface uses a Sui-inspired blue palette. The interface and walkthrough are in English; original evidence remains verbatim. Published JSON translates descriptive labels only; the original journals and raw responses remain unchanged, with separate source and published hashes. The website presents saved real responses and receipts with a permanent replay label. Viewing it makes no provider API calls. It is a controlled prototype, not an independent vendor marketplace or a live trading system.
 
 ## Reproduce without credentials
 

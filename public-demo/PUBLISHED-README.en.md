@@ -22,11 +22,13 @@ With Node.js 18+, run `node verify.mjs` from this directory. No dependencies or 
 
 ## Public materials
 
-Demo: https://recall-lab-evidence-20261028.mightytoast34.chatgpt.site/
+Demo: https://vikroz.github.io/recall-lab-total-recall/
+
+Backup mirror: https://recall-lab-evidence-20261028.mightytoast34.chatgpt.site/
 
 Source (MIT): https://github.com/VikRoz/recall-lab-total-recall
 
-Article: https://recall-lab-evidence-20261028.mightytoast34.chatgpt.site/blog
+Article: https://vikroz.github.io/recall-lab-total-recall/blog.html
 
 The package contains no credentials, runtime databases or operator backend. It does not imply a submitted hackathon application.
 
